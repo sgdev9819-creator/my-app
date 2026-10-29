@@ -1,0 +1,90 @@
+"use client"
+import Link from "next/link"
+import { useRef, useState } from "react"
+
+const Accessories = [
+    {
+        name: "Your AirPods. Your way.",
+        image: "air2.png",
+        info: "Get to know the whole family of AirPods and AirPods accessories. And get ",
+        info2: "free engraving",
+        link: "Shop all",
+    },
+    {
+        name: "Find your study buddies.",
+        image: "/two.png",
+        info: "Make it the best year ever with the latest accessories.",
+        link: "Shop college essentials",
+    },
+]
+
+export default function AccessoriesHero(){
+    const [activeImage, setActiveImage] = useState(0)
+    const containerRef = useRef(null)
+
+    const handleScroll = () => {
+        const container = containerRef.current
+        if (!container) return
+
+        const scrollLeft = container.scrollLeft
+        const slideWidth = container.clientWidth // Width of the visible container/slide
+        const newIndex = Math.round(scrollLeft / slideWidth)
+
+        if (newIndex !== activeImage && !isNaN(newIndex)) {
+            setActiveImage(newIndex)
+        }
+    }
+
+    // Function to let user click a dot and jump straight to that slide
+    const scrollToSlide = (index) => {
+        const container = containerRef.current
+        if (container) {
+            container.scrollTo({
+                left: container.clientWidth * index,
+                behavior: "smooth"
+            })
+            setActiveImage(index)
+        }
+    }
+
+    return(
+        <div className="Accessories-container relative flex flex-col items-center">
+            {/* Scrollable Slide Container */}
+            <div 
+                ref={containerRef}
+                onScroll={handleScroll}
+                className="Accessories-content-slide flex overflow-x-auto snap-x snap-mandatory scroll-smooth w-full"
+            >
+                {Accessories.map((items, index) => (
+                    <div className="Accessories-slid min-w-full relative snap-start" key={index}>
+                        <img src={items.image} alt={items.name} className="rounded-3xl w-full h-full object-cover" />
+                        <div className="absolute top-[3rem] left-[3rem] w-[500px] flex flex-col">
+                            <span className="font-light w-full text-3xl text-white">
+                                {items.name}
+                            </span>
+                            <p className="font-light text-white text-base"> {items.info} </p>
+                            {items.info2 && <p className="font-light text-white text-base"> {items.info2} </p>}
+                            <p className="font-light text-blue-400 mt-[1rem] text-base hover:underline cursor-pointer"> {items.link} </p>
+                        </div>
+                    </div>
+                ))}
+            </div>
+
+            {/* Pagination Rounded Span Dots */}
+            <div className="flex flex-row gap-3 mt-4 justify-center items-center">
+                {Accessories.map((_, index) => (
+                    <button
+                        key={index}
+                        onClick={() => scrollToSlide(index)}
+                        className={`h-3 rounded-full transition-all duration-300 ${
+                            activeImage === index 
+                                ? "w-8 bg-black" // Deep dark (active)
+                                : "w-3 bg-black/40 hover:bg-black/60" // Semidark (inactive)
+                        }`}
+                        aria-label={`Go to slide ${index + 1}`}
+                    />
+                ))}
+            </div>
+        </div>
+    )
+}
