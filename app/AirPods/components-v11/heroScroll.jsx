@@ -96,7 +96,7 @@ if(containerRef.current){
                 <div 
                 key={index}
                className="hero-items-1 airScroll">
-                    <img src={item.image} />
+                    <img src={item.image} className="h-full w-full" />
                     <div className= "hero-images-info-1">
                         <p  className={`absolute text-[11px] top-[-20px] text-black-800  ${index === 3 ? "text-white/70":"text-black-800"}`}>{item.top}</p>
        

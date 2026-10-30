@@ -118,7 +118,7 @@ return(
      setisoverlay(false)
     setisactiveLink(null)
 }} className="absolute w-full h-auto z-200">
-<div className="absolute top-0 left-0 z-204 bg-rgba(14,14,14,0.94)] backdrop-blur[28px] w-full h-[44px] justify-center items-center flex flex-row  gap-9">
+<div className={`absolute top-0 left-0 z-204  backdrop-blur[28px] w-full h-[44px] justify-center items-center flex flex-row  gap-9 ${isactiveLink? "bg-transparent":"bg-black/90"}`}>
 
 
 <div className="hidden lg:flex z-200">
@@ -178,7 +178,7 @@ className="no-underline text-xs text-white/90 z-200 justify-center items-center 
 </div>
 </div>
 
-<div className={`" mt-0 left-0 w-full bg-rgba(14,14,14,0.94)] translate-all duration-500 ease-in-out norder-b norder-white/5  z-100 lg:block"${isactiveLink?
+<div className={`" mt-0 left-0 w-full bg-[rgba(14,14,14,1)] translate-all duration-500 ease-in-out norder-b norder-white/5  z-100 lg:block"${isactiveLink?
   "h-screen opacity-100 visible  z-190":"h-0 opacity-0 invinsible"
 }`}
 onMouseLeave={()=> {
@@ -189,7 +189,7 @@ onMouseLeave={()=> {
 
 
 {isactiveLink && dropdownData[isactiveLink] &&(
-<div className="max-w-[1024px] mx-auto px-17 py-17  bg-black/90 flex flex-row gap-20 animation-fadein z-100">
+<div className="max-w-[1024px] mx-auto px-17 py-17  bg-transparent flex flex-row gap-20 animation-fadein z-100">
 <div className="col-span-8 gap-4">
 <p className="text-white/50 text-[11px] mb-3 font-light uppercase tracking-wider ">
 {dropdownData[isactiveLink].tittle}

@@ -122,7 +122,7 @@ return ()=> cancelAnimationFrame(animationIdRef.current)
 
 
     return(
-        <div className="w-full h-[100rem]   flex flex-col absolute font-light">
+        <div className="w-full h-[30rem]   flex flex-col relative font-light">
 <div className="flex flex-raw  juatify-center w-full h-auto absolute top-30 gap-20 ">
 
     <div className="flex flex-col absolute left-40  ">

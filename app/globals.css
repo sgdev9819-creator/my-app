@@ -852,7 +852,7 @@ right: 0;
     display: flex;
     opacity: 0;
     flex-direction: row;
-    z-index: 500;
+    z-index: 201;
     animation:slidein 1s ease forwards;
    
 }

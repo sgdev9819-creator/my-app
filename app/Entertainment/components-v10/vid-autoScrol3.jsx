@@ -164,7 +164,7 @@ return ()=> cancelAnimationFrame(animationIdRef.current)
 
 
     return(
-        <div className="w-full h-[130rem] justify-center  flex flex-col absolute ">
+        <div className="w-full h-[40rem] justify-center  flex flex-col absolute ">
 <div className="relative flex flex-col h-max w-full justify-center gap-2" >
 <video src="large11.mp4"  ref={vidRef} muted loop autoPlay playsInline className=" w-full"/>
 <div className="entern-overlay">

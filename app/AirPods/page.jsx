@@ -35,12 +35,12 @@ export default function AirPodsPage(){
     </div>
 
     <div className="absolute top-[447rem] h-[76rem] w-full justify-center flex flex-col font-light text-white bg-black  ">
-<h3 className="text-5xl w-full justify-center items-center flex absolute top-40">
+<h3 className="text-[50px] w-full justify-center items-center flex absolute top-40">
 Get to know AirPods.
 </h3>
 
 
-<div  className=" absolute top-[-2.5rem] w-full justify-center items-center flex  ">
+<div  className=" absolute top-[2.5rem] w-full justify-center items-center flex  ">
     <HeroScroll/>
     </div>
     </div>

@@ -272,9 +272,9 @@ export default function FooterGrid(){
 <div className="absolute flex justify-center items-center bottom-7 w-full">
     <Button
     text1="Buy"
-    className1="w-[50px] justify-center text-sm items-center inline-flex h-[1.2rem] bg-blue-600 text-white font-light rounded-2xl no-underline"
+    className1="w-[50px] justify-center text-[17px] items-center inline-flex h-[1.2rem] bg-blue-600 text-white font-light rounded-2xl no-underline"
     text2="Learn more"
-    className2="w-max text-blue-400 text-sm justify-center items-center inline-flex font-light no-underline hover:underline "
+    className2="w-max text-blue-400 text-[17px] justify-center items-center inline-flex font-light no-underline hover:underline "
 
     />
 </div>

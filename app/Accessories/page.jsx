@@ -33,9 +33,9 @@ useEffect(()=>{
 <div className="absolute top-15 left-2 w-full flex flex-row gap-[80%] justify-center items-center">
     <h2 className="text-white text-[5rem] font-light  absolute  top-10 left-20">Accessories</h2>
 
- <div className="absolute right-50 top-21 flex flex-col gap-4 text-[17px] text-blue-500  ">
+ <div className="absolute right-50 top-21 flex flex-col gap-4 text-[17px] text-blue-400  ">
     <Link href="#" className="ml-17 font-light  ">Connect with a Specialist</Link>
-     <Link href="#" className="ml-17 font-light  ">Find an Apple Store</Link>
+     <Link href="#" className="ml-17 font-light mt-[0.5rem]  ">Find an Apple Store</Link>
      </div>
      
   <div className="absolute top-[36rem] w-full z-100 "><Accessoriesslide/></div>
@@ -73,8 +73,8 @@ className={`acc-button ${showfull?"activebutton":"button"}`}>
 
 </button>
 
-<div className={`w-full  mt-[5rem] justify-center items-center flex z-100
-   ${showfull?"opacity-100 visible ":"opacity-0 invinsible "}
+<div className={`absolute w-full  mt-[5rem] justify-center items-center flex z-100 transition-colors duration-500
+   ${showfull ? "opacity-100 visible z-50 ":"opacity-0 invisible z-0 "}
   `}>
   <SecondSlide/>
 </div>
@@ -101,7 +101,7 @@ className={`acc-button ${showfull?"activebutton":"button"}`}>
 
 
 
-    <div className="absolute left-0 w-full z-100 top-[181rem] h-[43rem] bg-black  justify-center items-center flex flex-col">
+    <div className="absolute left-2 w-full z-100 top-[181rem] h-[43rem] bg-black  justify-center items-center flex flex-col">
 
 
 

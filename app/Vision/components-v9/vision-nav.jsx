@@ -118,7 +118,7 @@ return(
      setisoverlay(false)
     setisactiveLink(null)
 }} className="absolute w-full h-auto z-200">
-<div className="absolute top-0 left-0 z-204 bg-transparent backdrop-blur[28px] w-full h-[44px] justify-center items-center flex flex-row  gap-9">
+<div className={`absolute top-0 left-0 z-204  backdrop-blur[28px] w-full h-[44px] justify-center items-center flex flex-row  gap-9 ${isactiveLink? "bg-transparent ":"bg-transparent"}`}>
 
 
 <div className="hidden lg:flex z-200">
@@ -178,7 +178,7 @@ className="no-underline text-xs text-white/90 z-200 justify-center items-center 
 </div>
 </div>
 
-<div className={`" mt-0 left-0 w-full bg-[rgba(14,14,14,0.94)] translate-all duration-500 ease-in-out norder-b norder-white/5  z-100 lg:block"${isactiveLink?
+<div className={`" mt-0 left-0 w-full bg-[rgba(14,14,14,1)] translate-all duration-500 ease-in-out norder-b norder-white/5  z-100 lg:block"${isactiveLink?
   "h-screen opacity-100 visible  z-190":"h-0 opacity-0 invinsible"
 }`}
 onMouseLeave={()=> {
@@ -230,8 +230,8 @@ onMouseLeave={()=> {
 
 </nav>
 
-<div className={`fixed top-0 left-0 inset-0 bg-black/40 backdrop-blur-[16px] overflow-hidden 
-    ${isoverlay? "opacity-100 invincible z-100 ":" opacity-0 visible z-0" }`}></div>
+<div className={`fixed top-0 left-0 inset-0 bg-black/70 backdrop-blur-[16px] overflow-hidden 
+    ${isoverlay? "opacity-100 visible z-100 ":" opacity-0 invisible z-0" }`}></div>
 
 </div>
 

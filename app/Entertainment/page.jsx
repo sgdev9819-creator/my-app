@@ -48,15 +48,15 @@ export default function AirPodsPage(){
 </div>
 
 
-<div className="w-full absolute top-[286rem]  flex  items-center">
+<div className="w-full absolute top-[236rem]  flex  items-center">
     <ImageLoop1/>
 </div>
 
-<div className="w-full absolute top-[330rem]  flex  items-center">
+<div className="w-full absolute top-[280rem]  flex  items-center">
     <ImageLoop2/>
 </div>
 
-<div className="w-full absolute top-[368rem]  flex  items-center">
+<div className="w-full absolute top-[318rem]  flex  items-center">
     <ImageLoop3/>
 </div>
 
