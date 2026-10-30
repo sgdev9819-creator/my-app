@@ -1516,6 +1516,20 @@ opacity: 1;
     padding-bottom: 33px;
 }
 
+
+.ipad-slid{
+    width: 100%;
+    display: flex;
+    scroll-behavior: smooth;
+    gap: 4px;
+    padding-left: 67px;
+    padding-right: 122px;
+    padding-bottom: 2rem;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    transform: all 0.5s ease;
+    scroll-snap-type: x mandatory;
+}
+
 .hero-items-2{
  position: relative;
    
@@ -1533,4 +1547,8 @@ opacity: 1;
     border-radius: 20px;
     transition: transform 0.6s ease;
     border-radius: 20px;
+}
+
+.ipad-items{
+    width:100px;
 }

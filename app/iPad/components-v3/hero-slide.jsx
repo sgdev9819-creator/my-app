@@ -1,14 +1,17 @@
 "use client"
 import { useRef,useEffect,useState } from "react";
   const products =[
-    {id: 1,name:"MacBook Noe",image:"/ipad1.png"},
-      {id: 2,name:"MacBook Air",image:"/ipad2.png"},
-       {id: 3, name:"MacBook Pro",image:"/ipad3.png"},
-          {id: 4, name:"iMac",image:"/ipad4.png"},
-            {id: 5, name:"Mac mini",image:"/ipad6.png"},
-              {id: 6, name:"Mac Studio",image:"/ipad7.png"},
-                {id: 7, name:"Compare",image:"/ipad8.png"},
-                  {id: 8, name:"Displays",image:"/ipad9.png"},
+    {id: 1,name:"iPad Pro",image:"/ipad1.png"},
+      {id: 2,name:"iPad Air",image:"/ipad2.png"},
+       {id: 3, name:"iPad",image:"/ipad3.png"},
+          {id: 4, name:"iPad mini",image:"/ipad4.png"},
+            {id: 5, name:"compare",image:"/ipad10.png"},
+             {id: 6, name:"Apple Pencil",image:"/ipad6.png"},
+              {id: 7, name:"Keyboard",image:"/ipad11.png"},
+                {id: 8, name:"Compare",image:"/ipad8.png"},
+                {id: 9, name:"Accessories",image:"/ipad12.png"},
+
+                  {id: 10, name:"Displays",image:"/ipad9.png"},
                   
 
 ]
@@ -58,11 +61,11 @@ export default function firstSlider(){
   
 return(
     <div className="slider-container">
-<div ref={containerRef} className="slider-content">
+<div ref={containerRef} className="ipad-slid">
     {products.map((item)=>(
         <div
         key={item.id}
-         className="content-items"
+         className="content-items ipad-items"
         >
             <img src={item.image} className="item" />
             <span className="item-info">{item.name}</span>

@@ -1,11 +1,11 @@
 "use client";
 import { useRef,useEffect,useState } from "react";
 const products =[
-    {id: 1,name:"Mac",image:"/one.png"},
-      {id: 2,name:"iPhone",image:"/two.png"},
-       {id: 3, name:"iPad",image:"/three.png"},
-          {id: 4, name:"Apple-watch",image:"/four.png"},
-            {id: 5, name:"vision-Pro",image:"/five.png"},
+    {id: 1,name:"Mac",image:"/st1.png"},
+      {id: 2,name:"iPhone",image:"/st2.png"},
+       {id: 3, name:"iPad",image:"/st3.png"},
+          {id: 4, name:"Apple-watch",image:"/st4.png"},
+            {id: 5, name:"vision-Pro",image:"/st5.png"},
               {id: 6, name:"Air-Pods",image:"/six.png"},
                 {id: 7, name:"Airtags",image:"/seven.png"},
                   {id: 8, name:"AppleTV",image:"/eight.png"},
