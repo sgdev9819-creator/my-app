@@ -87,7 +87,7 @@ if(containerRef.current){
 
     return(
         <div className="hero-images-container">
-    <div ref={containerRef} className="hero-images-content">
+    <div ref={containerRef} className="hero-images-content mac1">
                 {items.map((item,index)=>(
                 <div 
                 key={index}

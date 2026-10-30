@@ -35,51 +35,7 @@ import { useRef,useEffect,useState } from "react";
                    {id: 10, name:"Apple Fitness+",image:"/nav10.png"},
                      {id: 11, name:"Shop Watch",image:"/nav11.png"},
                    {id: 12, name:"watchOS 27",image:"/nav12.png"},
-                     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                    
 
 
 ]
@@ -136,13 +92,13 @@ return(
          className="watch-slider-item"
         >
             <img src={item.image} className="watch-slider-image" />
-            <div className="absolute w-full flex flex-col gap-[2px] top-36 justify-center items-center text-sm text-black font-normal ">
+            <div className="absolute w-full flex flex-col gap-[2px] top-36 justify-center items-center text-[13px] text-white font-light ">
             <span >{item.name}</span>
-            <span  className="mt-[-3px]" >
+            <span  className="mt-[-0.5rem] " >
                 {item.name3}
             </span>
-            <span className="text-orange-700 text-[11px]" >{item.name2}</span>
             </div>
+             <span className="text-orange-700 text-[11px] absolute top-[11rem]" >{item.name2}</span>
             </div>
     ))}
 </div>

@@ -27,14 +27,17 @@ export default function vidFooter(){
     
 
 useEffect(()=>{
-    const timer = setInterval(()=>{
+    let timer = null
+    if(isplaying){ 
+    timer = setInterval(()=>{
 setisActive((prevImage)=>{
 return prevImage === wordLoop.length -1?0 : prevImage +1
 })
-    },3000)
-
-    return ()=>clearInterval(timer)
-},[])
+    },2000)
+    }
+    return ()=>{
+        if(timer) clearInterval(timer)}
+},[isplaying])
 
 
 

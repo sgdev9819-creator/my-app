@@ -57,7 +57,7 @@ export default function HeroSlider(){
             `}  />
           <Link 
               href={icon.name}
-          className={`relative flex  w-full text-sm text-white font-light  justify-center items-center  
+          className={`relative flex  w-full text-[17px] text-white font-light  justify-center items-center  
             ${index === 1? "bottom-[0rem] ":"bottom-[0.9rem]"}  ${index === 2? "bottom-[0rem] ":"bottom-[0.9rem]"} ${index === 4? "bottom-[0rem] ":"bottom-[0.9rem]"} ${index === 6? "bottom-[0rem] ":"bottom-[0.9rem]"}
           `}>
             {icon.name}

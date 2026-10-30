@@ -187,7 +187,7 @@ if(containerRef.current){
             return(
                 <div
                 key={category.id}
-            className={`${activeMode ? "active":"not-active"
+            className={`${activeMode ? "active mac1":"not-active"
             }`}  ref={activeMode && isAllProducts ? containerRef : null}>
 
 

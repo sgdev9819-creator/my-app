@@ -44,12 +44,12 @@ export default function Images(){
 return(
     
 
-    <div className="relative grid grid-cols-2 rel gap-[2rem] w-full h-full p-6 pr-12  " >
+    <div className="flex flex-col lg:grid lg:grid-cols-2 relative items-center justify-center rel gap-[2rem] w-full h-full lg:p-6 lg:pr-12  " >
 {items.map((item,index)=>(
 
-<div className={`relative w-[636px] h-[710px]  flex flex-col items-center pt-2  rounded-3xl ${index === 0? "bg-black":"bg-white" }  `}
+<div className={` w-[98%] lg:w-[636px] relative h-[710px]  flex flex-col  items-center pt-2  rounded-3xl ${index === 0? "bg-black":"bg-white" }  `}
 key={index} >
-<img src={item.image} alt={index} className="w-full mt-70 object-cover rounded-3xl justify-center "  />
+<img src={item.image} alt={index} className="  w-full mt-70 object-cover rounded-3xl justify-center "  />
 <div className="absolute top-[4.8rem] justify-center items-center flex flex-col gap-1">
     <p className={`font-light text-[28px] ${
         index === 0? "text-white":" text-black"
@@ -71,7 +71,7 @@ key={index} >
         {item.name3}
     </h3>
     </div>
-    <div className={`absolute w-full h-max justify-center items-center flex ${index ===0 ? "top-[-2.1rem]":"top-[0.5rem]"}`}>
+    <div className={`absolute w-full h-max justify-center items-center flex ${index === 0 ? "top-[-2.1rem]":"top-[0.5rem]"}`}>
     {index !== 3 && (
         
         <Button 

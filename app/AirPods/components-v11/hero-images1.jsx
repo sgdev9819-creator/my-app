@@ -12,17 +12,24 @@ import Button  from "./button"
 import { useEffect,useState } from "react"
  export default function ImagesLoop(){
 const [isActive,setisActive]=useState(0)
-
+const[isrunning,setisruning]=useState(true)
 useEffect(()=>{
-    const timer = setInterval(()=>{
+    let timer = null
+    if(isrunning){ 
+     timer = setInterval(()=>{
 setisActive((prevIndex)=>{
     return prevIndex === images.length -1?0:prevIndex +1
 })
+    
     },1000)
-    return ()=> clearInterval(timer)
-    },[])
+}
+    return ()=> {
+        if(timer) clearInterval(timer)}
+    },[isrunning])
 
-
+const hunddleToggle=()=>{
+    setisruning((prev) => !prev)
+}
 
    
         return(
@@ -32,6 +39,17 @@ setisActive((prevIndex)=>{
                     
                     className="flex relative font-light text-white bg-black rounded-2xl w-[96%] h-full "
                     >
+
+<button onClick={hunddleToggle}
+aria-label={isrunning ? "Pause video" : "Play video"}
+className="w-max absolute right-[3rem] top-[3rem] z-200 p-4 rounded-full border-1 border-white/70 bg-white/10 backdrop-blur-[20px]"
+>
+    {
+isrunning? <img src="pause.svg" alt="Pause video" className="w-[15px] h-auto object-cover"/> : <img src="play.svg" alt="Play video" className="w-[15px] h-auto object-cover" />
+    }
+    </button> 
+
+
                         <div className="w-full justify-center items-center inline-flex absolute top-[15rem]">
                         <h2 className="text-[10rem] z-10 w-full justify-center items-center flex">
                             AirPods Max 2

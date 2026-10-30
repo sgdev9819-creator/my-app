@@ -20,7 +20,7 @@ export default function TVHomePage(){
     <HomeSlider/>
 </div>
 
-<div className="absolute top-[11.5rem] w-full justify-center items-center ">
+<div className="absolute lg:top-[11.5rem] w-full justify-center items-center ">
     <HeroImages1 />
 </div>
 

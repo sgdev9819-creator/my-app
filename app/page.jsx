@@ -7,8 +7,8 @@ import { useState } from "react";
 
 const products =[
  { 
-  name:"iPhone 18 Pro",
-  info:"Pro further",
+  name:"MacBook Pro",
+  info:"14-inch model now with M6",
   image:"/hero-image3.jpg",
  },
  

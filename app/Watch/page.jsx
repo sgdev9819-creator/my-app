@@ -47,19 +47,19 @@ Compare all models {'\u003e'}
     <HeroImage1/>
 </div>
 <div className=" absolute left-20 top-[100rem] w-auto h-auto justify-center">
-<h3 className="font-light text-5xl text-white ">
+<h3 className="font-light text-[45px] text-white ">
  Why Apple is the best
 place to shop Apple Watch.
 </h3>
 </div>
 
-<div className=" support-input   absolute top-[86rem] w-full ">
+<div className=" support-input   absolute top-[90rem] w-full ">
 <HeroImage2 />
 </div>
 
 <div className="w-full h-[100rem] justify-center items-center flex bg-black absolute top-[167.8rem]">
 <div className="absolute flex flex-row gap-120 justify-center items-center w-full absolute top-[8.7rem]">
-    <h3 className="font-light text-white text-[46px] ">Apple Watch essentials.</h3>
+    <h3 className="font-light text-white text-[45px] ">Apple Watch essentials.</h3>
     <Link href="#" className="text-blue-400 text-[17px] mt-[1.6rem] font-light no-underline hover:underline">
 All Apple Watch accessories </Link>
 </div>
