@@ -22,52 +22,10 @@ export default function Images(){
         
          
     ]
- const containerRef = useRef(null);
-    const[showLeft,setshowLeft]=useState(false)
-    const[showRight,setshowRight]=useState(true)
-
-    const checkCurrentState = ()=>{
-        if(containerRef.current){    
-            const{scrollLeft, scrollWidth,clientWidth} = containerRef.current
-            setshowLeft(scrollLeft > 10)
-
-            setshowRight(scrollLeft < scrollWidth - clientWidth - 10)
-        }     
-    }
-    useEffect(() =>{
-        const container = containerRef.current
-        if(container){
-            checkCurrentState()
-            container.addEventListener("scroll", checkCurrentState);
-        }
-    return () => {
-      if (container) {
-        container.removeEventListener("scroll", checkCurrentState);
-      }
-    };
-  }, []);
-
-    const handleLeft = ()=>{
-if(containerRef.current){
-    containerRef.current.scrollBy({
-        left:-465,
-        behavior:"smooth"
-    })
-}
-    }
-    
-    const handleRight = ()=>{
-if(containerRef.current){
-    containerRef.current.scrollBy({
-        left:465,
-        behavior:"smooth"
-    })
-}
-    }
 
     return(
         <div className="hero-images-container">
-    <div ref={containerRef} className="climax-images-1">
+    <div  className="climax-images-1">
                 {items.map((item,index)=>(
                 <div 
                 key={index}
@@ -85,6 +43,7 @@ if(containerRef.current){
                         </p>
                        
                     </div>
+                 
 <Link href="#" className={`absolute w-full h-max   flex  justify-center items-center text-blue-400  text-[15px] font-light hover:underline ${index === 1 ?"top-[5.5rem]":"top-[5.7rem]"}`}>
                     
 {item.link}
@@ -96,6 +55,7 @@ if(containerRef.current){
                     </div>
                 ))}
             </div>
+            {/*
            <div className=" relative top-[0rem] left-[70rem] gap-5 flex flex-row  w-max justify-center ">
 
   <button 
@@ -129,7 +89,7 @@ className={`w-max rounded-full
 
 </div>
 
-
+*/}
 
     </div>
 )

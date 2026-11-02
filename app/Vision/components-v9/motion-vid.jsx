@@ -16,7 +16,7 @@ const overlayOpacity = useTransform(
 
 
 return(
-    <div ref={currentRef} className=" w-full justify-center items-center h-[240vh] relative">
+    <div ref={currentRef} className=" w-full justify-center items-center h-[200vh] relative">
         <div className="h-[94vh] sticky top-8   overflow-hidden">
 <video
           src="large (8).mp4"

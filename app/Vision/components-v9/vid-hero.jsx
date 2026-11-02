@@ -52,7 +52,7 @@ return ()=>{
 }
 },[])
   return(
-    <div className="w-full absolute  flex justify-center items-center" >
+    <div className="w-full relative  flex justify-center items-center" >
 
     <div className="relative w-[100%] h-max   justify-center items-center">
     

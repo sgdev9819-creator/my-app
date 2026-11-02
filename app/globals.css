@@ -745,8 +745,8 @@ right: 0;
 }
 
 .Accessories-slid{
-     width: 100%;
-    height: 43rem;
+     width: 1190px;
+    height: 41rem;
     border-radius: 20px;
     position: relative;
      flex: 0 0 auto;
@@ -784,11 +784,9 @@ right: 0;
 }
 .activeAcc{
      width: 100%;
-    display: flex;
-    overflow-x: auto;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;
-    scroll-behavior: smooth;
+    display: grid;
+    grid-template-columns: repeat(4,200px);
+   
     visibility: visible;
     gap: 20px;
     opacity: 1;
@@ -797,31 +795,20 @@ right: 0;
     padding-bottom: 22px;
     transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
     transform: all 0.5s ease;
-    scroll-snap-type: x mandatory;
+    
 }
 .not-active{
+    width: 100%;
     visibility: hidden;
     opacity: 0;
     display: none;
 }
 
 .Acc-cases{
-    box-shadow: none;
-    width: 380px;
-    height: 630px;
-    background: none;
-    transition:none;
     position: relative;
-   opacity: 0;
-    flex: 0 0 auto;
-    object-fit: cover;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    border-radius: 20px;
-     animation: Slowvisible 0.6s ease forwards;
+    width: 300px;
+    height: 400px;
+    border-radius: 21px;
 }
 @keyframes Showvisible {
     0%{
@@ -837,8 +824,9 @@ right: 0;
       position: relative;
     width: 100%;
     top: 0rem;
-    left: 0;
-    padding-top: 0rem;
+    right: -6rem;
+    
+    
 }
 
 .second-nav{
@@ -1027,20 +1015,42 @@ input:focus-within::placeholder {
   }
 
   /* TV&Home*/
-
+.home-case{
+height: 780px;
+}
+.home-active{
+    gap: 10px;
+    
+    padding: 83.5px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
   .home-slider{
-    position:relative;
-    width:max-content;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap:1rem;
 
+ width: 100%;
+    display: flex;
+    scroll-behavior: smooth;
+    gap: 8px;
+    padding-left: 81px;
+    padding-right: 122px;
+    padding-bottom: 2rem;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    transform: all 0.5s ease;
+    scroll-snap-type: x mandatory;
   }
   .home-slider:hover a{
     color:rgba(0, 162, 255, 0.863);
   }
+  .home-items{
+    position: relative;
+    flex: 0 0 auto;
+    justify-content: center;
+     align-items: center;
+     display:flex;
+     flex-direction: column;
+ width:120px;
+  }
+ 
   .tv-hero-content{
      width: 100%;
     display: flex;
@@ -1205,10 +1215,10 @@ input:focus-within::placeholder {
 }
 
 .mother-footer{
-    position:absolute;
+    position:relative;
     width: 100%;
     height:468.2rem ;
-    top: 1335rem;
+    top: 40rem;
     background: black;
    
   
@@ -1286,6 +1296,7 @@ background:linear-gradient(to top,transparent ,rgba(255, 253, 253, 0.904) );
     
 flex: 0 0 auto;
     position: relative;
+    top:0.5rem;
 
 }
 .infinity-1{

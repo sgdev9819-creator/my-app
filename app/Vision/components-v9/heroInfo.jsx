@@ -2,7 +2,7 @@
 
 export default function heroInfo(){
     return(
-        <div className="absolute w-full justify-center items-center font-light text-5xl text-white flex flex-col gap-1 ">
+        <div className="relative w-full justify-center items-center font-light text-5xl text-white flex flex-col gap-1 ">
     <h3 >
         Apple Vision Pro seamlessly
     </h3>

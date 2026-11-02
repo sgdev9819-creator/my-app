@@ -57,7 +57,7 @@ AirPods:{
     "Explore All AirPods","AirPods 4","AirPods Pro 3","AirPods Max 2"
    ]
 },
-"TV & Home":{
+"TV-Home":{
   leble:"TV & Home",
   tittle:"Explore TV & Home",
     quik:["Shop TV 4k", "Shop HomePod","Shop HomePod mini","Shop Siri Romote","AirPods Accessories"],
@@ -104,7 +104,7 @@ export default function Navber(){
    {name: "Watch",path:"Watch"},
    {name: "Vision",path:"Vision"},
     {name:"AirPods",path:"AirPods"},
-   {name: "TV & Home",path:"TV-Home"},
+   {name: "Home",path:"TV-Home"},
    { name:"Entertainment",path:"Entertainment"},
    {name: "Accessories",path:"Accessories"},
     {name:"Support",path:"Support"},
@@ -118,7 +118,8 @@ return(
      setisoverlay(false)
     setisactiveLink(null)
 }} className="absolute w-full h-auto z-200">
-<div className={`absolute top-0 left-0 z-204  backdrop-blur[28px] w-full h-[44px] justify-center items-center flex flex-row  gap-9 ${isactiveLink? "bg-transparent":"bg-black/90"}`}>
+<div className={`absolute top-0 left-0 z-204  backdrop-blur[28px] w-full h-[44px] justify-center items-center flex flex-row  gap-9 ${isactiveLink? "bg-transparent":"bg-transparent"}`}>
+
 
 <div className="hidden lg:flex z-200">
 <Link href="/">
@@ -126,13 +127,13 @@ return(
 </Link>
 </div>
 
-<div className="hidden lg:stickey lg:top-0 lg:left-0 lg:w-max lg:flex lg:flex-row gap-9  justify-center items-center">
+<div className="hidden lg:relative lg:w-max lg:flex lg:flex-row gap-[42px]  justify-center items-center">
 {navLinks.map((link,index)=>(
 <Link key={index}
 href={`/${link.path}`}
 onMouseEnter={()=>{ 
     setisoverlay(true)       
-    setisactiveLink(link.name)}}
+    setisactiveLink(link.path)}}
 className="no-underline text-xs text-white/90 z-200 justify-center items-center w-auto font-light  hover:text-white"
 >
     {link.name}
@@ -177,7 +178,7 @@ className="no-underline text-xs text-white/90 z-200 justify-center items-center 
 </div>
 </div>
 
-<div className={`" mt-0 left-0 w-full bg-[rgba(14,14,14,1)] translate-all duration-500 ease-in-out norder-b norder-white/5  z-100 lg:block"${isactiveLink?
+<div className={`" mt-0 left-0 w-full bg-[rgba(14,14,14,1)]  translate-all duration-500 ease-in-out norder-b norder-white/5  z-100 lg:block"${isactiveLink?
   "h-screen opacity-100 visible  z-190":"h-0 opacity-0 invinsible"
 }`}
 onMouseLeave={()=> {
@@ -188,7 +189,7 @@ onMouseLeave={()=> {
 
 
 {isactiveLink && dropdownData[isactiveLink] &&(
-<div className="max-w-[1024px] mx-auto px-17 py-17  bg-transparent flex flex-row gap-20 animation-fadein z-100">
+<div className="max-w-[1054px] mx-auto px-14 py-17  bg-transparent flex flex-row gap-20 animation-fadein z-100">
 <div className="col-span-8 gap-4">
 <p className="text-white/50 text-[11px] mb-3 font-light uppercase tracking-wider ">
 {dropdownData[isactiveLink].tittle}

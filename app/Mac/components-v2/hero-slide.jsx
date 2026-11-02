@@ -77,7 +77,7 @@ return(
 <div className=" absolute top-42  flex flex-row w-full  justify-center items-center">
 { showLeft && (
   <button onClick={handleLeft} className="mac-left">
-<img src="lesser.svg" alt="previouse" className="w-[17px] h-auto ml-37" />
+<img src="lesser.svg" alt="previouse" className="w-[17px] h-auto ml-40" />
 <span className="w-[1px] h-full bg-white/20 absolute right-0 top-0"></span>
     </button>
 )}

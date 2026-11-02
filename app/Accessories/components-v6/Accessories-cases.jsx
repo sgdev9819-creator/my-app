@@ -52,7 +52,7 @@ const items = {
 
 
 export default function Cases(){
-  const [isActive, setIsActive] = useState("Student Life")
+  const [isActive, setIsActive] = useState("Your New Wordrobe")
 
     return(
         <div className="relative w-full h-max justify-center items-center flex flex-col ">
@@ -64,7 +64,7 @@ export default function Cases(){
     {Object.values(items).map((item,index)=>{ 
       const activeMode = isActive === item.id
       return(
-       <button key={item.id}
+       <button key={index}
               onClick={() => setIsActive(item.id)}
             className="relative w-max px-5 py-2 flex flex-row rounded-3xl text-[14px] transition-colors duration-100"
            
@@ -103,17 +103,17 @@ export default function Cases(){
                 {category.product.map((prod,index)=>(
                     <div
                     key={index}
-                    className="Acc-cases"
+                    className={`Acc-cases`}
                     >
                         <img src={prod.image} alt={prod.leble}
-                        className="w-full h-[240px] absolute top-0" />
+                        className="w-full h-[240px] relative top-0" />
                        <div className="absolute bottom-[15rem] flex flex-col gap-0 w-full justify-center items-center">                        
                         <h3 className="text-[28px]  text-white font-light  inline-flex items-center" >{prod.leble}</h3>
                         <p className="text-white font-light  text-[17px] inline-flex justify-self-center items-center justify-center w-full pl-[15px] pr-[15px]" >{prod.info}</p>
                      
                       </div>
                       <div className="relative w-full justify-center items-center flex top-33">
-                 <p className=" flex  justify-center items-center w-[300px] font-light  text-white text-sm ">{prod.price} </p>
+                 <p className=" flex  justify-center items-center w-[300px] font-light  text-white text-[17px] ">{prod.price} </p>
 </div>
                       
                              

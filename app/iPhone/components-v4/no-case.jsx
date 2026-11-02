@@ -1,69 +1,139 @@
 "use client"
-import { useState } from "react"
+import { useRef,useEffect,useState } from "react";
 import Button from "../components-v4/button"
  const items = [
-        {  top:"  Apple Upgrade",
-           name: " Love it. Lease it. Upgrade it.",
-            info:"Lease a new Mac with low monthly payments for 24 or 36 months and upgrade at the end of your term.◊◊",
-            image:"pk1.jpg"
+        {  
+           name: "iPad Pro",
+            info:"The ultimate iPad experience with the",
+            info1:" most advanced technology.",
+            price:"From $1199 or $99.91/mo. for 12 mo.*",
+            price1:"Lease from $24.99/mo. for 36 mo. ",
+            price2:"with Apple Upgrade◊◊",
+            image:"iphone1.jpg"
         },
         {
-           
-            top:"Ways to Buy",
-            name:"Pay over time, interest‑free.",     
-            info:"When you choose to check out at Apple with Apple Card Monthly Installments.◊◊◊",      
-               image:"/pk2.jpg"
+
+            name:"iPad Air",     
+            info:"Serious performance in a thin and ",      
+            info1:"light design.",
+            price:"From $749 or $62.41/mo. for 12 mo.*",
+            price1 :"Lease from $15.99/mo. for 36 mo. ",
+             price2:"with Apple Upgrade◊◊",
+               image:"/iphone2.jpg"
 
         },
-        {   top:"CERTIFIRD REFURBISHED",
-            name:"Shop refurbished Apple products backed by a one‑year warranty.",         
-               image:"/pk4.jpg"
+        {  
+
+
+            name:"iPad",  
+            info:"The colorful, all‑screen iPad for the",
+            info1:" things you do every day.",
+            price:"From $449 or $37.41/mo. for 12 mo.*",
+               image:"/iphone3.jpg"
         },
         {
-             top:"SMALL BUSINESS",
-            name:"Simple solutions for all the ways you work.",             
-               image:"/pk5.jpg"
+            name:"    iPad mini",             
+            info:"The full iPad experience in an",
+            info1:"ultraportable design.",
+            price:"From $599 or $49.91/mo. for 12 mo.*",
+            price1:"Lease from $11.99/mo. for 36 mo. ",
+             price2:"with Apple Upgrade◊◊",
+               image:"/iphone4.jpg"
         },
-        {
-           top:"GOVERNMENT",
-            name:"Special pricing is available for state, local,  and federal agencies. ",                
-               image:"/pk6.jpg"
-        },
-        {
-            top:"VETERANS AND MILITARY",
-            name:"Active and veteran members may be eligible for exclusive savings.",            
-               image:"/pk8.jpg",
-              
-        },
+       
 
          
-         
+         {  
+
+
+            name:"iPad",  
+            info:"The colorful, all‑screen iPad for the",
+            info1:" things you do every day.",
+            price:"From $449 or $37.41/mo. for 12 mo.*",
+               image:"/iphone5.jpg"
+        },
          
          
     ]
 
 export default function NoCase(){
 
+ const containerRef = useRef(null);
+    const[showLeft,setshowLeft]=useState(false)
+    const[showRight,setshowRight]=useState(true)
+
+    const checkCurrentState = ()=>{
+        if(containerRef.current){    
+            const{scrollLeft, scrollWidth,clientWidth} = containerRef.current
+            setshowLeft(scrollLeft > 10)
+
+            setshowRight(scrollLeft < scrollWidth - clientWidth - 10)
+        }     
+    }
+    useEffect(() =>{
+        const container = containerRef.current
+        if(container){
+            checkCurrentState()
+            container.addEventListener("scroll", checkCurrentState);
+        }
+    return () => {
+      if (container) {
+        container.removeEventListener("scroll", checkCurrentState);
+      }
+    };
+  }, []);
+
+    const handleLeft = ()=>{
+if(containerRef.current){
+    containerRef.current.scrollBy({
+        left:-378,
+        behavior:"smooth"
+    })
+}
+    }
+    
+    const handleRight = ()=>{
+if(containerRef.current){
+    containerRef.current.scrollBy({
+        left:378,
+        behavior:"smooth"
+    })
+}
+    }
 return(
 
          <div className="hero-images-container" >
-            <div className="active">
+            <div className="active" ref={containerRef}>
                 {items.map((prod,index)=>(
                     <div
                     key={index}
-                    className="cases"
+                    className="cases ipad"
                     >
                         <img src={prod.image} alt={prod.name}
-                        className="w-full h-[240px] absolute top-0" />
-                       <div className="absolute bottom-[13rem] flex flex-col gap-0 w-full justify-center items-center">                        
-                        <h3 className="text-[38px]  text-white font-light justify-center w-full items-center" >{prod.name}</h3>
-                        <p className="text-white font-light text-[17px] justify-center w-full justify-self-center items-center justify-center w-full pl-[15px] pr-[15px]" >{prod.info}</p>
-                     
-                      </div>
-                      <div className="relative w-full justify-center items-center flex top-33">
-                 <p className=" flex  justify-centerv font-light items-center w-[300px] text-white text-sm ">{prod.price} </p>
+                        className="absolute w-[371px] top-4 rounded-[20px] " />
+                       <div className="absolute top-[33rem] flex flex-col gap-0 w-full justify-center items-center">                        
+    
+                        <h3 className="text-[30px]  text-white font-light w-full absolute top-[0.5rem] flex justify-center items-center " >{prod.name}</h3>
+                         <div className="absolute top-[3.5rem] flex flex-col justify-center items-center w-full font-light text-white text-[16.5px]">
+                        <span className="">
+                            {prod.info}
+                        </span>
+                        <span className="">{
+                            prod.info1}
+                       </span>
+                        </div>
+ <div className="relative w-full justify-center items-center flex flex-col top-31 text-white/90 font-light  text-[12.5px]">
+                 <p className=" flex  justify-center items-center w-[300px]  ">{prod.price} </p>
+                 <p className="">
+                    {prod.price1}
+                 </p>
+                  <p className="">
+                    {prod.price2}
+                 </p>
 </div>
-                         <Button 
+              
+                      </div>
+                                <Button 
                          text1="Learn more"
                           text2="Buy"
                                />
@@ -71,6 +141,41 @@ return(
                         </div>
                 ))}
 </div>
+<div className=" relative top-[-0.5rem] left-[73.5rem] gap-5 flex flex-row  w-max justify-center ">
+
+  <button 
+  disabled={!showLeft}
+  onClick={handleLeft}
+  className={`w-max rounded-full 
+      justify-center items-center inline-flex p-[11px] bg-white/90 backdrop-blur-[10px]
+      ${
+        showLeft?"opacity-100":"opacity-50"
+      }
+  `}
+  
+  >
+<img src="l-black.svg" alt="previouse" className="w-[15px] h-auto" />
+    </button>
+
+
+    
+  <button
+    disabled={!showRight}
+    onClick={handleRight}
+className={`w-max rounded-full 
+       justify-center items-center inline-flex p-[11px] bg-white/90 backdrop-blur-[10px]
+      ${showRight?"opacity-100":"opacity-30"}
+  `}
+    >
+        <img src="g-black.svg" alt="next" className="w-[15px] h-auto"/>
+
+    </button>
+
+
+</div>
+
+
+
 </div>
             
     

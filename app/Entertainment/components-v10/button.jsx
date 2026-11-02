@@ -1,7 +1,7 @@
 import Link from 'next/link'
 export default function  Button({text1 ,text2,href1,href2}){
     return(
-        <div className="absolute flex flex-row gap-4 justify-center w-full items-center bottom-4 w-full h-max">
+        <div className="relative flex flex-row gap-4 justify-center w-full items-center bottom-0 w-full h-max">
             < Link href={href1 ||'#'} className='w-[130px] h-11  rounded-4xl no-underline bg-white text-1xl text-black font-light justify-center items-center inline-flex'>
            
                 {text1}

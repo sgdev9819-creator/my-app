@@ -24,21 +24,21 @@ return ()=> clearInterval(timer)
 
 
 return(
-    <div className="flex flex-row gap-5 w-full justify-center items-center absolute ">
+    <div className="flex flex-row gap-9 w-full justify-center items-center relative  h-[150px] ">
         <div className="flex flex-row gap-13 absolute top-8 left-0 justify-center items-center">
 
 
 
 
-<div  className="mt-38 ml-45 justify-center items-center flex ">
+<div  className=" ml-42  mt-[14px] justify-center items-center flex ">
 <img src="/logo1.png" alt="0" className="w-full h-full object-cover"  />
 </div>
         </div>
 
-<div className="flex justify-center w-max items-center absolute top-48  font-light text-white text-[22px]">
+<div className="flex justify-center w-max items-center absolute  font-light text-white text-[22px]">
 <p>Get up to six services in one subscription with Apple One.</p>
 </div>
-<Link href="#" className=" w-[137px] h-[3rem] rounded-3xl border-1 border-white/70   justify-center items-center inline-flex text-white font-light text-lg absolute top-47 right-46 ">
+<Link href="#" className=" w-[137px] h-[45px] rounded-3xl border-1 border-white/90   justify-center items-center inline-flex text-white font-light text-[17px] absolute top-[54px] right-40 ">
 Learn more
 </Link>
 

@@ -122,10 +122,10 @@ return ()=> cancelAnimationFrame(animationIdRef.current)
 
 
     return(
-        <div className="w-full h-[30rem]   flex flex-col relative font-light">
+        <div className="w-full h-[30rem]  flex flex-col relative font-light">
 <div className="flex flex-raw  juatify-center w-full h-auto absolute top-30 gap-20 ">
 
-    <div className="flex flex-col absolute left-40  ">
+    <div className="flex flex-col absolute left-40  top-[0px] ">
         <div className="flex flex-raw gap-2   text-white font-light text-[16px]">
             <img src="icon4.png" alt="" />
             <p className="mt-1 ">  Apple News+ </p>
@@ -152,7 +152,7 @@ return ()=> cancelAnimationFrame(animationIdRef.current)
 
 
     
-         <div className="flex z-200 absolute right-10 w-[50%] top-22 flex flex-row gap-10 ">
+         <div className="flex z-200 absolute right-10 w-[50%] top-22 flex flex-row gap-7 ">
                 <Button 
                 text1="Try it free"
                 className1='w-[130px] h-11  rounded-4xl no-underline bg-white text-1xl text-black font-light justify-center items-center inline-flex'

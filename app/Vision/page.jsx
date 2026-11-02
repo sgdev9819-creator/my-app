@@ -57,12 +57,8 @@ useEffect(()=>{
     return(
         <div className=" relative justify-center iteme-center w-full h-full ">
 <VisionNav/>
-<div className="absolute w-full h-max ">
+<div className="relative  w-full h-max ">
     <HeroImage/>
-</div>
-
-<div className="absolute top-[50.3rem] w-full h-max ">
-    <HeroInfo/>
 </div>
 
 <div className={`w-full h-[54px] fixed top-0 left-0 p-4 z-400 bg-black/50 backdrop-blur-[30px]
@@ -103,121 +99,125 @@ text2="Buy"
 <div>
 
 </div>
-<div className=" absolute top-[110rem] w-full h-full justify-center items-center flex z-200">
+<div className="relative top-[4rem] w-full h-max ">
+    <HeroInfo/>
+</div>
+
+<div className=" relative top-[8rem] w-full h-full justify-center items-center flex z-200">
     <VidHero/>
 </div>
 
-<div className="absolute top-[147.4rem] left-[12rem]  h-max justify-center items-center flex">
+<div className="relative top-[15rem] left-[12rem]  h-max  ">
     <h3 className="text-[60px] text-white font-light"> 
         Take a closer look.
     </h3>
 </div>
 
-<div className=" absolute top-[167.8rem] w-full h-full justify-center items-center flex z-200">
+<div className=" relative top-[1rem] w-full h-full justify-center items-center flex z-200">
    <Heroimages1/>
 </div>
 
 
-<div className=" absolute top-[270.8rem] w-full h-full justify-center  items-center flex z-200">
+<div className="relative top-[12rem] w-full h-full justify-center  items-center flex z-200">
    <MotionVid/>
 </div>
-<div className=" absolute top-[326rem] left-[12rem] flex z-200">
+<div className=" relative top-[20rem] left-[12rem] flex z-200">
 <Info1/>
 </div>
-<div className=" absolute top-[351rem]  w-full h-full justify-center  items-center flex z-200">
+<div className=" relative top-[7rem] w-full h-full justify-center  items-center flex z-200">
 <Heroimages2/>
 </div>
 
-<div className=" absolute top-[461rem]  w-full h-full justify-center  items-center flex z-200">
+<div className=" relative top-[16rem] w-full h-full justify-center  items-center flex z-200">
 <MotionVid2/>
 </div>
 
-<div className=" absolute top-[516rem] left-[12rem] flex z-200">
+<div className=" relative top-[23rem] left-[12rem] flex z-200">
 <Info2/>
 </div>
 
-<div className=" absolute top-[541rem]  w-full h-full justify-center  items-center flex z-200">
+<div className=" relative top-[11rem] w-full h-full justify-center  items-center flex z-200">
 <Heroimages3/>
 </div>
 
-<div className=" absolute top-[634rem]  w-full h-full justify-center  items-center flex z-200">
+<div className=" relative top-[20rem]  w-full h-full justify-center  items-center flex z-200">
 <MotionVid3/>
 </div>
 
-<div className=" absolute top-[689rem] left-[12rem] flex z-200">
+<div className=" relative top-[27rem] left-[12rem] flex z-200">
 <Info3/>
 </div>
-<div className=" absolute top-[717rem]  w-full h-full justify-center  items-center flex z-200">
+<div className="relative top-[15rem] w-full h-full justify-center  items-center flex z-200">
 <Heroimages4/>
 </div>
 
-<div className=" absolute top-[811rem]  w-full h-full justify-center  items-center flex z-200">
+<div className=" relative top-[24rem]  w-full h-full justify-center  items-center flex z-200">
 <MotionVid4/>
 </div>
 
-<div className=" absolute top-[866rem] left-[12rem] flex z-200">
+<div className=" relative top-[30rem] left-[12rem] flex z-200">
 <Info4/>
 </div>
-<div className=" absolute top-[891rem]  w-full h-full justify-center  items-center flex z-200">
+<div className="relative top-[20rem] w-full h-full justify-center  items-center flex z-200">
 <Heroimages5/>
 </div>
 
 
 
 
-<div className=" absolute top-[986rem]  w-full h-full justify-center  items-center flex z-200">
+<div className=" relative top-[29rem] w-full h-full justify-center  items-center flex z-200">
 <MotionVid5/>
 </div>
 
-<div className=" absolute top-[1041rem] left-[12rem] flex z-200">
+<div className=" relative top-[34rem] left-[12rem] flex z-200">
 <Info5/>
 </div>
-<div className=" absolute top-[1066rem]  w-full h-full justify-center  items-center flex z-200">
+<div className=" relative top-[24rem]  w-full h-full justify-center  items-center flex z-200">
 <Heroimages6/>
 </div>
 
 
 
 
-<div className=" absolute top-[1211rem]  w-full h-full justify-center  items-center flex z-200">
+<div className=" relative top-[33rem]  w-full h-full justify-center  items-center flex z-200">
 <MotionVid6/>
 </div>
 
-<div className=" absolute top-[1266rem] left-[12rem] flex z-200">
+<div className=" relative top-[38rem] left-[12rem] flex z-200">
 <Info6/>
 </div>
-<div className=" absolute top-[1291rem]  w-full h-full justify-center  items-center flex z-200">
+<div className=" relative top-[28rem] w-full h-full justify-center  items-center flex z-200">
 <Heroimages7/>
 </div>
 <div className="mother-footer">
 
-<div className="w-full absolute top-[12rem] justify-center items-center">
+<div className="w-full relative top-[8rem] justify-center items-center">
     <FooterImages1/>
 </div>
 
-<div className="w-full absolute top-[102rem] justify-center items-center">
+<div className="w-full relative top-[11rem] justify-center items-center">
     <FooterInfo/>
 </div>
 
-<div className="w-full absolute top-[120rem] justify-center items-center">
+<div className="w-full relative top-[19rem] justify-center items-center">
     <FooterVid/>
 </div>
-<div className="w-full absolute top-[197rem] justify-center items-center">
+<div className="w-full relative top-[49rem] justify-center items-center">
     <FooterImage1/>
 </div>
-<div className="w-full absolute top-[251rem] justify-center items-center">
+<div className="w-full relative top-[63rem] justify-center items-center">
     <FooterImage3/>
 </div>
 
-<div className="w-full absolute top-[322rem] justify-center items-center">
+<div className="w-full relative top-[81rem]  justify-center items-center">
     <FooterImage4/>
 </div>
 
-<div className="w-full absolute top-[387rem] justify-center items-center">
+<div className="w-full relative top-[88rem] justify-center items-center">
     <TrackFlex/>
 </div>
 
-<div className="w-full absolute top-[387rem] justify-center items-center">
+<div className="w-full relative top-[77rem] justify-center items-center">
     <FooterFlex/>
 </div>
 
@@ -226,7 +226,7 @@ text2="Buy"
 
 
 
-<div className="absolute top-[1795rem] w-full h-[199rem] justify-center items-center bg-black flex z-200">
+<div className="relative top-[28rem] w-full h-[199rem] justify-center items-center bg-black flex z-200">
    <div className="w-full flex absolute top-[0.2rem] justify-center h-[700px] bg-transparent items-center">
     <MainF1/>
    </div>

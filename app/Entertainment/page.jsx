@@ -18,20 +18,20 @@ export default function AirPodsPage(){
 
 
     <AirpodsNav/>
-<div className="w-full h-[100vh] absolute bg-black top-0 flex flex-col justify-center">
+<div className="w-full h-[100vh] relative bg-black top-0 flex flex-col justify-center">
 
 <div className="w-full absolute top-[3rem]  flex  items-center">
     <HeroSlider/>
 </div>
-<div className="w-full absolute top-[26rem]  flex  items-center">
+<div className="w-full relative top-[6rem]  flex  items-center">
     <HeroWords/>
 </div>
 </div>
-<div className="w-full absolute top-[31rem]  flex  items-center">
+<div className="w-full relative top-[0rem]  flex  items-center">
     <Herowords2/>
 </div>
-<div className="w-full relative top-[48rem]  items-center justify-center flex flex-col h-[410rem] bg-black">
-<div className="w-full absolute top-[25.5rem]  flex  items-center">
+<div className="w-full relative top-[0rem]  items-center justify-center flex flex-col h-[410rem] bg-black">
+<div className="w-full absolute top-[24.5rem]  flex  items-center">
     <Herovid/>
 </div>
 

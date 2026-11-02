@@ -15,9 +15,8 @@ export default function Mac(){
     <Navber/>
  <div className={styles["show"]} >
     <div className="w-full  h-full flex flex-row justify-center items-center">
-<h3 className=" w-max h-max justify-center 
- items-center inline-flex text-[15px] text-white font-light ">Introducing Apple Upgrade. Lease a new Mac with low monthly payments for 24 or 36 months and upgrade at the end of your term.◊</h3>
-<Link href="#" className="w-max h-max justify-center items-center inline-flex text-blue-400 mt-[-0.4rem] font-light  ">Learn more</Link>
+<h3 className=" w-max h-max justify-center items-center inline-flex text-[15px] text-white font-light ">Introducing Apple Upgrade. Lease a new Mac with low monthly payments for 24 or 36 months and upgrade at the end of your term.◊</h3>
+<Link href="#" className="w-max h-max justify-center items-center inline-flex text-blue-400 font-light  ">Learn more</Link>
 </div>
 </div>
 
@@ -35,19 +34,27 @@ export default function Mac(){
  </div>
 
 
-<div className="absolute top-110 w-full ">
+<div className="absolute top-[30.9rem] w-full ">
     <NoCase/>
 </div>
 
 
-<div className="absolute pt-6 top-[95rem] left-21 justify-center w-[400px] loading-[0.5]">
-    <h3 className="font-light  text-white text-[47px]  loading-[0.5] w-[500px]" >
+
+<div className="absolute pt-6 top-[104.6rem] flex items-center w-full justify-center w-[400px] loading-[0.5] ">
+    <div className="absolute left-21  w-max flex flex-col">
+          <h3 className="font-light text-white text-[47px]  loading-[0.5] w-[500px]" >
         Why Apple is the best
     </h3>
-    <h3 className="mt-[-20] font-light  text-white text-[47px]  loading-[0.5] w-[500px] "> place to shop Mac.</h3>
-    
+    <h3 className="mt-[-20] font-light  text-white text-[47px]  loading-[0.5] w-[500px] "> place to shop iPhone.</h3>
+
+    </div>
+  
+<Link href="#" className="absolute top-[3.2rem] z-50 right-21 w-max text-blue-400 no-underline font-light text-[17px] hover:underline">
+Shop iPhone
+</Link>
+
 </div>
-<div className="absolute top-350 w-full ">
+<div className="absolute top-[96rem] w-full ">
 <HeroImage1/>
 </div>
 
@@ -57,7 +64,7 @@ export default function Mac(){
        Get to know Mac.
     </h3>
 </div>
-<div className="absolute top-[-3rem] mt-0 w-full ">
+<div className="absolute top-[0rem] mt-0 w-full ">
 <HeroImage2/>
 </div>
 </div>

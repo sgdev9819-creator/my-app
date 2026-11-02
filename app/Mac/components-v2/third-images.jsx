@@ -106,8 +106,8 @@ if(containerRef.current){
                          absolute bottom-1 w-full rounded-b-[20px] ${index === 1?"h-[375px]":"h-[343px]"}`} />
 
                     </div>
-                ))}
-            </div>
+                ))}  </div>
+{/*
            <div className=" relative top-[0rem] left-[70rem] gap-5 flex flex-row  w-max justify-center ">
 
   <button 
@@ -141,7 +141,7 @@ className={`w-max rounded-full
 
 </div>
 
-
+*/}
 
     </div>
 )

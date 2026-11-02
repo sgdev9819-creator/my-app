@@ -65,7 +65,7 @@ Innovation you can
 
 <div
 ref={currentRef}
-className="w-full h-[110vh] relative top-50 flex justify-center items-center">
+className="w-full h-[90vh] relative top-20 flex justify-center items-center">
     
     <motion.img 
         src="hero4.png" 

@@ -168,7 +168,7 @@ return ()=> cancelAnimationFrame(animationIdRef.current)
 <div className="relative flex flex-col h-max w-full justify-center gap-2" >
 <video src="large11.mp4"  ref={vidRef} muted loop autoPlay playsInline className=" w-full"/>
 <div className="entern-overlay">
-    <div className="absolute top-[19rem] justify-center w-max h-auto items-center flex flex-col ">
+    <div className="relative top-[60.5%]  flex flex-col ">
     <div className="flex flex-col gap-5 w-max ml-44 ">
     <div className="absolute top-[-3rem] flex flex-row gap-3 text-white font-light text-sm justify-center items-center   ">
 <img src="icon2.png" alt="" />
@@ -189,22 +189,22 @@ return ()=> cancelAnimationFrame(animationIdRef.current)
 
 </div>
 
-<div className="flex z-200 relative top-[5rem] ml-[-19.1rem] ">
+</div>
+</div>
+
+<div className="flex z-200 relative top-[66%]  left-[-27%]  ml-[0px] justify-center items-center ">
     <Button 
     text1="Try it free"
     text2=" Learn more"
     />
 </div>
 </div>
-</div>
-
-</div>
 
 
 
 <button onClick={togglePlay}
 aria-label={isplaying ? "Pause video" : "Play video"}
-className="w-max absolute right-15 top-[27rem]  p-4 rounded-full border-1 border-white/70 bg-white/10 backdrop-blur-[20px] z-200"
+className="w-max absolute right-15 top-[81%]  p-4 rounded-full border-1 border-white/70 bg-white/10 backdrop-blur-[20px] z-200"
 >
     {
 isplaying ? <img src="pause.svg" alt="Pause video" className="w-[15px] h-auto object-cover"/> : <img src="play.svg" alt="Play video" className="w-[15px] h-auto object-cover" />

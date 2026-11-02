@@ -166,10 +166,10 @@ return ()=> cancelAnimationFrame(animationIdRef.current)
     return(
         <div className="w-full h-[40rem] justify-center  flex flex-col absolute ">
 <div className="relative flex flex-col h-max w-full justify-center gap-2" >
-<video src="large9.mp4"  ref={vidRef} muted loop autoPlay playsInline className=" w-full"/>
+<video src="large9.mp4"  ref={vidRef} muted loop autoPlay playsInline className=" w-full h-max"/>
 <div className="entern-overlay">
-    <div className="absolute top-[23rem] justify-center items-center flex flex-row ">
-    <div className="flex flex-col gap-5 w-max ml-44 ">
+    <div className="relative top-[71.5%]  flex flex-row ">
+    <div className="flex flex-col gap-5 w-max ml-[10rem] ">
     <div className="absolute top-[-3rem] flex flex-row gap-3 text-white font-light text-sm justify-center items-center   ">
 <img src="icon.png" alt="" />
 <p>  Apple TV   </p>
@@ -188,7 +188,7 @@ return ()=> cancelAnimationFrame(animationIdRef.current)
 </div>
 <p className="letter ">SEVERANCE </p>
 </div>
-<div className="flex z-200 ">
+<div className="flex z-200 relative top-[20%] justify-center items-center  left-[7%]  ">
     <Button 
     text1="Try it free"
     text2=" Learn more"
@@ -202,7 +202,7 @@ return ()=> cancelAnimationFrame(animationIdRef.current)
 
 <button onClick={togglePlay}
 aria-label={isplaying ? "Pause video" : "Play video"}
-className="w-max absolute right-15 top-[27rem] z-200 p-4 rounded-full border-1 border-white/70 bg-white/10 backdrop-blur-[20px]"
+className="w-max absolute right-15 top-[79%] z-200 p-4 rounded-full border-1 border-white/70 bg-white/10 backdrop-blur-[20px]"
 >
     {
 isplaying ? <img src="pause.svg" alt="Pause video" className="w-[15px] h-auto object-cover"/> : <img src="play.svg" alt="Play video" className="w-[15px] h-auto object-cover" />

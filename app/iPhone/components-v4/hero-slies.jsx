@@ -72,7 +72,7 @@ return(
             </div>
     ))}
 </div>
-<div className=" absolute top-36  flex flex-row w-full  justify-center items-center">
+<div className=" absolute top-40  flex flex-row w-full  justify-center items-center">
 { showLeft && (
   <button onClick={handleLeft} className="mac-left">
 <img src="lesser.svg" alt="previouse" className="w-[17px] h-auto ml-37" />

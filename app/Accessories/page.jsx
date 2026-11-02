@@ -38,7 +38,7 @@ useEffect(()=>{
      <Link href="#" className="ml-17 font-light mt-[0.5rem]  ">Find an Apple Store</Link>
      </div>
      
-  <div className="absolute top-[36rem] w-full z-100 "><Accessoriesslide/></div>
+  <div className="absolute top-[36rem] w-full z-1 "><Accessoriesslide/></div>
 
     </div>
 
@@ -83,7 +83,7 @@ className={`acc-button ${showfull?"activebutton":"button"}`}>
  </div>
 
 
-<div className="absolute top-[31rem] z-100 left-2 w-full flex flex-row gap-[80%] justify-center items-center">
+<div className="absolute top-[31rem] z-40 left-2 w-full flex flex-row gap-[80%] justify-center items-center">
     <h2 className="text-white text-[2.7rem] font-light  absolute  top-10 left-20">Say hello to what’s new.</h2>
 
 </div>
@@ -94,14 +94,14 @@ className={`acc-button ${showfull?"activebutton":"button"}`}>
     </div>
 
 
-  <div className="absolute top-[99rem] z-100 justify-center w-full "><Cases/></div>
+  <div className="absolute top-[99rem] z-50 justify-center items-center w-full "><Cases/></div>
 
 
 
 
 
 
-    <div className="absolute left-2 w-full z-100 top-[181rem] h-[43rem] bg-black  justify-center items-center flex flex-col">
+    <div className="absolute left-2 w-full z-50 top-[181rem] h-[43rem] bg-black  justify-center items-center flex flex-col">
 
 
 
@@ -110,13 +110,13 @@ className={`acc-button ${showfull?"activebutton":"button"}`}>
 
 </div>
 
-  <div className="absolute top-[17rem] z-100 justify-center w-full "><FooterImage/></div>
+  <div className="absolute top-[17rem] z-50 justify-center w-full "><FooterImage/></div>
   </div>
 <div className="text-5xl font-light z-100  text-white absolute top-[233.3rem] left-21">
   
   <h2>Accessories</h2>
 </div>
-<div className="absolute top-[249rem] justify-center w-full z-100">
+<div className="absolute top-[249rem] justify-center w-full z-50">
  
   <Climax/>
 </div>
