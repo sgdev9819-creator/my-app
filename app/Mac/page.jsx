@@ -6,6 +6,7 @@ import HeroImage from "./components-v2/hero-images-1"
 import SecondImages from "./components-v2/second-images"
 import ThirdImages from "./components-v2/third-images"
 import FourthImage from "./components-v2/fourth-images"
+import Footer from "./components-v2/footer-comp"
 import BodyImages1 from "./components-v2/bodyimage"
 import styles from "./page.module.css"
 import Link from "next/link"
@@ -94,6 +95,14 @@ Switch to Mac.
 
 <div className="absolute top-[325.2rem]  mt-0 w-full ">
 <FourthImage/>
+</div>
+<div className="absolute top-[383.7rem]   left-21 ">
+    <h3 className="font-light  text-white text-[47px]  w-[500px]" >
+        Significant others.
+    </h3>
+</div>
+<div className="absolute top-[391rem] flex w-full justify-center items-center">
+    <Footer/>
 </div>
 <div className="absolute top-2000 text-white left-0 justify-center ">
     <button> path</button>

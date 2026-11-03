@@ -137,7 +137,7 @@ return(
               
                       </div>
                       <div className="relative top-[42%]">
-                        {index !== 0 &&(
+                        {index !== 0   &&(
 
                        
                            <Button 

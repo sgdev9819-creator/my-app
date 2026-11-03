@@ -33,8 +33,8 @@ export default function Home() {
 <div className="absolute w-full left-0 top-[-3rem] flex flex-col gap-3 justify-center items-center">
 {products.map((items,index)=>(
 <div key={index}
-className={` relative left-0 w-full  ${index === 0? "h-[45rem] bg-black":" h-[37.8rem] jstify-center items-center" } 
-${index === 2?"h-[45rem] bg-black":" h-[37.8rem] jstify-center items-center"}
+className={` relative top-0 left-0 w-full   ${index === 0? "h-[110vh] bg-black":" h-[100vh] jstify-center items-center" } 
+${index === 2?"h-[45rem] bg-black":" h-[100vh] jstify-center items-center"}
 `}
 >
 <img src={items.image} className={` w-full h-[510px] lg:h-[600px] object-cover ${index ===0? "absolute top-[6rem] ":" relative top-0"} `}/>
