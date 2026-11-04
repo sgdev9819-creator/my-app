@@ -127,7 +127,7 @@ return(
 </Link>
 </div>
 
-<div className="hidden lg:stickey lg:top-0 lg:left-0 lg:w-max lg:flex lg:flex-row gap-9  justify-center items-center">
+<div className="hidden lg:stickey lg:top-0 lg:left-0 lg:w-max lg:flex lg:flex-row gap-[42px]  justify-center items-center">
 {navLinks.map((link,index)=>(
 <Link key={index}
 href={`/${link.path}`}
@@ -189,7 +189,7 @@ onMouseLeave={()=> {
 
 
 {isactiveLink && dropdownData[isactiveLink] &&(
-<div className="max-w-[1024px] mx-auto px-17 py-17 bg-transparent  flex flex-row gap-20 animation-fadein z-100">
+<div className="max-w-[1084px] mx-auto px-14 py-17 bg-transparent  flex flex-row gap-20 animation-fadein z-100">
 <div className="col-span-8 gap-4">
 <p className="text-white/50 text-[11px] mb-3 font-light uppercase tracking-wider ">
 {dropdownData[isactiveLink].tittle}

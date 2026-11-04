@@ -101,9 +101,11 @@ Switch to Mac.
         Significant others.
     </h3>
 </div>
+
 <div className="absolute top-[391rem] flex w-full justify-center items-center">
     <Footer/>
 </div>
+
 <div className="absolute top-2000 text-white left-0 justify-center ">
     <button> path</button>
     </div>

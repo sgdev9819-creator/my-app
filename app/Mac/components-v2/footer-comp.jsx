@@ -37,19 +37,28 @@ const Footer = {
 export default function ShearedFooter(){
 const[isactive,setisactive]=useState("firstInfo")
 const activeData = Footer[isactive]
+
+
+const handleClick = (id) => {
+    if (isactive === id) {
+        setisactive(null); 
+    }else {
+        setisactive(id); 
+    }
+  }
 return(
-    <div className="w-[87%] h-[784px] relative flex flex-row  bg-black/80 
+    <div className="w-[87%] h-[784px] relative flex flex-row  bg-[rgba(14,14,14,1)] shadow-[0px_0px_1px_rgba(255,255,255,0.04)]
     backdrop-blur-[20px] rounded-[22px]">
-       <div className="flex flex-col w-[36%]  mt-[8rem] pl-[5rem] h-max justify-center gap-[2rem] items-center">
+       <div className="flex flex-col w-[36%]  mt-[8rem] pl-[5rem] h-max justify-center gap-[0.1rem] items-center">
                 {Object.values(Footer).map((item, index) => {
                     const activeItem = isactive === item.id
         return(
 
 <div 
     key={index}
-    className={`w-full  relative  flex flex-col transition-all duration-500 overflow-hidden ${activeItem ? "h-auto pb-4" : "h-[3rem]"}`}>
-<button className="w-full flex flex-row relative  gap-[5rem] py-4 pb-[2rem] cursor-pointer"
- onClick={() => setisactive(item.id)}>
+    className={`w-full  relative  flex flex-col transition-all duration-500 border-b border-white/60 overflow-hidden ${activeItem ? "h-auto pb-4" : "h-[3rem]"}`}>
+<button className="w-full flex flex-row relative  gap-[5rem] py-4  pb-[1.5rem] cursor-pointer"
+ onClick={() => handleClick(item.id)}>
     <h3 className="text-[28px] text-white font-light ">
         {item.name}
     </h3>
@@ -63,13 +72,13 @@ return(
                                 <span className="mt-[0.5rem]">{item.info2}</span>
                                 <span className="mt-[0.5rem]">{item.info3}</span>
                             </div>
-<span className="w-full h-[1px] bg-black/60 absolute bottom-0  "></span>
+
 </div>
         )
 })}
 </div>
 {isactive && activeData && (
-                <div className="w-[64%] relative top-[6rem] flex justify-center items-center">
+                <div className="w-[64%] relative top-[2rem] flex justify-center items-center">
                     <img
                         src={activeData.image} 
                         alt={activeData.name} 
