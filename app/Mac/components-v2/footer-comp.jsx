@@ -41,7 +41,9 @@ const activeData = Footer[isactive]
 
 const handleClick = (id) => {
     if (isactive === id) {
-        setisactive(null); 
+        const currentIndex = footerArray.findIndex(item => item.id === id)
+            const nextIndex = (currentIndex + 1) % footerArray.length
+      setisactive(footerArray[nextIndex].id)
     }else {
         setisactive(id); 
     }

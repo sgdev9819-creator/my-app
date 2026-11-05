@@ -3,6 +3,7 @@ import Link from "next/link";
 import Button from "./components/button"
 import Navber from "./components/home-navber"
  import FooterImages from "./components/footer-image"
+  import FooterScroll from "./components/footer-scroll"
 import { useState } from "react";
 
 const products =[
@@ -30,7 +31,7 @@ export default function Home() {
   <div className="absolute top-0 left-0 flex justify-center w-full ">
     <Navber/>
 
-<div className="relative w-full left-0 top-[0rem] flex flex-col gap-3 justify-center items-center">
+<div className="absolute w-full left-0 top-[-3rem] flex flex-col gap-3 justify-center items-center">
 {products.map((items,index)=>(
 <div key={index}
 className={` relative top-0 left-0 w-full   ${index === 0? "h-[110vh] bg-black":" h-[95vh] bg-white/98 " } 
@@ -63,8 +64,10 @@ text2="Shop"
   <FooterImages/>
 </div>
 
-
-
+<div className=" w-full relative top-[300rem]  jstify-centert items-center">
+  <FooterScroll/>
+</div>
+<button className="absolute top-[500rem]">path</button>
 </div>  
   );
 }
