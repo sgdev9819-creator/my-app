@@ -226,7 +226,7 @@ onMouseLeave={()=> {
 </nav>
 
 <div className={`fixed top-0 left-0 inset-0 bg-black/70 backdrop-blur-[16px] overflow-hidden 
-    ${isoverlay? "opacity-100 invicible z-100 ":" opacity-0 visible z-0" }`}></div>
+    ${isoverlay? "opacity-100 visible z-100 ":" opacity-0 invisible z-0" }`}></div>
 
 </div>
 

@@ -10,6 +10,7 @@ const products =[
  { 
   name:"MacBook Pro",
   info:"14-inch model now with M6",
+  info1:"Available Starting 11.6",
   image:"/hero-image3.jpg",
  },
  
@@ -28,46 +29,50 @@ const products =[
 
 export default function Home() {
   return (
-  <div className="absolute top-0 left-0 flex justify-center w-full ">
+  <div className=" relative top-0 left-0 flex flex-col   w-full">
+    <div className="fixed top-[0px] w-full z-30">
     <Navber/>
-
-<div className="absolute w-full left-0 top-[-3rem] flex flex-col gap-3 justify-center items-center">
-{products.map((items,index)=>(
-<div key={index}
-className={` relative top-0 left-0 w-full   ${index === 0? "h-[110vh] bg-black":" h-[95vh] bg-white/98 " } 
-${index === 2?"h-[110vh] bg-black":" h-[95vh] "}
-`}
->
-<img src={items.image} className={` w-full h-[510px]  object-cover ${index === 0? "absolute top-[6rem] lg:h-[600px] ":" absolute top-[0%] lg:h-[95vh]"} 
-${index === 2? "lg:h-hull absolute top-[0%]":"" }
-`}/>
-<div className={`w-full justify-center items-center flex flex-col ${index === 0?"absolute top-[8rem] text-white":"absolute top-[2rem] text-black"}
+     </div>
+<div className="flex flex-col gap-[1rem] w-full h-max relative z-5">
+  {products.map((item,index)=>(
+    <div
+    key={index}
+    className={`relative flex w-full ${index !== 0 ? "h-[100vh] bg-black":"h-[110vh] bg-black"}`}
+    >
+      <img src={item.image} alt="" className={`absolute w-full object-cover ${index !== 0 ? "h-full":"h-[510px] top-[5rem]"}  `} />
+      <div className={`w-full justify-center items-center flex flex-col ${index === 0?"absolute top-[5rem] text-white":"absolute top-[2rem] text-black"}
 ${index ===2 ? "absolute top-[30rem] text-white":"absolute top-[2rem] text-black"}
 `}>
- <h1 className="text-6xl font-light">
-  {items.name}
+ <h1 className="text-[56px] font-light">
+  {item.name}
  </h1>
- <p className="text-[19px] font-light mt-[0.5rem]">
-  {items.info}
+ <p className="text-[28px] font-light mt-[-0.5rem] ">
+  {item.info}
  </p>
-<div className="relative top-1"><Button
+ <p className="text-[17px] text-white/50 font-light ">
+  {item.info1}
+ </p>
+</div>
+<div className={`relative w-full justify-center items-center ${index !== 0 ? "top-[9rem]":"top-[14rem]"}
+${index === 2 ? "top-[37rem]":""}
+`}><Button
 text1="Learn more"
 text2="Shop"
 /></div>
+      </div>
+       
+  ))}
 </div>
-  </div>
-))}
-
-</div>
-
-<div className=" absolute top-[123rem] w-full justify-center items-center">
+<div className=" relative top-[0.5rem] w-full justify-center items-center">
   <FooterImages/>
 </div>
-
-<div className=" w-full relative top-[300rem]  jstify-centert items-center">
+<div className="relative flex justify-center items-center w-full top-[3.5rem] font-light text-white text-[57px]">
+  <h2>Endless entertainment.</h2>
+</div>
+<div className=" w-full relative top-[4.6rem]  ">
   <FooterScroll/>
 </div>
-<button className="absolute top-[500rem]">path</button>
+
 </div>  
   );
 }
