@@ -84,7 +84,7 @@ className={`acc-button ${showfull?"activebutton":"button"}`}>
 
 
 <div className="absolute top-[31rem] z-40 left-2 w-full flex flex-row gap-[80%] justify-center items-center">
-    <h2 className="text-white text-[2.7rem] font-light  absolute  top-10 left-20">Say hello to what’s new.</h2>
+    <h2 className="text-white text-[47px] font-light  absolute  top-10 left-20">Say hello to what’s new.</h2>
 
 </div>
 
@@ -106,13 +106,13 @@ className={`acc-button ${showfull?"activebutton":"button"}`}>
 
 
 <div className="absolute top-[5.5rem] left-2 w-full flex flex-row gap-[80%] justify-center items-center z-100">
-    <h2 className="text-white text-[2.7rem] font-light z-100  absolute  top-10 left-20">Why Apple is the best place to buy accessories.</h2>
+    <h2 className="text-white text-[47px] font-light z-100  absolute  top-10 left-20">Why Apple is the best place to buy accessories.</h2>
 
 </div>
 
   <div className="absolute top-[17rem] z-50 justify-center w-full "><FooterImage/></div>
   </div>
-<div className="text-5xl font-light z-100  text-white absolute top-[233.3rem] left-21">
+<div className="text-[47px] font-light z-100  text-white absolute top-[233.3rem] left-21">
   
   <h2>Accessories</h2>
 </div>
