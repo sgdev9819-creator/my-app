@@ -131,16 +131,11 @@ export default function FooterScroll() {
                 {duplicatedTop.map((top, index) => (
                     <div 
                         key={index}
-                        className="relative flex flex-row w-[800px] h-[520px] flex-shrink-0"
+                        className="relative justify-center items-center  w-[800px] h-[520px] flex-shrink-0"
                     >
                         <img src={top.image} alt="" className="w-full h-full object-cover" />
-                        <div className="footer-scroll-overlay">
-                            <div className="absolute bottom-[10%] flex flex-row justify-center items-center px-8">
-                                <Link href="#" className="w-max px-[2rem] py-[5px] text-[17px] justify-center items-center bg-black text-white hover:bg-black/90">
-                                    Learn More
-                                </Link>
-                                <span className="text-white ml-4">{top.info}</span>
-                            </div>
+                        <div className="landing-footer-scroll">
+                          
                         </div>
                     </div>
                 ))}
@@ -156,14 +151,9 @@ export default function FooterScroll() {
                         key={index}
                         className="relative flex flex-row w-[372px] h-[220px] flex-shrink-0"
                     >
-                        <img src={bottom.image} alt="" className="w-full h-full object-cover" />
-                        <div className="footer-scroll-overlay">
-                            <div className="absolute bottom-[10%] flex flex-row justify-center items-center px-4">
-                                <Link href="#" className="w-max px-[2rem] py-[5px] text-[17px] justify-center items-center bg-black text-white hover:bg-black/90">
-                                    Stream Now
-                                </Link>
-                                <span className="text-white ml-2 text-sm">{bottom.info}</span>
-                            </div>
+                        <img src={bottom.image} alt="" className="w-full relative h-full object-cover" />
+                        <div className="landing-footer-scroll"> 
+                            
                         </div>
                     </div>
                 ))}
