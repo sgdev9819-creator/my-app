@@ -113,7 +113,7 @@ export default function Navber(){
 
 
 return(
-  <div className="w-full  h-full justify-center  flex absolute top-0 left-0 ">
+  <div className="  w-full  h-full justify-center lg: flex absolute top-0 left-0 ">
 <nav onMouseLeave={()=> {
      setisoverlay(false)
     setisactiveLink(null)
@@ -132,9 +132,9 @@ href={link.path}
 onMouseEnter={()=>{ 
     setisoverlay(true)
     setisactiveLink(link.path)}}
-className="no-underline text-xs text-white/90 z-200 justify-center items-center w-auto font-light  hover:text-white"
+className="no-underline text-xs text-white/90 z-200 justify-center items-center w-full font-light  hover:text-white"
 >
-    {link.name}
+    {link.name} 
   
 </Link>
 

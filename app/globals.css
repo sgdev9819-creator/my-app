@@ -139,6 +139,16 @@ animation-name: fillProgress;
     background: linear-gradient(to top,rgba(0, 0, 0, 0.815)5%,transparent 95%);
 
 }
+.activemb{
+    transition: all 0.5s ease;
+
+}
+.activemb::nth-child(1){
+    transform: rotate(45deg) translateY(8px);
+}
+.activemb::nth-child(2){
+    transform: rotate(85deg) translateY(8px)
+}
 /*Mac section*/
 .mac1{
      padding: 85px;

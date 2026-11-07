@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Button from "./components/button"
 import Navber from "./components/home-navber"
+import MobileNav from "./components/mobilenav"
  import FooterImages from "./components/footer-image"
   import FooterScroll from "./components/footer-scroll"
 import { useState } from "react";
@@ -30,8 +31,11 @@ const products =[
 export default function Home() {
   return (
   <div className=" relative top-0 left-0 flex flex-col   w-full">
-    <div className="fixed top-[0px] w-full z-30">
+    <div className="hidden lg:fixed top-[0px] w-full z-40">
     <Navber/>
+     </div>
+     <div className="lg:hidden fixed top-[0px] w-full z-40">
+      <MobileNav/>
      </div>
 <div className="flex flex-col gap-[1rem] w-full h-max relative z-5">
   {products.map((item,index)=>(

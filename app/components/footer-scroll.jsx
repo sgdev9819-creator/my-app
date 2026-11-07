@@ -57,77 +57,68 @@ export default function FooterScroll() {
         };
     }, [isPlaying]);
 
-    const scrollToIndex = (index) => {
-        isAutoScrollingRef.current = true;
-        setCurrentIndex(index);
-        
-        if (topRef.current) {
-            const child = topRef.current.children[index];
-            if (child) {
-                topRef.current.scrollTo({
-                    left: child.offsetLeft,
-                    behavior: "smooth"
-                });
-            }
-        }
-
-        if (bottomRef.current) {
-            const child = bottomRef.current.children[index];
-            if (child) {
-                bottomRef.current.scrollTo({
-                    left: child.offsetLeft,
-                    behavior: "smooth"
-                });
-            }
-        }
-
-        setTimeout(() => {
-            isAutoScrollingRef.current = false;
-        }, 600);
+    const getItemWidth = (ref) => {
+        if (!ref.current || !ref.current.children[0]) return 0;
+        const child = ref.current.children[0];
+        const style = window.getComputedStyle(child);
+        return child.offsetWidth + parseInt(style.marginRight || 0) + parseInt(style.marginLeft || 0);
     };
-
-    const handleDotClick = (index) => {
-        setIsPlaying(false);
-        scrollToIndex(index);
-    };
-
-    const handleScroll = (sourceRef, targetRef) => {
-        if (isAutoScrollingRef.current) return;
-        
-        setIsPlaying(false);
-
-        if (isSyncingRef.current || !sourceRef.current || !targetRef.current) return;
+const scrollToIndex = (index) => {
         isSyncingRef.current = true;
+        setCurrentIndex(index);
 
-        const source = sourceRef.current;
-        const target = targetRef.current;
-
-        const maxSourceScroll = source.scrollWidth - source.clientWidth;
-        const maxTargetScroll = target.scrollWidth - target.clientWidth;
-
-        if (maxSourceScroll > 0) {
-            const scrollPercentage = source.scrollLeft / maxSourceScroll;
-            target.scrollLeft = scrollPercentage * maxTargetScroll;
+        if (topRef.current) {
+            const topWidth = getItemWidth(topRef);
+            topRef.current.scrollTo({ left: index * topWidth, behavior: "smooth" });
+        }
+        if (bottomRef.current) {
+            const bottomWidth = getItemWidth(bottomRef);
+            bottomRef.current.scrollTo({ left: index * bottomWidth, behavior: "smooth" });
         }
 
         setTimeout(() => {
             isSyncingRef.current = false;
-        }, 50);
+        }, 400);
+    };
+    const handleTopScroll = () => {
+        if (isSyncingRef.current || !topRef.current || !bottomRef.current) return;
+        
+        setIsPlaying(false);
+        isSyncingRef.current = true;
+
+        const topWidth = getItemWidth(topRef);
+        const bottomWidth = getItemWidth(bottomRef);
+
+        if (topWidth > 0 && bottomWidth > 0) {
+            const index = Math.round(topRef.current.scrollLeft / topWidth);
+            setCurrentIndex(index % topArray.length);
+
+            
+            bottomRef.current.scrollLeft = index * bottomWidth;
+        }
+
+        requestAnimationFrame(() => {
+            isSyncingRef.current = false;
+        });
+    };
+
+ 
+    const handleDotClick = (index) => {
+        setIsPlaying(false);
+        setCurrentIndex(index);
     };
 
     const handlePlayPause = () => {
-        setIsPlaying((prevState) => !prevState);
+        setIsPlaying((prev) => !prev);
     };
-
     const activeDotIndex = currentIndex % topArray.length;
-
     return (
         <div className="absolute w-full flex flex-col gap-[1rem] h-max">
             <div 
-                ref={topRef}
-                onScroll={() => handleScroll(topRef, bottomRef)}
-                className="footer-scroll flex overflow-x-auto scrollbar-none"
-            >
+            ref={topRef}
+                onScroll={handleTopScroll}
+                className="w-full flex overflow-x-auto scrollbar-none snap-x snap-mandatory"
+                style={{ scrollSnapType: 'x mandatory' }}>
                 {duplicatedTop.map((top, index) => (
                     <div 
                         key={index}
@@ -142,10 +133,12 @@ export default function FooterScroll() {
             </div>
 
             <div 
-                ref={bottomRef} 
-                onScroll={() => handleScroll(bottomRef, topRef)} 
-                className="footer-scroll flex overflow-x-auto scrollbar-none"
-            >
+            
+             ref={topRef}
+                onScroll={handleTopScroll}
+                className="w-full flex overflow-x-auto scrollbar-none snap-x snap-mandatory"
+                style={{ scrollSnapType: 'x mandatory' }}
+                >
                 {duplicatedBottom.map((bottom, index) => (
                     <div
                         key={index}
