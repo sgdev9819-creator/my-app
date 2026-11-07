@@ -165,11 +165,11 @@ export default function FooterScroll() {
                         <div
                             key={index}
                             onClick={() => handleDotClick(index)}
-                            className="w-[50px] h-[10px] bg-white/70 rounded-full overflow-hidden cursor-pointer"
+                            className={` h-[10px] bg-white/70 rounded-full overflow-hidden cursor-pointer  transition-transition duration-500 hover:bg-white/80 ${activeDotIndex === index ? "w-[50px]":"w-[10px]" }`}
                         >
                             <span
                                 key={`${currentIndex}-${index}`}
-                                className={`block h-full bg-black/30 ${activeDotIndex === index ? "animate-fill-progress" : index < activeDotIndex ? "w-full" : "w-0"}`}
+                                className={`block h-full bg-black/70 ${activeDotIndex === index ? "animate-fill-progress" : index < activeDotIndex ? "w-full" : "w-0"}`}
                                 style={{
                                     animationPlayState: isPlaying ? "running" : "paused"
                                 }}

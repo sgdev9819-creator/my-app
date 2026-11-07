@@ -81,7 +81,7 @@ Help is here. </h3>
     <h3 className="text-white/60 text-[28px] font-light ">Even more reason to shop with us.</h3>
 </div>
 
-<div className=" absolute top-[140rem] w-full  flex z-60 ">
+<div className=" absolute top-[140rem] w-full left-[0.5rem] flex z-60 ">
 <ColorfulCards/>
 </div>
 

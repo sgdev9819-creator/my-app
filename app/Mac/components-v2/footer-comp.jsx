@@ -59,7 +59,7 @@ return(
 <div 
     key={index}
     className={`w-full  relative  flex flex-col transition-all duration-500 border-b border-white/60 overflow-hidden ${activeItem ? "h-auto pb-4" : "h-[3rem]"}`}>
-<button className="w-full flex flex-row relative  gap-[5rem] py-4  pb-[1.5rem] cursor-pointer"
+<button className="w-full flex flex-row relative  gap-[5rem] pb-[2rem]   cursor-pointer"
  onClick={() => handleClick(item.id)}>
     <h3 className="text-[28px] text-white font-light ">
         {item.name}
@@ -68,7 +68,7 @@ return(
                                     <img src={item.buttonImg} alt="" className="w-[18px] h-[18px] mt-[1rem]" />
                                
 </button>
-<div className={`w-full flex flex-col pb-[1rem] text-white transition-transform duration-500 ${activeItem ? "visible opacity-100 flex" : "hidden invisible opacity-0 h-0"}`}>
+<div className={`w-full flex flex-col pb-[1rem] pt-[0rem] text-white transition-transform duration-500 ${activeItem ? "visible opacity-100 flex" : "hidden invisible opacity-0 h-0"}`}>
                                 <span>{item.info}</span>
                                 <span className="mt-[0.5rem]">{item.info1}</span>
                                 <span className="mt-[0.5rem]">{item.info2}</span>
@@ -80,11 +80,11 @@ return(
 })}
 </div>
 {isactive && activeData && (
-                <div className="w-[64%] relative top-[2rem] flex justify-center items-center">
+                <div className="w-[64%] relative top-[2rem] flex  transition-transform duration">
                     <img
                         src={activeData.image} 
                         alt={activeData.name} 
-                        className="h-[13rem] rounded-full object-cover" 
+                        className="h-[13rem] rounded-full object-cover absolute right-[4rem] top-[4rem]" 
                     />
                 </div>
             )}
