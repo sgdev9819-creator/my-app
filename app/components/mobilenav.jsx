@@ -102,7 +102,7 @@ Support:{
 }
 }
 
-export default function Navber(){
+export default function MobileNavber(){
   const[isactiveLink,setisactiveLink]=useState(null)
   const[ismobile,setismobile]=useState(false)
    const[isoverlay,setisoverlay]=useState(false)
@@ -133,7 +133,7 @@ const handleLinkClicks = () => {
 return(
   <div className="lg:hidden flex w-full  h-full justify-center  flex absolute top-0 left-0 ">
 <nav 
- className="fixed w-full h-auto z-100">
+ className="fixed w-full h-auto z-110">
 <div className="fixed top-0 left-0 z-184 bg-[rgba(19,19,19,0.8)] backdrop-blur-[28px] w-full h-[44px] justify-center items-center flex flex-row  gap-[53%]">
 
 
@@ -157,7 +157,7 @@ onClick={handleLinkClick}
 </div>
 </div>
 
-<div className={`absolute lg:hidden top-0 left-0 w-full flex gap-[22px] bg-[rgba(19,19,19,0.96)] backdrop-blur-[28px] z-200   overflow-y-auto scrollbar-none
+<div className={`absolute lg:hidden top-0 left-0 w-full flex gap-[22px] bg-[rgba(19,19,19,0.96)] backdrop-blur-[28px] z-100   overflow-y-auto scrollbar-none
 ${ismobile?
   "h-[120vh] opacity-100 visible  z-180":"h-0 opacity-0 invinsible"
 }`}> 
@@ -180,7 +180,7 @@ className={`no-underline text-[28px] text-white/80  w-full font-light flex flex-
 </div>
 </div>
 
-<div className={` absolute lg:hidden top-0 left-0 w-full flex gap-[22px] bg-[rgba(19,19,19,0.96)] backdrop-blur-[28px] z-200   overflow-y-auto scrollbar-none ${isactiveLink ? "h-[100vh]  opacity-100 visible  z-180":"h-0 opacity-0 invinsible"
+<div className={` absolute lg:hidden top-0 left-0 w-full flex gap-[22px] bg-[rgba(19,19,19,0.96)] backdrop-blur-[28px] z-200   overflow-y-auto scrollbar-none transition-transform duration-500 ${isactiveLink ? "h-[100vh]  opacity-100 visible  z-180":"h-0 opacity-0 invinsible"
 }`}
 
 >
@@ -191,11 +191,11 @@ className={`no-underline text-[28px] text-white/80  w-full font-light flex flex-
     </div> 
 
 
-{isactiveLink && dropdownData[isactiveLink] &&(
+{isactiveLink && dropdownData[isactive2Link] &&(
 <div className="w-full mx-auto px-[3rem] py-[3rem]  bg-transparent flex flex-col gap-20 animation-fadein overflow-y-auto scrollbar-none">
 <div className="col-span-8 gap-4">
 <Link
-href="#"
+href={dropdownData[isactiveLink].path}
 className="text-white/50 text-[11px] mb-3 font-light uppercase tracking-wider ">
 {dropdownData[isactiveLink].tittle}
 </Link>

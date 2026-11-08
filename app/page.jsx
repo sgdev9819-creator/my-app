@@ -31,12 +31,12 @@ const products =[
 export default function Home() {
   return (
   <div className=" relative top-0 left-0 flex flex-col   w-full">
-    <div className="hidden lg:fixed top-[0px] w-full z-40">
-    <Navber/>
-     </div>
-     <div className="lg:hidden fixed top-[0px] w-full z-40">
-      <MobileNav/>
-     </div>
+   <div className="hidden lg:block fixed top-0 left-0 w-full z-50">
+    <Navber />
+</div>
+     <div className="block lg:hidden fixed top-0 left-0 w-full z-40">
+    <MobileNav />
+</div>
 <div className="flex flex-col gap-[1rem] w-full h-max relative z-5">
   {products.map((item,index)=>(
     <div
@@ -70,7 +70,7 @@ text2="Shop"
 <div className=" relative top-[0.5rem] w-full justify-center items-center">
   <FooterImages/>
 </div>
-<div className="relative flex justify-center items-center w-full top-[3.5rem] font-light text-white text-[57px]">
+<div className="relative flex justify-center items-center w-full top-[3.5rem] font-light text-white text-[37px] lg:text-[57px]">
   <h2>Endless entertainment.</h2>
 </div>
 <div className=" w-full relative top-[4.6rem]  ">

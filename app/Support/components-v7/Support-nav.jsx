@@ -122,7 +122,9 @@ return(
 
 
 <div className="hidden lg:flex z-200">
+<Link href="/">
 <img src="/apple-logo.svg" alt="Apple Log" className="lg:w-[22px] lg:h-[22px] "/>
+</Link>
 </div>
 
 <div className="hidden lg:stickey lg:top-0 lg:left-0 lg:w-max lg:flex lg:flex-row gap-[42px]  justify-center items-center">

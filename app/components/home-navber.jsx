@@ -113,7 +113,7 @@ export default function Navber(){
 
 
 return(
-  <div className="  w-full  h-full justify-center lg: flex absolute top-0 left-0 ">
+  <div className="  w-full  h-full justify-center lg:flex absolute top-0 left-0 ">
 <nav onMouseLeave={()=> {
      setisoverlay(false)
     setisactiveLink(null)
@@ -122,7 +122,9 @@ return(
 
 
 <div className="hidden lg:flex z-200">
+<Link href="/">
 <img src="/apple-logo.svg" alt="Apple Log" className="lg:w-[22px] lg:h-[22px] "/>
+</Link>
 </div>
 
 <div className="hidden lg:stickey lg:top-0 lg:left-0 lg:w-max lg:flex lg:flex-row gap-[42px]  justify-center items-center">
@@ -142,31 +144,7 @@ className="no-underline text-xs text-white/90 z-200 justify-center items-center 
 ))}
 
 </div>
-{/*Mobile section here we go damn it */}
-<div className="w-full  px-12 py-12   flex flex-row  animation-fadein z-100 lg:hidden">
-<div  className="absolute left-3 z-10 lg:hidden">
-  <img src="appl.svg" alt="" className="w-[22px] z-70 h-[22px]"/>
-</div>
-<div className="fixed right-0 flex flex-row gap-4 lg:hidden">
-  <img src="zoom.svg" alt=""  className="w-[20px] h-[20px]"/>
-    <img src="bag.svg" alt=""  className="w-[20px] h-[20px]"/>
-<button className="justify-center items-center z-100" onClick={()=> setismobile(true)}>
-{`${ismobile ? <img src="x.svg" alt="close"  className="w-[20px] h-[20px]"/>:<img src="bars.svg" alt="bars"  className="w-[20px] h-[20px]"/> }`}
-</button>
-</div>
-{/*Dropdown for mobile and T so i dont get confused*/}
-<div className={`"absolute top-[-100] left-0 z-10 w-full flex flex-col gap-5 overflow-hidden bg-white/90 lg:hidden "${ismobile ? "h-max opacity-100":"h-[0px] opacity-0"}`}>
-<ul className="absolute w-full  flex flex-col justify-center ">
-  {navLinks.map((lesser,index)=>(
-    <li key={index}
-    className="text-1xl w-max text-black-90"
-    >
-      {lesser.name}
-    </li>
-  ))}
-</ul>
-</div>
-</div>
+
 <div className="hidden lg:flex lg:flex-row lg:items-center lg:justify-center lg:gap-[2rem] ">
   <img src="search.svg" alt="" className="w-[20px] h-[20px]" />
   <img src="shop.svg" alt="" className="w-[20px] h-[20px]"/>

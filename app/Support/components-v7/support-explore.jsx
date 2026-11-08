@@ -29,7 +29,7 @@ const supItems = [
 export default function SupportExport(){
 
     return(
-        <div className="absolute top-10 w-full h-max flex flex-row justify-center items-center gap-38 mt-12 mb-12">
+        <div className="absolute top-10 w-full h-max flex flex-col lg:flex-row justify-center items-center gap-38 mt-12 mb-12">
             {supItems.map((item,index)=>(
   <div key={index}
   className="w-[350px] h-[360px] justify-center items-center flex flex-col relative gap-10  "

@@ -30,7 +30,7 @@ const SupportItems=[
 import Link from "next/link"
 export default function heroImages(){
     return(
-        <div className="absolute w-full h-max justify-center items-center flex flex-row gap-23" >
+        <div className="absolute w-full h-max justify-center items-center grid grid-col-2 lg:flex lg:flex-row gap-23" >
             { SupportItems.map((items,index)=>(
                 <Link
                 href={items.name}

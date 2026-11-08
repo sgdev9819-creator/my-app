@@ -26,7 +26,7 @@ import Link from "next/link"
 export default function Cards(){
 
     return(
-        <div className=" absolute flex flex-row w-full justify-center 
+        <div className=" absolute flex flex-col lg:flex-row w-full justify-center 
         items-cente gap-6" >
             {cards.map((card,index)=>(
               <div  key={index}
