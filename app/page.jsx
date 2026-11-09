@@ -41,12 +41,10 @@ export default function Home() {
   {products.map((item,index)=>(
     <div
     key={index}
-    className={`relative flex w-full ${index !== 0 ? "h-[100vh] bg-black":"h-[100vh] bg-black"}  ${ index === 2 ? "bg-white":""}`}
+    className={`relative flex w-full h-[100vh] ${index === 2 ? "bg-[rgba(245,245,245,1)] text-black" : "bg-black text-white"}`}
     >
       <img src={item.image} alt="" className={`absolute w-full object-cover ${index !== 0 ? "h-[510px] top-[5rem]":"h-[510px] bottom-[0px]"} ${ index === 2 ? "top-[8.3rem]":""} `} />
-      <div className={`w-full justify-center items-center flex flex-col ${index !== 0?"absolute top-[2rem] text-white":"absolute top-[5rem] text-white"}
-  ${index === 2 ? "text-black absolute top-[5rem]":""}
-`}>
+     <div className={`w-full justify-center absolute top-[5rem] items-center flex flex-col ${index !== 0 ? "top-[2rem]" : ""} ${index === 2 ? "text-black" : "text-white"}`}>
  <h1 className=" text-[32px] lg:text-[56px] font-light">
   {item.name}
  </h1>
@@ -57,7 +55,7 @@ export default function Home() {
   {item.info1}
  </p>
 </div>
-<div className={`relative w-full justify-center items-center ${index !== 0 ? "top-[11rem]":"top-[12rem]"}
+<div className={`relative w-full justify-center items-center ${index === 2 ? "top-[12rem]" : index !== 0 ? "top-[14rem]" : "top-[12rem]"}
 
 `}><Button
 text1="Learn more"
