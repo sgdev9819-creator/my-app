@@ -36,28 +36,17 @@ export default function FooterScroll() {
         if (isPlaying) {
             interval = setInterval(() => {
                 setCurrentIndex((prevIndex) => {
-                    const nextIndex = (prevIndex + 1) % duplicatedTop.length;
+                    const nextIndex = (prevIndex + 1) % topArray.length;
                     scrollToIndex(nextIndex);
-                    
-                    if (topRef.current && nextIndex === 0) {
-                        topRef.current.scrollTo({ left: 0, behavior: "auto" });
-                    }
-                    if (bottomRef.current && nextIndex === 0) {
-                        bottomRef.current.scrollTo({ left: 0, behavior: "auto" });
-                    }
-
                     return nextIndex;
                 });
             }, 5000);
         }
         return () => {
-            if (interval) {
-                clearInterval(interval);
-            }
+            if (interval) clearInterval(interval);
         };
     }, [isPlaying]);
-
-    const getItemWidth = (ref) => {
+  const getItemWidth = (ref) => {
         if (!ref.current || !ref.current.children[0]) return 0;
         const child = ref.current.children[0];
         const style = window.getComputedStyle(child);
@@ -66,35 +55,45 @@ export default function FooterScroll() {
 const scrollToIndex = (index) => {
         isSyncingRef.current = true;
         setCurrentIndex(index);
-
+        
         if (topRef.current) {
-            const topWidth = getItemWidth(topRef);
-            topRef.current.scrollTo({ left: index * topWidth, behavior: "smooth" });
-        }
-        if (bottomRef.current) {
-            const bottomWidth = getItemWidth(bottomRef);
-            bottomRef.current.scrollTo({ left: index * bottomWidth, behavior: "smooth" });
+            const topItemWidth = getItemWidth(topRef);
+            topRef.current.scrollTo({
+                left: index * topItemWidth,
+                behavior: "smooth"
+            });
         }
 
-        setTimeout(() => {
-            isSyncingRef.current = false;
-        }, 400);
-    };
-    const handleTopScroll = () => {
+        if (bottomRef.current) {
+            const bottomItemWidth = getItemWidth(bottomRef);
+            bottomRef.current.scrollTo({
+                left: index * bottomItemWidth,
+                behavior: "smooth"
+            });
+        }
+       if (index === 0 && topRef.current && bottomRef.current) {
+            setTimeout(() => {
+                topRef.current.scrollTo({ left: 0, behavior: "auto" });
+                bottomRef.current.scrollTo({ left: 0, behavior: "auto" });
+            }, 600);
+        }
+    }
+
+  const handleScroll = () => {
         if (isSyncingRef.current || !topRef.current || !bottomRef.current) return;
         
         setIsPlaying(false);
         isSyncingRef.current = true;
 
-        const topWidth = getItemWidth(topRef);
-        const bottomWidth = getItemWidth(bottomRef);
+        const topItemWidth = getItemWidth(topRef);
+        const bottomItemWidth = getItemWidth(bottomRef);
 
-        if (topWidth > 0 && bottomWidth > 0) {
-            const index = Math.round(topRef.current.scrollLeft / topWidth);
-            setCurrentIndex(index % topArray.length);
-
+        if (topItemWidth > 0 && bottomItemWidth > 0) {
+            const currentScrollIndex = Math.round(topRef.current.scrollLeft / topItemWidth);
+            const wrappedIndex = currentScrollIndex % topArray.length;
+         bottomRef.current.scrollLeft = currentScrollIndex * bottomItemWidth;
             
-            bottomRef.current.scrollLeft = index * bottomWidth;
+            setCurrentIndex(wrappedIndex);
         }
 
         requestAnimationFrame(() => {
@@ -102,21 +101,26 @@ const scrollToIndex = (index) => {
         });
     };
 
+
+
+    
  
     const handleDotClick = (index) => {
         setIsPlaying(false);
         setCurrentIndex(index);
+        scrollToIndex(index);
     };
 
     const handlePlayPause = () => {
         setIsPlaying((prev) => !prev);
     };
+
     const activeDotIndex = currentIndex % topArray.length;
     return (
         <div className="absolute w-full flex flex-col gap-[1rem] h-max">
             <div 
             ref={topRef}
-                onScroll={handleTopScroll}
+              onScroll={() => handleScroll(topRef, bottomRef)}
                 className="w-full flex overflow-x-auto scrollbar-none snap-x snap-mandatory"
                 style={{ scrollSnapType: 'x mandatory' }}>
                 {duplicatedTop.map((top, index) => (
@@ -134,8 +138,8 @@ const scrollToIndex = (index) => {
 
             <div 
             
-             ref={topRef}
-                onScroll={handleTopScroll}
+             ref={bottomRef}
+               onScroll={() => handleScroll(bottomRef, topRef)}
                 className="w-full flex overflow-x-auto scrollbar-none snap-x snap-mandatory"
                 style={{ scrollSnapType: 'x mandatory' }}
                 >

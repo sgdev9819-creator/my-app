@@ -139,15 +139,129 @@ animation-name: fillProgress;
     background: linear-gradient(to top,rgba(0, 0, 0, 0.815)5%,transparent 95%);
 
 }
-.activemb{
-    transition: all 0.5s ease;
+.activemb span{
+   transition: transform 0.3s ease, opacity 0.3s ease;
+    transform-origin: center;
+}
+.activemb span:nth-child(1) {
+  transform: translateY(4px) rotate(45deg);
+}
+
+.activemb span:nth-child(2) {
+    transform: translateY(-4px) rotate(-45deg);
+}
+
+.activemobile{
+    height:0vh; 
+     visibility:visible; 
+      z-index:160;
+      transition: all 0.5s ease;
+      animation: drop 0.5s ease forwards;
+}
+@keyframes drop{
+    0%{
+        height:0vh; 
+     visibility:hidden; 
+    }
+    100%{
+        height:120vh; 
+     visibility:visible; 
+      z-index:160;
+    }
+}
+.mb-content{
+    animation: dropCon 0.7s ease forwards;
+    width: 100%;
+    transition: all 0.7s ease;
+}
+@keyframes dropCon{
+    0%{
+        opacity:0;
+        transform: translateY(-20px);
+    }
+    100%{
+        opacity:1;
+        transform: translateY(0px);
+    }
+}
+.movef{
+    position:absolute; 
+    right:5%;
+    opacity: 0; 
+    cursor:pointer ;
+}
+
+.mb-content:hover .movef{
+    opacity: 1;
+}
+.backbt{
+    border:none; 
+    color:white;
+    font-size:18px; 
+    visibility: visible;
+    font-style:light;
+animation: back 0.5s ease forwards;
+opacity: 0;
+transition: all 0.5s ease;
+}
+@keyframes back{
+    0%{
+
+        opacity:0;
+        transform: translateX(20px);
+    }
+    100%{
+        opacity:1;
+        transform: translateX(0px);
+    }
 
 }
-.activemb::nth-child(1){
-    transform: rotate(45deg) translateY(8px);
+.mbnavcon{
+    width:full;
+     max-width: auto;
+      padding:3.5rem; 
+       background:transparent; 
+       display:flex;
+       flex-direction:column; 
+       gap:20px;   
+         animation: back 0.5s ease forwards;
+   opacity: 0;
+    transition: all 0.5s ease; 
 }
-.activemb::nth-child(2){
-    transform: rotate(85deg) translateY(8px)
+.navlinksac{
+    opacity: 1;
+    
+    animation: fort 0.5s ease forwards;
+    transition: all 0.5s ease;
+}
+
+@keyframes fort{
+    0%{
+        opacity:1;
+        display: flex;
+    
+        transform: translateY(0px);
+    }
+    100%{
+        opacity:0;
+        
+        display: none;
+        transform: translateY(-20px);
+
+    }
+}
+.navlinksnon{
+    opacity: 0;
+    
+     animation: fort 0.5s ease forwards;
+}
+
+.color-text{
+     background-color: transparent;
+     background-image: linear-gradient(to right,rgb(255, 123, 0),rgb(255, 255, 255),rgb(0, 132, 255));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color:transparent;
 }
 /*Mac section*/
 .mac1{

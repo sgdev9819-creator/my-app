@@ -134,47 +134,48 @@ return(
   <div className="lg:hidden flex w-full  h-full justify-center  flex absolute top-0 left-0 ">
 <nav 
  className="fixed w-full h-auto z-110">
-<div className="fixed top-0 left-0 z-184 bg-[rgba(19,19,19,0.8)] backdrop-blur-[28px] w-full h-[44px] justify-center items-center flex flex-row  gap-[53%]">
+<div className={`fixed top-0 left-0 z-174  backdrop-blur-[28px] w-full h-[50px] justify-center items-center  flex flex-row ${ismobile? "bg-transparent":"bg-[rgba(19,19,19,0.8)]"}  `}>
 
 
-<div className="flex lg:hidden z-110">
+<div className={` lg:hidden absolute left-[0.9rem] z-110 ${ismobile? "invisible hidden":"visible flex"} `}>
 <img src="/apple-logo.svg" alt="Apple Log" className="w-[22px] h-[22px] "/>
 </div>
 
-<div className="flex lg:hidden flex-row items-center justify-center gap-[1.7rem] ">
+<div className={` lg:hidden flex-row items-center justify-center gap-[1.7rem] absolute right-[4rem] ${ismobile? "invisible hidden":"visible flex"}  `}>
   <img src="search.svg" alt="" className="w-[20px] h-[20px] z-100" />
   <img src="shop.svg" alt="" className="w-[20px] h-[20px] z-100"/>
 
-<div className={`flex flex-col justify-center items-center cursor-pointer z-200 ${ismobile? "activemb":""}  `}
+
+</div>
+
+<div className={`absolute top-[1.2rem] right-[1rem] flex flex-col justify-center items-center cursor-pointer z-200 ${ismobile? "activemb":""}  `}
 onClick={handleLinkClick}
 
 >
-    <span className="w-[20px] h-[1px] bg-white block mb-1"></span>
-    <span className="w-[20px] h-[1px] bg-white block mb-1"></span>
+    <span className="w-[16px] h-[1px] bg-white block mb-1"></span>
+    <span className="w-[16px] h-[1px] bg-white block mb-1"></span>
    
 </div>
-
-</div>
 </div>
 
-<div className={`absolute lg:hidden top-0 left-0 w-full flex gap-[22px] bg-[rgba(19,19,19,0.96)] backdrop-blur-[28px] z-100   overflow-y-auto scrollbar-none
+<div className={`absolute lg:hidden top-0 left-0 w-full flex gap-[22px] bg-[rgba(19,19,19,0.99)] backdrop-blur-[28px] z-100   overflow-y-auto scrollbar-none 
 ${ismobile?
-  "h-[120vh] opacity-100 visible  z-180":"h-0 opacity-0 invinsible"
+  "activemobile":"h-0 hidden invinsible"
 }`}> 
-    <div className="py-[3rem] px-[3rem] flex flex-col gap-[14px] ">
+    <div className={`w-full py-[3.5rem] pl-[3.5rem] flex flex-col gap-[9px]  `}>
 {navLinks.map((link,index)=>(
     <div key={index}
 
 onClick={()=>{ 
     
     setisactiveLink(link.path)}}
-className={`no-underline text-[28px] text-white/80  w-full font-light flex flex-row  cursor-pointer  hover:text-white ${isactiveLink? "invisible hidden opacity-0 ":"visible flex opacity-100"}`}
+className={` mb-content no-underline text-[28px] text-white/80  w-full font-light flex flex-row  cursor-pointer  hover:text-white ${isactiveLink? "navlinksac":" flex opacity-100"}`}
 >
 <span >
     {link.name} 
 </span>
 
-<span className=" absolute right-[5%] cursor-pointer " >{'\u003e'}</span>
+<span className=" movef" >{'\u003e'}</span>
 </div>
 ))}
 </div>
@@ -184,15 +185,23 @@ className={`no-underline text-[28px] text-white/80  w-full font-light flex flex-
 }`}
 
 >
-   <div 
+
+<div className={`absolute top-[1.5%] w-full flex flex-row justify-center items-center  gap-[80%] z-200`}>
+   <button 
    onClick={handleLinkClicks}
-   className="absolute top-[0px] left-[2rem] text-white text-[18px] font-light">
+   className={`  ${isactiveLink ? "backbt":"opacity-0 invinsible"}`}>
     back
-    </div> 
+    </button> 
+<button 
+onClick={handleLinkClick}
+className=" border-none  w-max p-[0.5rem] z-200 justify-center items-center text-white ">
+ <img src="/x.svg" alt="Close" className=" justify-ceter items-center flex w-[17px] h-[17px] object-cover" />
+</button>
 
+</div>
 
-{isactiveLink && dropdownData[isactive2Link] &&(
-<div className="w-full mx-auto px-[3rem] py-[3rem]  bg-transparent flex flex-col gap-20 animation-fadein overflow-y-auto scrollbar-none">
+{isactiveLink && dropdownData[isactiveLink] &&(
+<div className={` mbnavcon`}>
 <div className="col-span-8 gap-4">
 <Link
 href={dropdownData[isactiveLink].path}
@@ -202,7 +211,7 @@ className="text-white/50 text-[11px] mb-3 font-light uppercase tracking-wider ">
 <ul className="flex flex-col gap-2 ">
   {dropdownData[isactiveLink].links.map((item,index)=>(
     <li key={index}
-    className={` text-2xl text-white/80 font-light hover:text-white transition-colors duration-200  ${isactiveLink? "visible flex opacity-100":"invisible hidden opacity-0 "}`}
+    className={` text-[28px] text-white/80 font-light hover:text-white transition-colors duration-200  ${isactiveLink? "visible flex opacity-100":"invisible hidden opacity-0 "}`}
     >
       {item}
     </li>
@@ -211,14 +220,14 @@ className="text-white/50 text-[11px] mb-3 font-light uppercase tracking-wider ">
 </div>
 
 <div className="flex flex-col ">
-   <p className="text-white/50 text-[11px] font-light uppercase tracking-wider ">
+   <p className="text-white/50 text-[14px] font-light  tracking-wider ">
 {dropdownData[isactiveLink].leble}
 </p>
 
 <ul className="flex flex-col gap-1 mt-3">
     {dropdownData[isactiveLink].quik.map((next)=>(
         <li key={next}
-    className=" text-[12px] text-white/80 font-light hover:text-white transition-colors duration-300"
+    className=" text-[17px] text-white/80 font-light hover:text-white transition-colors duration-300"
     >
             {next}
         </li>
