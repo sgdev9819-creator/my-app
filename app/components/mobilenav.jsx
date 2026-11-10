@@ -5,99 +5,127 @@ import { useState } from "react"
 const dropdownData = {
  Store:{
  leble:"Quick Links",
-tittle:"Shop",
+tittle:"Shop Gifts",
+moreinfo:["Certified Refurbished","Education","Business","Veteran and military","Government"],
+extra:"Shop Special Stores",
+ followUp:["Compare Mac","Switch from PC to Mac"],
 path:"Store",
 quik:["Find a Store"," Order Status","Apple Trade In","Financial","Personal Setup"],
-links:["Shop the Latest","Mac","iPad","iPhone"," Apple Watch"," AirPods"," Apple Vision Pro","Accessories"]
+links:["Mac","iPad","iPhone"," Apple Watch"," AirPods"," Apple Vision Pro","Accessories"]
  },
 
 Mac:{
   leble:"Shop Mac",
-  tittle:"EXPLORE Mac",
+  tittle:"Explore All Mac",
+    extra:"More From Mac",
+  moreinfo:["Mac Support","Apple Care","MacOS 27","Apple Intelligence and Siri ","Apps by Apple","Apple Creator Studio","Better with iPhone  ","iCloud+","Mac for Business","Eduction ","Apple at Work"],
+  followUp:["Compare Mac","Switch from PC to Mac"],
   path:"Mac",
-  quik:["Shop Mac"," Mac Accessories","Apple Trade In","Financial","Personal Setup"],
-  links:["Explore All Mac","MacBook Neo","MacBook Air","MacBook Pro","iMac","Mac mini","Mac Studio","Displays"]
+  quik:["Shop Mac"," Help Me Choose"," Mac Accessories","Apple Trade In","Financial","Personal Setup"],
+ links:[,"MacBook Neo","MacBook Air","MacBook Pro","iMac","Mac mini","Mac Studio","Displays"]
 },
 
 iPhone:{
 leble:"Shop Mac",
-tittle:"EXPLORE IPhone",
+tittle:"Explore All iPhone",
+  extra:"More From iPhone",
+  moreinfo:["iPhone Support","Apple Care","iPhoneOS 27","Apple Intelligence and Siri ","Apps by Apple","Apple Privacy","Better with Mac","iCloud+","Walet,Pay,Card ","Apple at Work"],
+followUp:["Compare iPhone","Switch from Android"],
 path:"iPhone",
-quik:["Shop iPhone"," iPhone Accessories","Apple Trade In","Carear Deals Apple","Financial","Personal Setup"],
-links:["Explore All iPhone","iPhone 17 pro","iPhone 17 Air","iPhone 17","iPhone 17e","iPhone 16"]
+quik:["Shop iPhone"," iPhone Accessories","Apple Upgrade","Apple Trade In","Carear Deals at Apple","Financial","Personal Setup"],
+links:[,"iPhone Duo","iPhone 18 pro","iPhone Air","iPhone 17","iPhone 17e","iPhone 16"],
 
 },
 
 iPad:{
 leble:"Shop iPad",
-tittle:"EXPLORE IPad",
+tittle:"Explore All iPad",
+extra:"More From iPad",
+moreinfo:["iPad Support","Apple Care","iPadOS 27","Apple Intelligence and Siri ","Apps by Apple","Apple Creator Studio","iCloud+","Eduction ","Apple at Work"],
+ followUp:["Compare iPad"],
 path:"iPad",
-quik:["Shop iPad"," iPad Accessories","Apple Trade In","Financial","Personal Setup"],
-links:["Explore All iPads","iPhad pro","iPhad Air","iPhad","iPhad Mini","Apple Pencile","Keyboards"]
-
+quik:["Shop iPad"," iPad Accessories","Apple Upgrade","Apple Trade In","Financial","Personal Setup"],
+links:["iPad pro","iPad Air","iPad","iPad Mini","Apple Pencile","Keyboards"],
+ 
 },
 
 Watch:{
     leble:"Shop Apple Watch",
-  tittle:"EXPLORE watch",
+  tittle:"Explore All Apple Watch",
+   extra:"More From Watch",
+moreinfo:["iPad Support","Apple Care","iPadOS 27","Apple Watch For Your Kids","Apps by Apple","Apple fitness+","Education"],
+  followUp:["Compare Watch","Why Apple Watch"],
   path:"Watch",
-  quik:["Shop Apple Watch","Apple Watch Bands", " Apple Watch Accessories","Apple Trade In","Financial","Personal Setup"],
+  quik:["Shop Apple Watch","Apple Watch Bands", " Apple Watch Accessories","Apple Upgrade","Apple Trade In","Financial","Personal Setup"],
   links:[
-   "Explore All Apple Watch", "Apple Watch Series 11","Apple Watch Ultra","Apple Watch Nike","WatchOS","Apple Watch Hermes"
-  ]
+   , "Apple Watch Series 12","Apple Watch Ultra 4","Apple Watch SE 3","Apple Watch Nike","Apple Watch Hermes"
+  ],
 },
 Vision:{
      leble:"Shop Apple Vision Pro",
-   tittle:"EXPLORE Vision",
+   tittle:"Shop Apple Vision Pro",
+    extra:"More From Vision",
+     moreinfo:["Apple Vision Pro Support","Apple Care","VisionOS 27","Apple Vision Pro for Enterprise"],
+   followUp:["Tech Specs",],
    path:"Vision",
-    quik:["Shop Apple Vision Pro", " Apple Watch Accessories","Book a Demo","Financial","Personal Setup"],
+    quik:[, " Apple Watch Accessories","Book a Demo","Financial","Personal Setup"],
    links:[
      "Explore Apple Vision Pro"
    ]
 },
 AirPods:{
    leble:"Shop AirPods",
-   tittle:"Explore AirPods",
+   tittle:"Explore All AirPods",
+    extra:"More From AirPod",
+  moreinfo:["AirPords Support","Apple Care","Hearing Health","Apple Muscic","Apple Fitness+"],
+   followUp:["Compare AirPods",],
    path:"AirPods",
    quik:["Shop AirPods", "AirPods Accessories"],
    links:[
-    "Explore All AirPods","AirPods 4","AirPods Pro 3","AirPods Max 2"
+    ,"AirPods 4","AirPods Pro 3","AirPods Max 2"
    ]
 },
 "TV-Home":{
   leble:"TV & Home",
-  tittle:"Explore TV & Home",
+  tittle:"Explore  Home",
+   extra:"More From Home",
+   moreinfo:["Apple TV Support","HomePod Support","AppleCare for Apple TV","AppleCare for HomePod","AppleTV App ","Home App","Apple Music","AirPlay" ],
   path:"TV-Home",
-    quik:["Shop TV 4k", "Shop HomePod","Shop HomePod mini","Shop Siri Romote","AirPods Accessories"],
+   quik:["Shop Home", "Shop Apple Home Collection","Shop Accessories","Personal Setup",],
   links:[
-    "Explore All TV & Home", "Apple TV 4k","HomePod","HomePod mini"
-  ]
+    ,"Apple HomeView", "Apple TV 4k","HomePod","HomePod mini"
+  ],
 },
 Entertainment:{
     leble:"Support",
     path:"Entertainment",
-  tittle:"Explore Entertainment",
+  tittle:"Explore All Entertainment",
   quik:["Apple TV Support", "Apple Music Support",],
   links:[
-   "Explore All Entertainment", "Apple One"," Apple TV","Apple Arcade"," Apple Fitness+"," Apple News+"," Apple Podcast","Apple Books"," Apple Store"
+   , "Apple One"," Apple TV","Apple Arcade"," Apple Fitness+"," Apple News+"," Apple Podcast","Apple Books"," Apple Store"
   ]
 },
 Accessories:{
     leble:"Explore Accessories",
-  tittle:"Explore Accessories",
+  tittle: "Explore All Accessories",
+  extra:"More To Explore",
+  moreinfo:["New Arrivals","Made By Apple","Accesibility","Assistive Technologis",],
   path:"Accessories",
-  quik:["Made by Apple", "Beats","AirTag","Assistive Technologies"],
+ quik:["Apple Headphone & Speakers", "Chargers & Adapters","AirTag","Smart Home Essencials","Cases & Protection","Content Creation","Gamming","Hard Deive & Storage","Mic & Keyboard","Health & Fitness+","Office Accessories","Software"],
    links:[
-  "Explore All Accessories","Mac"," iPads"," iPhone","Watch Bands","Vision Pro","AirPods","TV & Home"
-   ]
+ ,"Mac"," iPads"," iPhone","Watch Bands","Vision Pro","AirPods","TV & Home"
+   ],
 },
 Support:{
   leble:"Get Help",
+    extra:"Helpful Topics",
+moreinfo:["Get AppleCare","Apple Account & Password","Billing & Subscriptions","Assesibility"],
+ followUp:["Explore Support",],
   path:"Support",
   tittle:"Explore Support",
   quik:["Community", "Check Caverage","Gunius Bar","Repair",],
   links:[
-   "Explore Support","Mac"," iPads"," iPhone","Watch Bands","Vision Pro","AirPods","TV"
+   ,"Mac"," iPads"," iPhone","Watch Bands","Vision Pro","AirPods","TV"
   ]
 }
 }
@@ -128,8 +156,13 @@ const handleLinkClick = () => {
     };
     
 const handleLinkClicks = () => {
-        setisactiveLink((prev) => !prev);
+setisactiveLink(null);
     };
+
+    const handleAll=()=>{
+      setismobile((prev)=> !prev)
+      setisactiveLink(null);
+    }
 return(
   <div className="lg:hidden flex w-full  h-full justify-center  flex absolute top-0 left-0 ">
 <nav 
@@ -186,16 +219,17 @@ className={` mb-content no-underline text-[28px] text-white/80  w-full font-ligh
 
 >
 
-<div className={`absolute top-[1.5%] w-full flex flex-row justify-center items-center  gap-[80%] z-200`}>
+<div className={`absolute top-[1%] left-0  w-full flex flex-row justify-center items-center gap-[82%]  z-200`}>
    <button 
    onClick={handleLinkClicks}
-   className={`  ${isactiveLink ? "backbt":"opacity-0 invinsible"}`}>
-    back
+   className={`${isactiveLink ? "backbt":"opacity-0 invinsible"}`}>
+   
+<img src="lesser.svg" alt="previouse" className="w-[17px] h-auto " />
     </button> 
 <button 
-onClick={handleLinkClick}
-className=" border-none  w-max p-[0.5rem] z-200 justify-center items-center text-white ">
- <img src="/x.svg" alt="Close" className=" justify-ceter items-center flex w-[17px] h-[17px] object-cover" />
+onClick={handleAll}
+className=" border-none  w-max p-[0.5rem] z-200  text-white ">
+ <img src="/x.svg" alt="Close" className=" w-[17px] h-[17px] object-cover" />
 </button>
 
 </div>
@@ -205,7 +239,7 @@ className=" border-none  w-max p-[0.5rem] z-200 justify-center items-center text
 <div className="col-span-8 gap-4">
 <Link
 href={dropdownData[isactiveLink].path}
-className="text-white/50 text-[11px] mb-3 font-light uppercase tracking-wider ">
+className={`text-[28px] text-white/80 font-light hover:text-white transition-colors duration-200 ${isactiveLink? "visible flex opacity-100":"invisible hidden opacity-0 "}`}>
 {dropdownData[isactiveLink].tittle}
 </Link>
 <ul className="flex flex-col gap-2 ">
@@ -217,6 +251,15 @@ className="text-white/50 text-[11px] mb-3 font-light uppercase tracking-wider ">
     </li>
   ))}
 </ul>
+<div className="flex flex-col gap-[0.2rem] mt-[1rem] text-white text-[12px] font-light">
+  {dropdownData[isactiveLink]?.followUp?.map((item,idx)=>(
+  <span key={idx} >
+    {item}
+    </span>
+
+
+  ))}
+  </div>
 </div>
 
 <div className="flex flex-col ">
@@ -235,6 +278,21 @@ className="text-white/50 text-[11px] mb-3 font-light uppercase tracking-wider ">
 </ul>
      </div>
 
+<div className="flex flex-col">
+   <p className="text-white/50 text-[14px] font-light  tracking-wider ">
+{dropdownData[isactiveLink]?.extra}
+</p>
+
+<ul className="flex flex-col gap-1 mt-3">
+    {dropdownData[isactiveLink]?.moreinfo?.map((next)=>(
+        <li key={next}
+    className=" text-[17px] text-white/80 font-light hover:text-white transition-colors duration-300"
+    >
+            {next}
+        </li>
+    ))}
+</ul>
+     </div>
   </div>
 
 

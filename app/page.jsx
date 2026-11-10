@@ -44,25 +44,30 @@ export default function Home() {
     className={`relative flex w-full h-[100vh] ${index === 2 ? "bg-[rgba(245,245,245,1)] text-black" : "bg-black text-white"}`}
     >
       <img src={item.image} alt="" className={`absolute w-full object-cover ${index !== 0 ? "h-[510px] top-[5rem]":"h-[510px] bottom-[0px]"} ${ index === 2 ? "top-[8.3rem]":""} `} />
-     <div className={`w-full justify-center absolute top-[5rem] items-center flex flex-col ${index !== 0 ? "top-[2rem]" : ""} ${index === 2 ? "text-black" : "text-white"}`}>
+     <div className={`w-full  items-center h-full mt-[5rem]  flex flex-col z-10 ${index !== 0 ? "top-[2rem]" : ""} ${index === 2 ? "text-black" : "text-white"}`}>
  <h1 className=" text-[32px] lg:text-[56px] font-light">
   {item.name}
  </h1>
- <p className={`text-[19px] lg:text-[28px] font-light mt-[-0.5rem] ${index === 0 ? "color-text":""}`}>
+ <p className={`text-[19px] lg:text-[28px] font-light ${index === 0 ? "color-text":""}`}>
   {item.info}
  </p>
  <p className="hidden lg:flex text-[17px] text-white/50 font-light ">
   {item.info1}
  </p>
-</div>
-<div className={`relative w-full justify-center items-center ${index === 2 ? "top-[12rem]" : index !== 0 ? "top-[14rem]" : "top-[12rem]"}
 
-`}><Button
+ 
+<div className={` w-full justify-center  items-center mt-[1rem]`}
+
+><Button
 text1="Learn more"
 text2="Shop"
 /></div>
+
+</div>
+
+  
       </div>
-       
+
   ))}
 </div>
 <div className=" relative top-[1rem] w-full justify-center items-center">

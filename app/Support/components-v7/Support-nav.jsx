@@ -6,64 +6,84 @@ const dropdownData = {
  Store:{
  leble:"Quick Links",
 tittle:"Shop",
-quik:["Find a Store"," Order Status","Apple Trade In","Financial","Personal Setup"],
-links:["Shop the Latest","Mac","iPad","iPhone"," Apple Watch"," AirPods"," Apple Vision Pro","Accessories"]
+quik:["Find a Store"," Order Status","Apple Upgrade","Apple Trade In","Financial","Personal Setup"],
+moreinfo:["Certified Refurbished","Education","Business","Veteran and military","Government"],
+extra:"Shop Special Stores",
+links:["Shop Gift","Mac","iPad","iPhone"," Apple Watch"," AirPods"," Apple Vision Pro","Accessories"]
  },
 
 Mac:{
   leble:"Shop Mac",
-  tittle:"EXPLORE Mac",
-  quik:["Shop Mac"," Mac Accessories","Apple Trade In","Financial","Personal Setup"],
+  tittle:"Explore Mac",
+  extra:"More From Mac",
+  moreinfo:["Mac Support","Apple Care","MacOS 27","Apple Intelligence and Siri ","Apps by Apple","Apple Creator Studio","Better with iPhone  ","iCloud+","Mac for Business","Eduction ","Apple at Work"],
+  quik:["Shop Mac"," Help Me Choose"," Mac Accessories","Apple Trade In","Financial","Personal Setup"],
+  followUp:["Compare Mac","Switch from PC to Mac"],
   links:["Explore All Mac","MacBook Neo","MacBook Air","MacBook Pro","iMac","Mac mini","Mac Studio","Displays"]
 },
 
 iPhone:{
-leble:"Shop Mac",
-tittle:"EXPLORE IPhone",
-quik:["Shop iPhone"," iPhone Accessories","Apple Trade In","Carear Deals Apple","Financial","Personal Setup"],
-links:["Explore All iPhone","iPhone 17 pro","iPhone 17 Air","iPhone 17","iPhone 17e","iPhone 16"]
-
+leble:"Shop iPhone",
+tittle:"Explore iPhone",
+  extra:"More From iPhone",
+quik:["Shop iPhone"," iPhone Accessories","Apple Upgrade","Apple Trade In","Carear Deals at Apple","Financial","Personal Setup"],
+links:["Explore All iPhone","iPhone Duo","iPhone 18 pro","iPhone Air","iPhone 17","iPhone 17e","iPhone 16"],
+moreinfo:["iPhone Support","Apple Care","iPhoneOS 27","Apple Intelligence and Siri ","Apps by Apple","Apple Privacy","Better with Mac","iCloud+","Walet,Pay,Card ","Apple at Work"],
+followUp:["Compare iPhone","Switch from Android"],
 },
 
 iPad:{
 leble:"Shop iPad",
-tittle:"EXPLORE IPad",
-quik:["Shop iPad"," iPad Accessories","Apple Trade In","Financial","Personal Setup"],
-links:["Explore All iPads","iPhad pro","iPhad Air","iPhad","iPhad Mini","Apple Pencile","Keyboards"]
-
+tittle:"Explore IPad",
+  extra:"More From iPad",
+moreinfo:["iPad Support","Apple Care","iPadOS 27","Apple Intelligence and Siri ","Apps by Apple","Apple Creator Studio","iCloud+","Eduction ","Apple at Work"],
+quik:["Shop iPad"," iPad Accessories","Apple Upgrade","Apple Trade In","Financial","Personal Setup"],
+links:["Explore All iPad","iPad pro","iPad Air","iPad","iPad Mini","Apple Pencile","Keyboards"],
+ followUp:["Compare iPad"],
 },
 
 Watch:{
     leble:"Shop Apple Watch",
-  tittle:"EXPLORE watch",
-  quik:["Shop Apple Watch","Apple Watch Bands", " Apple Watch Accessories","Apple Trade In","Financial","Personal Setup"],
+  tittle:"Explore watch",
+    extra:"More From Watch",
+  quik:["Shop Apple Watch","Apple Watch Bands", " Apple Watch Accessories","Apple Upgrade","Apple Trade In","Financial","Personal Setup"],
   links:[
-   "Explore All Apple Watch", "Apple Watch Series 11","Apple Watch Ultra","Apple Watch Nike","WatchOS","Apple Watch Hermes"
-  ]
+   "Explore All Apple Watch", "Apple Watch Series 12","Apple Watch Ultra 4","Apple Watch SE 3","Apple Watch Nike","Apple Watch Hermes"
+  ],
+moreinfo:["iPad Support","Apple Care","iPadOS 27","Apple Watch For Your Kids","Apps by Apple","Apple fitness+","Education"],
+  followUp:["Compare Watch","Why Apple Watch"],
 },
 Vision:{
      leble:"Shop Apple Vision Pro",
-   tittle:"EXPLORE Vision",
+       extra:"More From Vision",
+   tittle:"Explore Vision",
     quik:["Shop Apple Vision Pro", " Apple Watch Accessories","Book a Demo","Financial","Personal Setup"],
    links:[
      "Explore Apple Vision Pro"
-   ]
+   ],
+  moreinfo:["Apple Vision Pro Support","Apple Care","VisionOS 27","Apple Vision Pro for Enterprise"],
+   followUp:["Tech Specs",],
 },
 AirPods:{
    leble:"Shop AirPods",
    tittle:"Explore AirPods",
-   quik:["Shop AirPods", "AirPods Accessories"],
+     extra:"More From AirPod",
+   quik:["Shop AirPods 5", "Shop AirPods Pro","Shop AirPods Pro Max"," AirPods Accessories"],
    links:[
     "Explore All AirPods","AirPods 4","AirPods Pro 3","AirPods Max 2"
-   ]
+   ],
+  moreinfo:["AirPords Support","Apple Care","Hearing Health","Apple Muscic","Apple Fitness+"],
+   followUp:["Compare AirPods",],
 },
-"TV & Home":{
+"TV-Home":{
   leble:"TV & Home",
+    extra:"More From Home",
   tittle:"Explore TV & Home",
-    quik:["Shop TV 4k", "Shop HomePod","Shop HomePod mini","Shop Siri Romote","AirPods Accessories"],
+    quik:["Shop Home", "Shop Apple Home Collection","Shop Accessories","Personal Setup",],
   links:[
-    "Explore All TV & Home", "Apple TV 4k","HomePod","HomePod mini"
-  ]
+    "Explore  Home","Apple HomeView", "Apple TV 4k","HomePod","HomePod mini"
+  ],
+  moreinfo:["Apple TV Support","HomePod Support","AppleCare for Apple TV","AppleCare for HomePod","AppleTV App ","Home App","Apple Music","AirPlay" ]
 },
 Entertainment:{
     leble:"Support",
@@ -75,11 +95,13 @@ Entertainment:{
 },
 Accessories:{
     leble:"Explore Accessories",
+      extra:"More To Explore",
   tittle:"Explore Accessories",
-  quik:["Made by Apple", "Beats","AirTag","Assistive Technologies"],
+  quik:["Apple Headphone & Speakers", "Chargers & Adapters","AirTag","Smart Home Essencials","Cases & Protection","Content Creation","Gamming","Hard Deive & Storage","Mic & Keyboard","Health & Fitness+","Office Accessories","Software"],
    links:[
   "Explore All Accessories","Mac"," iPads"," iPhone","Watch Bands","Vision Pro","AirPods","TV & Home"
-   ]
+   ],
+  moreinfo:["New Arrivals","Made By Apple","Accesibility","Assistive Technologis",],
 },
 Support:{
   leble:"Get Help",
@@ -87,7 +109,10 @@ Support:{
   quik:["Community", "Check Caverage","Gunius Bar","Repair",],
   links:[
    "Explore Support","Mac"," iPads"," iPhone","Watch Bands","Vision Pro","AirPods","TV"
-  ]
+  ],
+  extra:"Helpful Topics",
+moreinfo:["Get AppleCare","Apple Account & Password","Billing & Subscriptions","Assesibility"],
+ followUp:["Explore Support",],
 }
 }
 
@@ -95,7 +120,7 @@ export default function Navber(){
   const[isactiveLink,setisactiveLink]=useState(null)
   const[ismobile,setismobile]=useState(false)
   const[isoverlay,setisoverlay]=useState(false)
-  const navLinks = [
+ const navLinks = [
 
     {name:"Store",path:"Store"},
     {name:"Mac", path:"Mac"},
@@ -104,7 +129,7 @@ export default function Navber(){
    {name: "Watch",path:"Watch"},
    {name: "Vision",path:"Vision"},
     {name:"AirPods",path:"AirPods"},
-   {name: "TV & Home",path:"TV-Home"},
+   {name:"Home",path:"TV-Home"},
    { name:"Entertainment",path:"Entertainment"},
    {name: "Accessories",path:"Accessories"},
     {name:"Support",path:"Support"},
@@ -113,7 +138,7 @@ export default function Navber(){
 
 
 return(
-  <div className="w-full  h-full justify-center  flex absolute top-0 left-0 ">
+  <div className="  w-full  h-full justify-center lg:flex absolute top-0 left-0 ">
 <nav onMouseLeave={()=> {
      setisoverlay(false)
     setisactiveLink(null)
@@ -130,13 +155,13 @@ return(
 <div className="hidden lg:stickey lg:top-0 lg:left-0 lg:w-max lg:flex lg:flex-row gap-[42px]  justify-center items-center">
 {navLinks.map((link,index)=>(
 <Link key={index}
-href={`/${link.path}`}
+href={link.path}
 onMouseEnter={()=>{ 
-    setisoverlay(true)       
+    setisoverlay(true)
     setisactiveLink(link.path)}}
-className="no-underline text-xs text-white/90 z-200 justify-center items-center w-auto font-light  hover:text-white"
+className="no-underline text-xs text-white/90 z-200 justify-center items-center w-full font-light  hover:text-white"
 >
-    {link.name}
+    {link.name} 
   
 </Link>
 
@@ -144,41 +169,14 @@ className="no-underline text-xs text-white/90 z-200 justify-center items-center 
 ))}
 
 </div>
-{/*Mobile section here we go damn it */}
-<div className="w-full  px-12 py-12   flex flex-row  animation-fadein z-100 lg:hidden">
-<div  className="absolute left-3 z-10 lg:hidden">
-  <img src="appl.svg" alt="" className="w-[22px] z-70 h-[22px]"/>
-</div>
-<div className="fixed right-0 flex flex-row gap-4 lg:hidden">
-  <img src="zoom.svg" alt=""  className="w-[20px] h-[20px]"/>
-    <img src="bag.svg" alt=""  className="w-[20px] h-[20px]"/>
-<button className="justify-center items-center z-100" onClick={()=> setismobile(true)}>
-{`${ismobile ? <img src="x.svg" alt="close"  className="w-[20px] h-[20px]"/>:<img src="bars.svg" alt="bars"  className="w-[20px] h-[20px]"/> }`}
-</button>
-</div>
-{/*Dropdown for mobile and T so i dont get confused*/}
-<div className={`"absolute top-[-100] left-0 z-10 w-full flex flex-col gap-5 overflow-hidden bg-white/90 lg:hidden "${ismobile ? "h-max opacity-100":"h-[0px] opacity-0"}`}>
-<ul className="absolute w-full  flex flex-col justify-center ">
-  {navLinks.map((lesser,index)=>(
-    <li key={index}
-    className="text-1xl w-max text-black-90"
-    href={
-     `/${lesser.path}`
-    }
-    >
-      {lesser.name}
-    </li>
-  ))}
-</ul>
-</div>
-</div>
+
 <div className="hidden lg:flex lg:flex-row lg:items-center lg:justify-center lg:gap-[2rem] ">
   <img src="search.svg" alt="" className="w-[20px] h-[20px]" />
   <img src="shop.svg" alt="" className="w-[20px] h-[20px]"/>
 </div>
 </div>
 
-<div className={`" mt-0 left-0 w-full bg-[rgba(14,14,14,1)] translate-all duration-500 ease-in-out norder-b norder-white/5  z-100 lg:block"${isactiveLink?
+<div className={`" mt-0 left-0 w-full bg-[rgb(19,19,19)] translate-all duration-500 ease-in-out norder-b norder-white/5  z-100 lg:block"${isactiveLink?
   "h-screen opacity-100 visible  z-190":"h-0 opacity-0 invinsible"
 }`}
 onMouseLeave={()=> {
@@ -189,9 +187,9 @@ onMouseLeave={()=> {
 
 
 {isactiveLink && dropdownData[isactiveLink] &&(
-<div className="max-w-[1084px] mx-auto px-14 py-17  bg-transparent flex flex-row gap-20 animation-fadein z-100">
+<div className="max-w-[1084px] mx-auto px-14 py-17  bg-[rgb(19, 19, 19)] flex flex-row gap-20 animation-fadein z-100">
 <div className="col-span-8 gap-4">
-<p className="text-white/50 text-[11px] mb-3 font-light uppercase tracking-wider ">
+<p className="text-white/50 text-[11px] mb-3 font-light  tracking-wider ">
 {dropdownData[isactiveLink].tittle}
 </p>
 <ul className="flex flex-col gap-2">
@@ -203,10 +201,20 @@ onMouseLeave={()=> {
     </li>
   ))}
 </ul>
+
+<div className="flex flex-col gap-[0.2rem] mt-[1rem] text-white text-[12px] font-light">
+  {dropdownData[isactiveLink]?.followUp?.map((item,idx)=>(
+  <span key={idx} >
+    {item}
+    </span>
+
+
+  ))}
+  </div>
 </div>
 
 <div className="flex flex-col">
-   <p className="text-black/50 text-[11px] font-light uppercase tracking-wider ">
+   <p className="text-white/50 text-[11px] font-light  tracking-wider ">
 {dropdownData[isactiveLink].leble}
 </p>
 
@@ -221,6 +229,23 @@ onMouseLeave={()=> {
 </ul>
      </div>
 
+<div className="flex flex-col">
+   <p className="text-white/50 text-[11px] font-light  tracking-wider ">
+{dropdownData[isactiveLink]?.extra}
+</p>
+
+<ul className="flex flex-col gap-1 mt-3">
+    {dropdownData[isactiveLink]?.moreinfo?.map((next)=>(
+        <li key={next}
+    className=" text-[12px] text-white/80 font-light hover:text-white transition-colors duration-300"
+    >
+            {next}
+        </li>
+    ))}
+</ul>
+     </div>
+
+
   </div>
 
 
@@ -231,7 +256,7 @@ onMouseLeave={()=> {
 </nav>
 
 <div className={`fixed top-0 left-0 inset-0 bg-black/70 backdrop-blur-[16px] overflow-hidden 
-    ${isoverlay? "opacity-100 invicible z-100 ":" opacity-0 visible z-0" }`}></div>
+    ${isoverlay? "opacity-100 visible z-100 ":" opacity-0 invisible z-0" }`}></div>
 
 </div>
 

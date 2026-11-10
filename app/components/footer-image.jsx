@@ -55,7 +55,7 @@ className=" relative object-cover justify-center items-center flex flex-col w-fu
 
 <img src={items.image} className="h-full object-cover" />
 <div className={` absolute top-[2rem] w-full justify-center items-center flex flex-col font-light ${index === 0 || index === 2 || index === 4? "text-white":"text-black"}
-${index === 2 ? "relative bottom-[4%]  h-full":""}
+${index === 2 ? "relative bottom-[9%]  h-full":""}
 `}>
   <h1 className="text-[32px] lg:text-[40px] ">
     {items.name}
@@ -66,7 +66,10 @@ ${index === 2 ? "relative bottom-[4%]  h-full":""}
   <p className=" text-[19px] lg:text-[21px] mt-[-0.5rem]">
     {items.info1}
   </p>
-<Button text1="Learn More" text2="Shop" />
+  <div className=" mt-[1rem] w-full justify-center">
+    <Button text1="Learn More" text2="Shop" />
+  </div>
+
 
 </div>
   </div>

@@ -1,5 +1,6 @@
 "use client"
-import AirpodsNav from "./components-v10/entertainment-nav"
+import EnternNav from "./components-v10/entertainment-nav"
+import MobileNav from "./components-v10/mobilenav"
 import HeroSlider from "./components-v10/hero-slider"
 import HeroWords from "./components-v10/hero-heading"
 import Herovid from "./components-v10/vid-autoScrol"
@@ -17,7 +18,12 @@ export default function AirPodsPage(){
  <div className=" relative justify-center  w-full h-full ">  
 
 
-    <AirpodsNav/>
+    <div className="hidden lg:block absolute top-0 left-0 w-full z-50">
+    <EnternNav />
+</div>
+     <div className="block lg:hidden fixed top-0 left-0 w-full z-40">
+    <MobileNav />
+</div>
 <div className="w-full h-[100vh] relative bg-black top-0 flex flex-col justify-center">
 
 <div className="w-full absolute top-[3rem]  flex  items-center">
