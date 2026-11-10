@@ -40,7 +40,7 @@ const products =[
     imginfo:"/apple-logo.svg",
   info:"Get up to 3% Daily Cash back ",
   info1:"with every purchase.",
-  image:"/f-l6.jpg",
+  image:"/last.jpg",
  },
 ]
 
