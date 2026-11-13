@@ -37,17 +37,17 @@ const Footer = {
 export default function ShearedFooter(){
 const[isactive,setisactive]=useState("firstInfo")
 const activeData = Footer[isactive]
+const footerItems = Object.values(Footer)
 
-
-const handleClick = (id) => {
-    if (isactive === id) {
-        const currentIndex = footerArray.findIndex(item => item.id === id)
-            const nextIndex = (currentIndex + 1) % footerArray.length
-      setisactive(footerArray[nextIndex].id)
-    }else {
-        setisactive(id); 
+    const handleClick = (id) => {
+        if (isactive === id) {
+            const currentIndex = footerItems.findIndex(item => item.id === id)
+            const nextIndex = (currentIndex + 1) % footerItems.length
+            setisactive(footerItems[nextIndex].id)
+        } else {
+            setisactive(id) 
+        }
     }
-  }
 return(
     <div className="w-[87%] h-[784px] relative flex flex-row  bg-[rgba(14,14,14,1)] shadow-[0px_0px_1px_rgba(255,255,255,0.04)]
     backdrop-blur-[20px] rounded-[22px]">

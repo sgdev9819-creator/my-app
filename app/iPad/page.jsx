@@ -5,6 +5,7 @@ import NoCase from "./components-v3/no-case"
 import HeroImage1 from "./components-v3/hero-images-1"
 import HeroImage2 from "./components-v3/hero-images-2"
 import HeroImage3 from "./components-v3/hero-images-3"
+import Climax from "./components-v3/climax"
 import styles from "./page.module.css"
 import Link from "next/link"
 export default function Mac(){
@@ -80,6 +81,10 @@ Switch to iPad.
 </div>
 <div className="absolute top-[222.4rem] mt-0 w-full ">
 <HeroImage3/>
+</div>
+
+<div className="absolute top-[277.4rem] mt-0 w-full justify-center items-center flex ">
+<Climax/>
 </div>
 
     <button className="absolute top-[400rem] left-0 justify-center "> path</button>
