@@ -114,7 +114,7 @@ if(containerRef.current){
                       <p className="text-[25px] font-light ">{item.name2}</p>
                        </div>
                     </div>
-                  <div className="absolute bottom-3 right-3 inline-flex justify-center items-center w-[28px] h-[28px] p-2 rounded-full bg-black/10">
+                  <div className="absolute bottom-3 right-3 inline-flex justify-center items-center w-[28px] h-[28px] p-2 rounded-full transition-colors duration-400 bg-white/50 hover:bg-white/60">
                     {index === 0 && (
                         <img src="/greater.svg" alt="Image" className="w-full h-full object-cover inline-flex justify-center items-center" />
                     )}

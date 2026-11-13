@@ -24,7 +24,7 @@ const products =[
  {
    name:"iPad",
   info:"Hello hello",
-  image:"/landing2.jpg",
+  image:"/ip3.png",
  }
 ]
 
@@ -41,10 +41,10 @@ export default function Home() {
   {products.map((item,index)=>(
     <div
     key={index}
-    className={`relative flex w-full h-[100vh] ${index === 2 ? "bg-[rgba(245,245,245,1)] text-black" : "bg-black text-white"}`}
+    className={`relative flex w-full h-[100vh] ${index === 2 ? "bg-[rgb(16,16,16)] text-black" : "bg-black text-white"}`}
     >
       <img src={item.image} alt="" className={`absolute w-full object-cover ${index !== 0 ? "h-[510px] top-[5rem]":"h-[510px] bottom-[0px]"} ${ index === 2 ? "top-[8.3rem]":""} `} />
-     <div className={`w-full  items-center h-full mt-[5rem]  flex flex-col z-10 ${index !== 0 ? "top-[2rem]" : ""} ${index === 2 ? "text-black" : "text-white"}`}>
+     <div className={`w-full  items-center h-full mt-[5rem] text-white flex flex-col z-10 ${index !== 0 ? "top-[2rem]" : ""} `}>
  <h1 className=" text-[32px] lg:text-[56px] font-light">
   {item.name}
  </h1>
@@ -70,13 +70,13 @@ text2="Shop"
 
   ))}
 </div>
-<div className=" relative top-[1rem] w-full justify-center items-center">
+<div className=" relative top-[1.5rem] w-full justify-center items-center">
   <FooterImages/>
 </div>
-<div className="relative flex justify-center items-center w-full top-[3.5rem] font-light text-white text-[37px] lg:text-[57px]">
+<div className="relative flex justify-center items-center w-full top-[4.5rem] font-light text-white text-[37px] lg:text-[57px]">
   <h2>Endless entertainment.</h2>
 </div>
-<div className=" w-full relative top-[5.6rem]  ">
+<div className=" w-full relative top-[6.6rem]  ">
   <FooterScroll/>
 </div>
 

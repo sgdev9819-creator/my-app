@@ -64,12 +64,12 @@ if(containerRef.current){
     }
 
     return(
-        <div className="hero-images-container">
+        <div className="relative w-full top-[9rem]">
     <div ref={containerRef} className="climax-images-1">
                 {items.map((item,index)=>(
                 <div 
                 key={index}
-               className="climax-contents hero" >
+               className="climax-contents ip-climax" >
                     <img src={item.image} className="rounded-[20px]" />
                    
                     </div>

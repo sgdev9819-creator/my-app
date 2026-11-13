@@ -64,7 +64,7 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
-   background:white;
+   background:rgb(19, 19, 19);
      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     transition: transform 0.6s ease;
@@ -297,7 +297,7 @@ transition: all 0.5s ease;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-   
+   background:transparent;
     border-radius: 20px;
 }
 .item{
@@ -463,8 +463,8 @@ transition: all 0.5s ease;
 .climax-contents{
     flex:0 0 auto;
     width: 42.9%;
-    height: 615px;
-    background: #000;
+    height: 515px;
+    background: rgb(19,19,19);
     color:white;
     border-radius: 20px;
     position: relative;
@@ -491,7 +491,7 @@ transition: all 0.5s ease;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-   background:white;
+     background:rgb(19,19,19);
      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.096);
     border-radius: 20px;
     transition: transform 0.6s ease;
@@ -555,7 +555,7 @@ transition: all 0.5s ease;
     width: 300px;
     height: 240px;
     border-radius: 18px;
-    background:white;
+    background:rgb(19,19,19);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: all 0.5s ease;
    
@@ -573,7 +573,7 @@ transition: all 0.5s ease;
     width: 400px;
     
     border-radius: 18px;
-    background:white;
+    background:rgb(19,19,19);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: all 0.5s ease;
    
@@ -731,7 +731,7 @@ right: 0;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-   background:white;
+   background:rgb(19,19,19);
      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     transition: transform 0.6s ease;
@@ -748,7 +748,7 @@ right: 0;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-   background:white;
+   background:rgb(19,19,19);
      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     transition: transform 0.6s ease;
@@ -1734,13 +1734,23 @@ opacity: 1;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-   background:white;
+   background:rgb(19, 19, 19);
      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     transition: transform 0.6s ease;
     border-radius: 20px;
 }
-
+.hero-items-2:hover{
+    transform:scale(1.01);
+}
 .ipad-items{
     width:100px;
 }
+
+/*iphone section*/
+.iphone-scro{
+    width: 70rem;
+}
+
+
+

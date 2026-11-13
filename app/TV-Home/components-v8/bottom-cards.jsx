@@ -38,7 +38,7 @@ export default function Cards(){
             {cards.map((card,index)=>(
                 <div  
                 key={index}
-                className="relative w-[372px] h-[321px] rounded-3xl bg-[rgba(49,48,48,0.315)] flex flex-col
+                className="relative w-[372px] h-[321px] rounded-3xl bg-[rgba(19,19,19,0.95)] flex flex-col
                 gap-[2rem] transition-transform duration-500 hover:scale-[1.01]"
                 >
                     <img src={card.image} alt="" className="absolute top-[1rem] left-[1rem]"/>

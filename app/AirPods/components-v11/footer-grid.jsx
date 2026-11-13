@@ -224,7 +224,7 @@ const products = [
 import Button  from "./button2"
 export default function FooterGrid(){
     return(
-        <div className="relative grid grid-rows-3 rel gap-[2.5rem] w-full h-full p-6 pr-12 ">
+        <div className="relative grid grid-cols-4  gap-[1.5rem] w-full h-full p-6 ">
     {products.map((item,index)=>(
      <div 
                 key={index}

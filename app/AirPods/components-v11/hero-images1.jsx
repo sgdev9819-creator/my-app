@@ -62,8 +62,8 @@ isrunning? <img src="pause.svg" alt="Pause video" className="w-[15px] h-auto obj
                             </div>
                                ))}
                        </div >
-                       <div className="absolute top-[37rem] flex flex-row w-full ">
-                        <div className="absolute left-10 flex flex-col gap-5 text-2xl">
+                       <div className="absolute top-[37rem] flex flex-col lg:flex-row w-full ">
+                        <div className="absolute left-10 flex flex-col gap-5 text-[37px]">
                              <p>
                             Listening. Remastered.
                         </p>

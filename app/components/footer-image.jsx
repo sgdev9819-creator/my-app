@@ -47,7 +47,7 @@ const products =[
 export default function FooterImages() {
   return (
   
-<div  className="relative  grid grid-cols-1 lg:grid lg:grid-cols-2  justify-center items-center gap-3 w-full h-max  overflow-hidden bg-black">
+<div  className="relative  grid grid-cols-1 lg:grid lg:grid-cols-2  justify-center items-center gap-[1rem] w-full h-max  overflow-hidden bg-black">
 {products.map((items,index)=>(
 <div key={index}
 className=" relative object-cover justify-center items-center flex flex-col w-full h-[100vh]"

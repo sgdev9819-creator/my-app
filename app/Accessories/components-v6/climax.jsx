@@ -105,7 +105,7 @@ return(
     className="flex flex-col relative gap-4 justify-center w-max h-auto"
     > 
     <p className="text-1xl w-max font-light  text-white/50">
-        {items.name}
+        {items.name}a
     </p>
      <ul
         className="flex flex-col w-max  gap-4 absolute top-11"

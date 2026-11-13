@@ -64,13 +64,12 @@ className="w-full h-full justify-center items-center  "
 
 
 
-
 <button onClick={togglePlay}
 aria-label={isplaying ? "Pause video" : "Play video"}
-className="w-max absolute  top-5 right-5  p-4 rounded-full border-1 border-white/70 bg-white/10 backdrop-blur-[20px]"
+className="w-max absolute  top-5 right-5  p-3 rounded-full border-1 border-white/70 bg-white/10 backdrop-blur-[20px] z-50"
 >
     {
-isplaying ? <img src="pause.svg" alt="Pause video" className="w-[17px] h-auto object-cover"/> : <img src="play.svg" alt="Play video" className="w-[17px] h-auto object-cover" />
+isplaying ? <img src="pause.svg" alt="Pause video" className="w-[15px] h-auto object-cover"/> : <img src="play.svg" alt="Play video" className="w-[15px] h-auto object-cover" />
     }
 
 </button>
