@@ -20,7 +20,7 @@ export default function TVHomePage(){
 <HomeSlider/>
     </div>
 
-<div className="relative left-22 w-max flex top-[11.2rem] font-light text-[47px] text-white">
+<div className="relative left-21 w-max flex top-[11.2rem] font-light text-[47px] text-white">
     <h3> Explore the lineup.</h3>
 </div>
 
@@ -48,13 +48,13 @@ Shop Apple Home.
 
 <div className="w-full h-[158.7rem] relative top-[20.8rem] bg-black flex flex-col">
     
-<div className="relative left-22 w-max flex top-[8.2rem] font-light text-[47px] text-white">
+<div className="relative left-21 w-max flex top-[8.2rem] font-light text-[47px] text-white">
     <h3>Get to know Apple Home.</h3>
 </div>
 <div className="relative top-[6.3rem] w-full ">
     <HeroImages2/>
 </div>
-<div className="relative left-22 w-max flex top-[9.3rem] font-light text-[47px] text-white">
+<div className="relative left-21 w-max flex top-[9.3rem] font-light text-[47px] text-white">
     <h3>Shop the Apple Home Collection.</h3>
 </div>
 

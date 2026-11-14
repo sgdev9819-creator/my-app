@@ -26,13 +26,13 @@ export default function Mac(){
 
 <div className="absolute top-23 left-0 w-full h-[400px] bg-black flex  justify-center items-center">
    
-    <h2 className="text-white text-[5rem] font-light  absolute  top-[4.9rem] left-21">Mac</h2>
+    <h2 className="text-white text-[5rem] font-light  absolute  top-[4.9rem] left-21 z-20">Mac</h2>
 <Hero/>
     </div>
 
 
 
-<div className="absolute top-160 left-[85px] justify-center">
+<div className="absolute top-160 left-21 justify-center">
 <h2 className="font-light  text-[47px] text-white ">
  Explore the lineup.
 </h2>
@@ -56,7 +56,7 @@ export default function Mac(){
 </div>
 
 <div className="absolute top-[150.8rem] pt-[6rem] bg-black justify-center pb-[9rem] w-full h-[114rem]" >
-<div className="absolute pt-6  left-[84px] justify-center  w-[400px]">
+<div className="absolute pt-6  left-21 justify-center  w-[400px]">
     <h3 className="relative top-[0.5rem] font-light  text-white text-[47px] w-[500px]" >
        Get to know Mac.
     </h3>
@@ -65,7 +65,7 @@ export default function Mac(){
 <SecondImages/>
 </div>
 
-<div className="absolute top-[66.1rem]  left-[84px] justify-center  w-[400px]">
+<div className="absolute top-[66.1rem]  left-21 justify-center  w-[400px]">
     <h3 className="relative top-[1.5rem] font-light  text-white text-[47px] w-[500px]" >
    Help me choose.
     </h3>

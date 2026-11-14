@@ -103,12 +103,12 @@ if(containerRef.current){
                       <p className="text-sm font-light ">{item.down2}</p>
                        </div>
                     </div>
-                  <div className="absolute bottom-3 right-3 inline-flex justify-center items-center w-[28px] h-[28px] p-2 rounded-full bg-black/10">
+                  <div className="absolute bottom-3 right-3 inline-flex justify-center items-center w-max h-max p-[9px] rounded-full transition-colors duration-300 bg-white/80 hover:bg-white/90">
                     {index === 0 && (
-                        <img src="/greater.svg" alt="Image" className="w-full h-full object-cover inline-flex justify-center items-center" />
+                        <img src="/che3.svg" alt="Image" className="w-[18px] h-auto object-cover inline-flex justify-center items-center" />
                     )}
                     {index !== 0 && (
-                        <img src="/plus.svg" alt="Image" className="w-full h-full object-cover inline-flex justify-center items-center" />
+                        <img src="/plus2.svg" alt="Image" className="w-[18px] h-auto object-cover inline-flex justify-center items-center" />
                     )}
             
                     </div>
@@ -121,19 +121,18 @@ if(containerRef.current){
                 ))}
             </div>
              <div className=" relative top-[-2.5rem] left-[73.5rem] gap-5 flex flex-row  w-max justify-center ">
-
-  <button 
+ <button 
   disabled={!showLeft}
   onClick={handleLeft}
   className={`w-max rounded-full 
-      justify-center items-center inline-flex p-[11px] bg-white/90 backdrop-blur-[10px]
+      justify-center items-center inline-flex p-[9px] bg-white/80 backdrop-blur-[10px] transition-colors duration-300  hover:bg-white/90 
       ${
         showLeft?"opacity-100":"opacity-50"
       }
   `}
   
   >
-<img src="l-black.svg" alt="previouse" className="w-[15px] h-auto" />
+<img src="che4.svg" alt="previouse" className="w-[18px] h-auto" />
     </button>
 
 
@@ -142,14 +141,13 @@ if(containerRef.current){
     disabled={!showRight}
     onClick={handleRight}
 className={`w-max rounded-full 
-       justify-center items-center inline-flex p-[11px] bg-white/90 backdrop-blur-[10px]
+       justify-center items-center inline-flex p-[9px] bg-white/80 backdrop-blur-[10px] transition-colors duration-300 hover:bg-white/90
       ${showRight?"opacity-100":"opacity-30"}
   `}
     >
-        <img src="g-black.svg" alt="next" className="w-[15px] h-auto"/>
+        <img src="che3.svg" alt="next" className="w-[18px] h-auto"/>
 
     </button>
-
 
 </div>
 
