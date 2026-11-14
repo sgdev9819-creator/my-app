@@ -110,7 +110,7 @@ key={index}
    <div className=" absolute top-23  flex flex-row w-full  justify-center items-center">
 { showLeft && (
   <button onClick={handleLeft} className="acc-left">
-<img src="lesser.svg" alt="previouse" className="w-[17px] h-auto ml-4" />
+<img src="che2.svg" alt="previouse" className="w-[17px] h-auto ml-4" />
 <span className="w-[1px] h-full bg-white/20 absolute right-0 top-0"></span>
     </button>
 )}
@@ -119,7 +119,7 @@ key={index}
  { showRight &&(  <button onClick={handleRight}
  className="acc-right"
     >
-        <img src="/greater.svg" alt="next" className="w-[17px] h-auto mr-4"/>
+        <img src="/che1.svg" alt="next" className="w-[17px] h-auto mr-4"/>
 <span className="w-[1px] h-full bg-white/20 absolute left-0 top-0"></span>
     </button>
  )}

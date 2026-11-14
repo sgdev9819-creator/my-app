@@ -274,7 +274,7 @@ if(containerRef.current){
 <div className=" absolute top-76  flex flex-row w-full  justify-center items-center">
 { showLeft && (
   <button onClick={handleLeft} className="storeleft">
-<img src="lesser.svg" alt="previouse" className="w-[35px] h-auto" />
+<img src="che4.svg" alt="previouse" className="w-[35px] h-auto" />
     </button>
 )}
 
@@ -282,7 +282,7 @@ if(containerRef.current){
  { showRight &&(  <button onClick={handleRight}
  className="storeright"
     >
-        <img src="/greater.svg" alt="next" className="w-[35px] h-auto"/>
+        <img src="/che3.svg" alt="next" className="w-[35px] h-auto"/>
 
     </button>
  )}

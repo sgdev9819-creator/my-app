@@ -1,76 +1,76 @@
 "use client"
 
 const products =[
-    {   
-        important:"",
+     {   
+        important:"#",
         name:"",
         info:"",
-        additional:"",
-        image:"",
+        additional:"#",
+        image:"#",
     },
     {
           important:"",
         name:"",
         info:"",
         additional:"",
-        image:"",
+        image:"#",
     },
     {
           important:"",
         name:"",
         info:"",
         additional:"",
-        image:"",
+        image:"#",
     },
     {
           important:"",
         name:"",
         info:"",
         additional:"",
-        image:"",
+        image:"#",
     },
     {
           important:"",
         name:"",
         info:"",
         additional:"",
-        image:"",
+        image:"#",
     },
     {
           important:"",
         name:"",
         info:"",
         additional:"",
-        image:"",
+        image:"#",
     },
     {
           important:"",
         name:"",
         info:"",
         additional:"",
-        image:"",
+        image:"#",
     },
     {
           important:"",
         name:"",
         info:"",
         additional:"",
-        image:"",
+        image:"#",
     },
     {
           important:"",
         name:"",
         info:"",
         additional:"",
-        image:"",
+        image:"#",
     },
     {
           important:"",
         name:"",
         info:"",
         additional:"",
-        image:"",
-    },
+        image:"#",
+    }
 
 ]
 import { useRef,useEffect,useState } from "react";
@@ -157,7 +157,7 @@ return(
 <div className=" absolute top-76  flex flex-row w-full  justify-center items-center">
 { showLeft && (
   <button onClick={handleLeft} className="storeleft">
-<img src="lesser.svg" alt="previouse" className="w-[35px] h-auto" />
+<img src="che4.svg" alt="previouse" className="w-[35px] h-auto" />
     </button>
 )}
 
@@ -165,11 +165,10 @@ return(
  { showRight &&(  <button onClick={handleRight}
  className="storeright"
     >
-        <img src="/greater.svg" alt="next" className="w-[35px] h-auto"/>
+        <img src="/che3.svg" alt="next" className="w-[35px] h-auto"/>
 
     </button>
  )}
-
 </div>
 
 

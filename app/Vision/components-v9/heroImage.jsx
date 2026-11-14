@@ -11,7 +11,7 @@ export default function HeroImage(){
     New powerful M5 chip and comfortable Dual Knit Band.
 </h3>
                 </div>
-<div className="absolute w-max right-50 top-[88%]  flex justify-center w-max items-center gap-2">
+<div className="absolute w-max right-50 top-[90%]  flex justify-center w-max items-center gap-2">
 
 <Button 
 text1="Book a demo"

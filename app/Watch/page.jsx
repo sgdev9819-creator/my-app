@@ -24,7 +24,7 @@ export default function Watch(){
 </div>
 <div className="absolute top-[5.9rem] w-full  h-[26.3rem] pb-40 pt-40 bg-black flex  justify-center ">
 
-<div className="w-full h-max absolute font-light left-22 top-20 text-white flex text-[4.7rem]">
+<div className="w-full h-max absolute font-light left-21 top-20 text-white flex text-[4.7rem]">
     <h2>
         Apple Watch
     </h2>
@@ -46,7 +46,7 @@ Compare all models {'\u003e'}
 <div className="w-full absolute top-[58.5rem]  flex justify-center items-center">
     <HeroImage1/>
 </div>
-<div className=" absolute left-20 top-[100rem] w-auto h-auto justify-center">
+<div className=" absolute left-21 top-[100rem] w-auto h-auto justify-center">
 <h3 className="font-light text-[45px] text-white ">
  Why Apple is the best
 place to shop Apple Watch.
@@ -58,7 +58,7 @@ place to shop Apple Watch.
 </div>
 
 <div className="w-full h-[100rem] justify-center items-center flex bg-black absolute top-[167.8rem]">
-<div className="absolute flex flex-row gap-120 justify-center items-center w-full absolute top-[8.7rem]">
+<div className="absolute flex flex-row gap-[40.2%] justify-center items-center w-full absolute top-[8.7rem]">
     <h3 className="font-light text-white text-[45px] ">Apple Watch essentials.</h3>
     <Link href="#" className="text-blue-400 text-[17px] mt-[1.6rem] font-light no-underline hover:underline">
 All Apple Watch accessories </Link>

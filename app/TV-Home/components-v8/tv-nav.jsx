@@ -143,7 +143,7 @@ return(
      setisoverlay(false)
     setisactiveLink(null)
 }} className="absolute w-full h-auto z-200">
-<div className={`absolute top-0 left-0 z-204  backdrop-blur[28px] w-full h-[44px] justify-center items-center flex flex-row  gap-9 ${isactiveLink? "bg-transparent":"bg-black/90"}`}>
+<div className={`absolute top-0 left-0 z-204  backdrop-blur[28px] w-full h-[44px] justify-center items-center flex flex-row  gap-9 bg-transparent`}>
 
 
 <div className="hidden lg:flex z-200">

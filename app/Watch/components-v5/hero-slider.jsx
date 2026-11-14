@@ -105,7 +105,7 @@ return(
 <div className=" absolute top-49  flex flex-row  w-full  justify-center items-center">
 { showLeft && (
   <button onClick={handleLeft} className="watch-left">
-<img src="lesser.svg" alt="previouse" className="w-[17px] h-auto ml-[6rem]" />
+<img src="che2.svg" alt="previouse" className="w-[17px] h-auto ml-[5.5rem]" />
 <span className="w-[1px] h-full bg-white/20 absolute right-0 top-0"></span>
     </button>
 )}
@@ -114,7 +114,7 @@ return(
  { showRight &&(  <button onClick={handleRight}
  className="watch-right"
     >
-        <img src="/greater.svg" alt="next" className="w-[17px] h-auto "/>
+        <img src="/che1.svg" alt="next" className="w-[17px] h-auto ml-[1rem]"/>
 <span className="w-[1px] h-full bg-white/20 absolute left-0 top-0"></span>
     </button>
  )}

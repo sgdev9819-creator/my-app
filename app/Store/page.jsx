@@ -24,13 +24,13 @@ export default function Mac(){
 <div className={styles["show"]} >
     <div className="w-full inline-flex  justify-center items-center">
 <h3 className=" w-max h-max justify-center  font-light  items-center inline-flex text-white">For a limited time get a gift cart up to 150$ when you buy a Mac or iPad with education savings.</h3>
-<Link href="#" className="w-max h-max justify-center items-center font-normal  inline-flex text-blue-400 ml-5 ">Learn more</Link>
+<Link href="#" className="w-max h-max justify-center items-center font-light  inline-flex text-blue-400 ml-5 ">Learn more</Link>
 </div>
 </div>
 <div className="relative top-30 w-full h-[500px] z-50 justify-center items-center">
     <div className="flex flex-row">
-    <h2 className="text-white text-[78px] font-light mt-14 ml-27">Store</h2>
-    <div className="flex flex-col absolute right-30 mt-14">
+    <h2 className="text-white text-[78px] font-light mt-14 ml-21">Store</h2>
+    <div className="flex flex-col absolute right-21 mt-14">
      <h3 className="ml-1 text-3xl text-white  font-light ">The best way to buy the</h3>
     <h3 className="ml-22 text-3xl text-white  font-light ">products you love</h3>
     <div className="mt-5 flex flex-col gap-1 text-[17px] text-blue-400  absolute right-0 mt-22">
@@ -44,7 +44,7 @@ export default function Mac(){
 </div>
 
 
-<div className="absolute top-150 left-27 flex flex-row gap-2 justify-center items-center ">
+<div className="absolute top-150 left-21 flex flex-row gap-2 justify-center items-center ">
     <h3 className=" text-white font-light text-[28px]">The latest.</h3>
     <h3 className="text-white/60 text-[28px] font-light">Take a look at what's new, right now.</h3>
 </div>
@@ -53,20 +53,20 @@ export default function Mac(){
 </div>
 
 
-<div className="absolute top-307 z-50 left-27 flex flex-row gap-2 justify-center items-center ">
+<div className="absolute top-307 h-max z-50 left-21 flex flex-row gap-2 justify-center items-center ">
     <h3 className=" text-white font-light text-[28px]">Accessories. </h3>
     <h3 className="text-white/60 text-[27px] font-light">Essentials that pair perfectly with your favorite products.</h3>
 </div>
 
 
-<div className="absolute top-244 z-50 w-full ">
+<div className="absolute top-244 z-50 w-full h-max ">
 <HeroImages2/>
 </div>
 
 
 
 
-<div className="absolute top-[115.6rem] left-27 flex z-2 flex-row gap-2 justify-center items-center ">
+<div className="absolute top-[115.6rem] left-21 flex z-2 flex-row gap-2 justify-center items-center ">
     <h3 className=" text-white font-light text-[28px]"> 
 Help is here. </h3>
     <h3 className="text-white/50 text-[28px] font-light"> Whenever and however you need it.</h3>
@@ -76,7 +76,7 @@ Help is here. </h3>
     <Images5/>
 </div>
 
-<div className="absolute top-[154.8rem] left-27 h-max z-5 flex flex-row gap-2 justify-center items-center ">
+<div className="absolute top-[154.8rem] left-21 h-max z-5 flex flex-row gap-2 justify-center items-center ">
     <h3 className=" text-white font-light  text-[28px]">The Apple Store difference.</h3>
     <h3 className="text-white/60 text-[28px] font-light ">Even more reason to shop with us.</h3>
 </div>
@@ -86,7 +86,7 @@ Help is here. </h3>
 </div>
 
 
-<div className="absolute top-[193.4rem] left-27 flex flex-row gap-2 justify-center items-center ">
+<div className="absolute top-[193.4rem] left-21 flex flex-row gap-2 justify-center items-center ">
     <h3 className=" text-white font-light  text-[28px]"> Loud and clear.</h3>
     <h3 className="text-white/60 text-[28px] font-light "> Unparalleled choices for rich, high-quality sound.</h3>
 </div>
@@ -98,7 +98,7 @@ Help is here. </h3>
 
 
 
-<div className="absolute top-[232.5rem] left-27 flex flex-row gap-2 justify-center items-center ">
+<div className="absolute top-[232.5rem] left-21 flex flex-row gap-2 justify-center items-center ">
     <h3 className=" text-white font-light text-[28px]"> The Apple experience.</h3>
     <h3 className="text-white/50 text-[28px] font-light"> Do even more with Apple products and services.</h3>
 </div>
@@ -108,7 +108,7 @@ Help is here. </h3>
 
 
 
-<div className="absolute top-[271.8rem] left-27 flex flex-row gap-2 justify-center items-center ">
+<div className="absolute top-[271.8rem] left-21 flex flex-row gap-2 justify-center items-center ">
     <h3 className=" text-white font-light  text-[28px]">Savings and offers.</h3>
     <h3 className="text-white/60 text-[28px] font-light "> Exclusive deals, special stores and more.</h3>
 </div>
@@ -119,7 +119,7 @@ Help is here. </h3>
 
 
 
-<div className="absolute top-[310.5rem] left-27 flex flex-col gap-[10px]">
+<div className="absolute top-[310.5rem] left-21 flex flex-col gap-[10px]">
     <h2 className="text-[28px] font-light  text-white ">
         Quick Links
     </h2>

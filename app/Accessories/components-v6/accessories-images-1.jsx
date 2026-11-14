@@ -149,14 +149,14 @@ key={index}
   disabled={!showLeft}
   onClick={handleLeft}
   className={`w-max rounded-full 
-      justify-center items-center inline-flex p-[11px] bg-white/80 backdrop-blur-[10px] hover:bg-white/70  transition-colors duration-500
+      justify-center items-center inline-flex p-[11px] bg-white/80 backdrop-blur-[10px] hover:bg-white/90  transition-colors duration-500
       ${
         showLeft?"opacity-100":"opacity-50"
       }
   `}
   
   >
-<img src="l-black.svg" alt="previouse" className="w-[15px] h-auto" />
+<img src="che4.svg" alt="previouse" className="w-[18px] h-auto" />
     </button>
 
 
@@ -186,11 +186,11 @@ key={index}
     disabled={!showRight}
     onClick={handleRight}
 className={`w-max rounded-full 
-       justify-center items-center inline-flex p-[11px] bg-white/80 backdrop-blur-[10px] hover:bg-white/70 transition-colors duration-500
+       justify-center items-center inline-flex p-[11px] bg-white/80 backdrop-blur-[10px] hover:bg-white/90 transition-colors duration-500
       ${showRight?"opacity-100":"opacity-30"}
   `}
     >
-        <img src="g-black.svg" alt="next" className="w-[15px] h-auto"/>
+        <img src="che3.svg" alt="next" className="w-[18px] h-auto"/>
 
     </button>
 

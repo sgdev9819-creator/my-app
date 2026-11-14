@@ -499,22 +499,6 @@ transition: all 0.5s ease;
 }
 
 
-.scroll-content{
-    width: 100%;
-    display: flex;
-    overflow-x: auto;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;
-    scroll-behavior: smooth;
-    gap: 20px;
-    padding-left: 122px;
-    padding-right: 122px;
-    padding-bottom: 2rem;
-    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
-    transform: all 0.5s ease;
-    scroll-snap-type: x mandatory;
-}
-
 .store-image{
     width: 482px;
     height: 501px;
@@ -544,9 +528,9 @@ transition: all 0.5s ease;
     -ms-overflow-style: none;
     behavior: smooth;
     gap: 1.3rem;
-    padding-left: 118px;
-    padding-right: 118;
-    padding-bottom:3rem ;
+   padding: 105px;
+     padding-left: 86px;
+    padding-right: 86px;
     transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
     transform: all 0.5s ease;
     scroll-snap-type: x mandatory;
@@ -799,6 +783,7 @@ right: 0;
     justify-content: center;
     align-items: center;
     display: inline-flex;
+    font-style:light;
     padding:7px ;
     padding-left:15px ;
     padding-right:15px ;

@@ -30,8 +30,8 @@ useEffect(()=>{
 
 <div className="absolute  top-0 left-0 w-full h-[99rem] justify-center flex bg-black  ">
 
-<div className="absolute top-15 left-2 w-full flex flex-row gap-[80%] justify-center items-center">
-    <h2 className="text-white text-[5rem] font-light  absolute  top-10 left-20">Accessories</h2>
+<div className="absolute top-15 left-0 w-full flex flex-row gap-[80%] justify-center items-center">
+    <h2 className="text-white text-[5rem] font-light  absolute  top-10 left-21">Accessories</h2>
 
  <div className="absolute right-50 top-21 flex flex-col gap-4 text-[17px] text-blue-400  ">
     <Link href="#" className="ml-17 font-light  ">Connect with a Specialist</Link>
@@ -83,8 +83,8 @@ className={`acc-button ${showfull?"activebutton":"button"}`}>
  </div>
 
 
-<div className="absolute top-[31rem] z-40 left-2 w-full flex flex-row gap-[80%] justify-center items-center">
-    <h2 className="text-white text-[47px] font-light  absolute  top-10 left-20">Say hello to what’s new.</h2>
+<div className="absolute top-[31rem] z-40 left-0 w-full flex flex-row gap-[80%] justify-center items-center">
+    <h2 className="text-white text-[47px] font-light  absolute  top-10 left-21">Say hello to what’s new.</h2>
 
 </div>
 
@@ -105,8 +105,8 @@ className={`acc-button ${showfull?"activebutton":"button"}`}>
 
 
 
-<div className="absolute top-[5.5rem] left-2 w-full flex flex-row gap-[80%] justify-center items-center z-100">
-    <h2 className="text-white text-[47px] font-light z-100  absolute  top-10 left-20">Why Apple is the best place to buy accessories.</h2>
+<div className="absolute top-[5.5rem] left-0 w-full flex flex-row gap-[80%] justify-center items-center z-100">
+    <h2 className="text-white text-[47px] font-light z-100  absolute  top-10 left-21">Why Apple is the best place to buy accessories.</h2>
 
 </div>
 

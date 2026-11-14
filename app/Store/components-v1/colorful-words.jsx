@@ -113,7 +113,7 @@ export default function Divs(){
    
 
     return(
-        <div className="relative w-full top-[18.7rem] flex h-max">
+        <div className="relative w-full top-[13.7rem] flex h-max">
     <div ref={containerRef} className="scroll-content-grid">
                 {items.map((item,index)=>(
                 <div 
@@ -147,7 +147,7 @@ export default function Divs(){
 <div className=" absolute top-76  flex flex-row w-full  justify-center items-center">
 { showLeft && (
   <button onClick={handleLeft} className="storeleft">
-<img src="lesser.svg" alt="previouse" className="w-[35px] h-auto" />
+<img src="che4.svg" alt="previouse" className="w-[35px] h-auto" />
     </button>
 )}
 
@@ -155,7 +155,7 @@ export default function Divs(){
  { showRight &&(  <button onClick={handleRight}
  className="storeright"
     >
-        <img src="/greater.svg" alt="next" className="w-[35px] h-auto"/>
+        <img src="/che3.svg" alt="next" className="w-[35px] h-auto"/>
 
     </button>
  )}

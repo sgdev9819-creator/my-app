@@ -108,8 +108,8 @@ export default function Images(){
        }
    
        return(
-        <div className="relative w-full top-[40rem]">
-    <div ref={containerRef} className="scroll-content">
+        <div className="relative w-full top-[35rem]">
+    <div ref={containerRef} className="hero-images-content ">
                 {items.map((item,index)=>(
                 <div 
                 key={index}
@@ -140,7 +140,7 @@ export default function Images(){
 <div className=" absolute top-76  flex flex-row w-full  justify-center items-center">
 { showLeft && (
   <button onClick={handleLeft} className="storeleft">
-<img src="lesser.svg" alt="previouse" className="w-[35px] h-auto" />
+<img src="che4.svg" alt="previouse" className="w-[35px] h-auto" />
     </button>
 )}
 
@@ -148,11 +148,10 @@ export default function Images(){
  { showRight &&(  <button onClick={handleRight}
  className="storeright"
     >
-        <img src="/greater.svg" alt="next" className="w-[35px] h-auto"/>
+        <img src="/che3.svg" alt="next" className="w-[35px] h-auto"/>
 
     </button>
  )}
-
 </div>
 
 
