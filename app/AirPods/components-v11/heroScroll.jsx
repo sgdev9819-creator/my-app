@@ -127,18 +127,18 @@ if(containerRef.current){
    
                <div className=" relative top-[0rem] left-[70rem] gap-5 flex flex-row  w-max justify-center ">
 
-  <button 
+ <button 
   disabled={!showLeft}
   onClick={handleLeft}
   className={`w-max rounded-full 
-      justify-center items-center inline-flex p-[11px] bg-white/90 backdrop-blur-[10px]
+      justify-center items-center inline-flex p-[9px] bg-white/80 backdrop-blur-[10px] transition-colors duration-300  hover:bg-white/90 
       ${
         showLeft?"opacity-100":"opacity-50"
       }
   `}
   
   >
-<img src="l-black.svg" alt="previouse" className="w-[15px] h-auto" />
+<img src="che4.svg" alt="previouse" className="w-[18px] h-auto" />
     </button>
 
 
@@ -147,11 +147,11 @@ if(containerRef.current){
     disabled={!showRight}
     onClick={handleRight}
 className={`w-max rounded-full 
-       justify-center items-center inline-flex p-[11px] bg-white/90 backdrop-blur-[10px]
+       justify-center items-center inline-flex p-[9px] bg-white/80 backdrop-blur-[10px] transition-colors duration-300 hover:bg-white/90
       ${showRight?"opacity-100":"opacity-30"}
   `}
     >
-        <img src="g-black.svg" alt="next" className="w-[15px] h-auto"/>
+        <img src="che3.svg" alt="next" className="w-[18px] h-auto"/>
 
     </button>
 

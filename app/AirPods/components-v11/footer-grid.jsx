@@ -224,11 +224,11 @@ const products = [
 import Button  from "./button2"
 export default function FooterGrid(){
     return(
-        <div className="relative grid grid-cols-4  gap-[1.5rem] w-full h-full p-6 ">
+        <div className="relative grid grid-cols-4  gap-[3rem] w-full h-full p-[2.5rem] ">
     {products.map((item,index)=>(
      <div 
                 key={index}
-                className="relative flex flex-col  justify-center  items-center w-[235px] h-[490px]  font-light text-white " >
+                className="relative flex flex-col  justify-center  items-center  h-[490px]  font-light text-white " >
                     <img src={item.image} alt={index} className="h-[200px] absolute top-0"/>
                     <div className="w-full flex flex-col gap-0 justify-center items-center">
                         <div className="w-full flex justify-center items-center absolute top-[13.5rem]">

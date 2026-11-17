@@ -7,6 +7,7 @@ import HeroImage2 from "./components-v3/hero-images-2"
 import HeroImage3 from "./components-v3/hero-images-3"
 import Climax from "./components-v3/climax"
 import styles from "./page.module.css"
+
 import Link from "next/link"
 export default function Mac(){
 

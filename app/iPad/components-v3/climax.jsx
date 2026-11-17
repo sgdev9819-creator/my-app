@@ -6,32 +6,45 @@ const Footer = {
     firstInfo: {
         id: "firstInfo",
         name: "iPhone and Mac",
-        buttonImg: "g-black.svg",
+        buttonImg: "che1.svg",
         image: "color8.png",
         info: "loading loading loading loading",
         info1: "loading loading loading loading",
         info2: "loading loading loading loading",
         info3: "loading loading loading",
+         info4: "loading loading loading loading",
+        info5: "loading loading loading loading",
+         info6: "loading loading loading loading",
+        info7: "loading loading loading loading",
     },
     secondInfo: {
         id: "secondInfo",
-        name: "iPhone and watch",
-        buttonImg: "g-black.svg",
+        name: "iPhone and ",
+        name1:"Apple watch",
+        buttonImg: "che1.svg",
         image: "color30.png",
-        info: "loading loading loading loading12",
+        info: "loading loading loading loading",
         info1: "loading loading loading loading",
         info2: "loading loading loading loading",
         info3: "loading loading loading",
+         info4: "loading loading loading loading",
+        info5: "loading loading loading loading",
+         info6: "loading loading loading loading",
+        info7: "loading loading loading loading",
     },
     thirdInfo: {
         id: "thirdInfo",
-        name: "iPhone and Air",
-        buttonImg: "g-black.svg",
+        name: "iPhone and AirPods",
+        buttonImg: "che1.svg",
         image: "color10.png",
-        info: "loading loading loading loading13",
+       info: "loading loading loading loading",
         info1: "loading loading loading loading",
         info2: "loading loading loading loading",
         info3: "loading loading loading",
+         info4: "loading loading loading loading",
+        info5: "loading loading loading loading",
+         info6: "loading loading loading loading",
+        info7: "loading loading loading loading",
     },
 }
 export default function ShearedFooter(){
@@ -58,21 +71,30 @@ return(
 
 <div 
     key={index}
-    className={`w-full  relative  flex flex-col transition-all duration-500 border-b border-white/60 overflow-hidden ${activeItem ? "h-auto pb-4" : "h-[3rem]"}`}>
-<button className="w-full flex flex-row relative  gap-[5rem] pb-[2rem]   cursor-pointer"
+    className={`w-full  relative  flex flex-col transition-all duration-500 border-b border-white/60 overflow-hidden ${activeItem ? "h-auto pb-4" : "h-auto"}`}>
+<button className="w-full flex flex-row relative h-max  gap-[5rem] pb-[2rem]   cursor-pointer"
  onClick={() => handleClick(item.id)}>
-    <h3 className="text-[28px] text-white font-light ">
+    <div className="flex flex-col text-[28px] text-white font-light ">
+    <h3>
         {item.name}
     </h3>
+    <h3 className="mt-[-0.5rem]">
+        {item.name1}
+    </h3>
+    </div>
 
-                                    <img src={item.buttonImg} alt="" className="w-[18px] h-[18px] mt-[1rem]" />
+                                    <img src={item.buttonImg} alt="" className=" absolute right-0 w-[18px] h-[20px] mt-[1rem]" />
                                
 </button>
-<div className={`w-full flex flex-col pb-[1rem] pt-[0rem] text-white transition-transform duration-500 ${activeItem ? "visible opacity-100 flex" : "hidden invisible opacity-0 h-0"}`}>
+<div className={`w-full text-[17px] font-light flex flex-col pb-[1rem] pt-[0rem] text-white transition-transform duration-500 ${activeItem ? "visible opacity-100 flex" : "hidden invisible opacity-0 h-0"}`}>
                                 <span>{item.info}</span>
                                 <span className="mt-[0.5rem]">{item.info1}</span>
                                 <span className="mt-[0.5rem]">{item.info2}</span>
                                 <span className="mt-[0.5rem]">{item.info3}</span>
+                                 <span className="mt-[0.5rem]">{item.info4}</span>
+                                <span className="mt-[0.5rem]">{item.info5}</span>
+                                <span className="mt-[0.5rem]">{item.info6}</span>
+                            <span className="mt-[0.5rem]">{item.info7}</span>
                             </div>
 
 </div>
