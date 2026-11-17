@@ -93,107 +93,291 @@ const items = {
     ]
     
   },
+
+
+
+
   "Smart Home Accessories": {
     id: "Smart Home Accessories",
     name: "Smart Home Accessories",
       path:"#",
     product: [
-      { image: ["pk1.jpg", "pk1.jpg", "pk1.jpg"],
-            classname:"Acc-cases",
-          info: "The magic of Mac at a surprising price", 
-          price: "From $699 or $58.25/mo for 12 mo.**" },
-
-       { image: ["pk7.jpg"],
-           classname:"Acc-cases",
-         info: "A 5K Retina display that’s perfect for Mac." },
-
-       { image: ["pk1.jpg", "pk1.jpg", "pk1.jpg", "pk1.jpg", "pk1.jpg", "pk1.jpg"], 
-        classname:"Acc-cases",
-        info: "All-in-one desktop for creativity and productivity.", 
-        price: "From $1499 or $124.91/mo. for 12 mo.**" },
-
-      { image: ["pk5.jpg"],
-           classname:"Acc-cases",
-          info: "The mini-est most affordable Mac desktop.",
-           price: "From $799 or $66.58/mo. for 12 mo.**" },
-
-      { image: ["pk1.jpg", "pk1.jpg", "pk1.jpg", "pk1.jpg"], 
+       { image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+         status:"New",
+         Id:0,
+         info: "iPhone 18 Pro Max Silicone",
          classname:"Acc-cases",
-         info: "Powerful performance and connectivity for pros.", 
-        price: "From $2499 or $208.25/mo. for 12 mo.**" },
+         info1:"Case with MagSafe – Crisp...",
+         price: "$49.00 or $4.08/mo. for 12 mo." },
 
-      { image: ["pk8.jpg"], 
-         classname:"Acc-cases", 
-      info: "The ultimate 5K Retina XDR display for creative and pro workflows." }
-    
+      { image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+            classname:"Acc-cases",
+         price: "$24.95" 
+        },
+
+      { 
+        images: ["#"], 
+        imagesclass:"absolute top-0 left-0 w-full h-full",
+        leble2: "AirPods 5", 
+        classname:"spanClass",
+        tag: "$129" 
+      },
+
+      { 
+        images: ["#",], 
+          classname:"spanClass1", 
+          leble:"Everything's",
+          leble1:"better together.",
+          imagesclass:"absolute top-0 left-0 w-full h-full",
+          current:"Holiday Picks",
+          button: "che3.svg"
+         },
+      
+      {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],        
+         status:"Only at Apple",
+            classname:"Acc-cases",
+         info: "Herschel Ripstop Zip Case  ",
+         info1:"for AirPods",
+         price: "$24.95"  },
+
+     
+      { image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+   classname:"Acc-cases",
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case  ",
+         info1:"for AirPods",
+         price: "$24.95" },
+
+      {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+           classname:"Acc-cases",
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+         price: "$24.95"  },
+
+      { image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+           classname:"Acc-cases", 
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+         price: "$24.95" },
+
+      {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+          classname:"Acc-cases", 
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+         price: "$24.95" },
+
+         {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+          classname:"Acc-cases", 
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+         price: "$24.95" },
+
+      { images: ["#", ],
+          classname:"spanClass", 
+          leble2: "Crossbody Strap", 
+          imagesclass:"absolute top-0 left-0 w-full h-full",
+      tag: "$59 " },
     ]
   },
+
+
+
+
   "Power Picks": {
     id: "Power Picks",
     name: "Power Picks",
       path:"#",
     product: [
-      { image: ["pk1.jpg", "pk1.jpg", "pk1.jpg"],
+       { image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+         status:"New",
+         Id:0,
+         info: "iPhone 18 Pro Max Silicone",
+         classname:"Acc-cases",
+         info1:"Case with MagSafe – Crisp...",
+         price: "$49.00 or $4.08/mo. for 12 mo." },
+
+      { image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+            classname:"Acc-cases",
+         price: "$24.95" 
+        },
+
+      { 
+        images: ["#"], 
+        imagesclass:"absolute top-0 left-0 w-full h-full",
+        leble2: "AirPods 5", 
+        classname:"spanClass",
+        tag: "$129" 
+      },
+
+      { 
+        images: ["#",], 
+          classname:"spanClass1", 
+          leble:"Everything's",
+          leble1:"better together.",
+          imagesclass:"absolute top-0 left-0 w-full h-full",
+          current:"Holiday Picks",
+          button: "che3.svg"
+         },
+      
+      {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],        
+         status:"Only at Apple",
+            classname:"Acc-cases",
+         info: "Herschel Ripstop Zip Case  ",
+         info1:"for AirPods",
+         price: "$24.95"  },
+
+     
+      { image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+   classname:"Acc-cases",
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case  ",
+         info1:"for AirPods",
+         price: "$24.95" },
+
+      {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
            classname:"Acc-cases",
-         info: "The magic of Mac at a surprising price",
-          price: "From $699 or $58.25/mo for 12 mo.**" },
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+         price: "$24.95"  },
 
-       { image: ["pk7.jpg"],  
-          classname:"Acc-cases",
-         info: "A 5K Retina display that’s perfect for Mac." },
+      { image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+           classname:"Acc-cases", 
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+         price: "$24.95" },
 
-       { image: ["pk1.jpg", "pk1.jpg", "pk1.jpg", "pk1.jpg", "pk1.jpg", "pk1.jpg"], 
+      {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
           classname:"Acc-cases", 
-          info: "All-in-one desktop for creativity and productivity.",
-           price: "From $1499 or $124.91/mo. for 12 mo.**" },
-      { image: ["pk5.jpg"],
-         classname:"Acc-cases",
-         info: "The mini-est most affordable Mac desktop.",
-          price: "From $799 or $66.58/mo. for 12 mo.**" },
-      { image: ["pk1.jpg", "pk1.jpg", "pk1.jpg", "pk1.jpg"], 
-       classname:"Acc-cases",   
-         info: "Powerful performance and connectivity for pros.",
-          price: "From $2499 or $208.25/mo. for 12 mo.**" },
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+         price: "$24.95" },
 
-      { image: ["pk8.jpg"],   
-         classname:"Acc-cases",
-         info: "The ultimate 5K Retina XDR display for creative and pro workflows." }
-    
+         {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+          classname:"Acc-cases", 
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+         price: "$24.95" },
+
+      { images: ["#", ],
+          classname:"spanClass", 
+          leble2: "Crossbody Strap", 
+          imagesclass:"absolute top-0 left-0 w-full h-full",
+      tag: "$59 " },
     ]
   },
+
+
+
+
   "Travel Ready": {
     id: "Travel Ready",
     name: "Travel Ready",
       path:"#",
     product: [
-      { image: ["pk7.jpg"], 
-           classname:"Acc-cases",
-        info: "A 5K Retina display that’s perfect for Mac.",
-        info1:"",
-        status:"New"
-      },
-       { image: ["pk1.jpg", "pk1.jpg", "pk1.jpg", "pk1.jpg", "pk1.jpg", "pk1.jpg"],
+       { image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+         status:"New",
+         Id:0,
+         info: "iPhone 18 Pro Max Silicone",
+         classname:"Acc-cases",
+         info1:"Case with MagSafe – Crisp...",
+         price: "$49.00 or $4.08/mo. for 12 mo." },
+
+      { image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
             classname:"Acc-cases",
-             info: "All-in-one desktop for creativity and productivity.", 
-             price: "From $1499 or $124.91/mo. for 12 mo.**" },
+         price: "$24.95" 
+        },
 
-      { image: ["pk5.jpg"],
-           classname:"Acc-cases",
-           info: "The mini-est most affordable Mac desktop.", 
-           price: "From $799 or $66.58/mo. for 12 mo.**" },
+      { 
+        images: ["#"], 
+        imagesclass:"absolute top-0 left-0 w-full h-full",
+        leble2: "AirPods 5", 
+        classname:"spanClass",
+        tag: "$129" 
+      },
 
-      { image: ["pk1.jpg", "pk1.jpg", "pk1.jpg", "pk1.jpg"],  
-          classname:"Acc-cases",
-         info: "Powerful performance and connectivity for pros.", 
-         price: "From $2499 or $208.25/mo. for 12 mo.**" },
-
-      { image: ["pk8.jpg"], 
-           classname:"Acc-cases",
-            info: "The ultimate 5K Retina XDR display for creative and pro workflows." }
-    
+      { 
+        images: ["#",], 
+          classname:"spanClass1", 
+          leble:"Everything's",
+          leble1:"better together.",
+          imagesclass:"absolute top-0 left-0 w-full h-full",
+          current:"Holiday Picks",
+          button: "che3.svg"
+         },
       
+      {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],        
+         status:"Only at Apple",
+            classname:"Acc-cases",
+         info: "Herschel Ripstop Zip Case  ",
+         info1:"for AirPods",
+         price: "$24.95"  },
+
+     
+      { image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+   classname:"Acc-cases",
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case  ",
+         info1:"for AirPods",
+         price: "$24.95" },
+
+      {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+           classname:"Acc-cases",
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+         price: "$24.95"  },
+
+      { image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+           classname:"Acc-cases", 
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+         price: "$24.95" },
+
+      {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+          classname:"Acc-cases", 
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+         price: "$24.95" },
+
+         {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+          classname:"Acc-cases", 
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+         price: "$24.95" },
+
+      { images: ["#", ],
+          classname:"spanClass", 
+          leble2: "Crossbody Strap", 
+          imagesclass:"absolute top-0 left-0 w-full h-full",
+      tag: "$59 " },
     ]
   },
+
+
+
+
+
+
   "Work from Home": {
     id: "Work from Home",
     name: "Work from Home",
@@ -213,14 +397,69 @@ const items = {
            classname:"Acc-cases",
            info: "The mini-est most affordable Mac desktop.",
             price: "From $799 or $66.58/mo. for 12 mo.**" },
+
       { image: ["pk1.jpg", "pk1.jpg", "pk1.jpg", "pk1.jpg"], 
           classname:"Acc-cases",
           info: "Powerful performance and connectivity for pros.",
            price: "From $2499 or $208.25/mo. for 12 mo.**" },
-      { image: ["pk8.jpg"], 
-          classname:"Acc-cases",
-         info: "The ultimate 5K Retina XDR display for creative and pro workflows." }
-    
+
+      { images: ["#",], 
+          classname:"spanClass1", 
+          leble:"Everything's",
+          leble1:"better together.",
+          imagesclass:"absolute top-0 left-0 w-full h-full",
+          current:"Holiday Picks",
+          button: "che3.svg"
+      },
+      {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+          classname:"Acc-cases", 
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+         price: "$24.95" },
+
+         {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+          classname:"Acc-cases", 
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+         price: "$24.95" },
+         
+      {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+          classname:"Acc-cases", 
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+         price: "$24.95" },
+
+         {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+          classname:"Acc-cases", 
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+         price: "$24.95" },
+         
+      {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+          classname:"Acc-cases", 
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+         price: "$24.95" },
+
+         {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+          classname:"Acc-cases", 
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+         price: "$24.95" },
+         
+      {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+          classname:"Acc-cases", 
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+         price: "$24.95" },
+
       
     ]
   }
@@ -253,11 +492,11 @@ function ProductCard({ prod, activeMode }) {
   }, [activeMode])
 
   const handleLeft = () => {
-    scrollRef.current?.scrollBy({ left: -256, behavior: "smooth" })
+    scrollRef.current?.scrollBy({ left: -236, behavior: "smooth" })
   }
 
   const handleRight = () => {
-    scrollRef.current?.scrollBy({ left: 256, behavior: "smooth" })
+    scrollRef.current?.scrollBy({ left: 236, behavior: "smooth" })
   }
 
   return (
