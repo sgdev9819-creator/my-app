@@ -70,7 +70,7 @@ if(containerRef.current){
                 <div 
                 key={index}
                className="climax-contents ip-climax" >
-                    <img src={item.image} className="rounded-[20px]" />
+                    <img src={item.image} className="rounded-[20px] " />
                    
                     </div>
                 ))}

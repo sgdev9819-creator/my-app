@@ -3,9 +3,9 @@ import { useRef,useEffect,useState } from "react";
 export default function Divs(){
     const items = [
       {
-            info:"Pay in full,pay monthly,or",
-            info2:" lease an upgrade at ",
-            info3:"the end of your term.",
+            leble:"Pay in full,pay monthly,or",
+            lebel1:" lease an upgrade at ",
+            
                image:"/2.jpg"
         },
         {
@@ -120,17 +120,17 @@ export default function Divs(){
                 key={index}
                 className={`${index === 0 ? "card-wide":"scroll-gid-items"}`}>
                     <img src="#" href={index} />
-                    <div className="absolute top-[3.5rem] left-[2rem] flex flex-col h-full font-bold text-[25px] ">
+                    <div className="absolute top-[3.5rem] left-[2rem] flex flex-col h-full font-light text-[25px] ">
                      
-                      <span className="flex w-maxt text-blue-600   " >{item.info}</span>
+                      <span className="flex w-maxt text-blue-400   " >{item.info}</span>
 
 {/*first and second section */}
 
-                      <div className="flex flex-row w-full text-black mt-[-0.5rem]">
- <span className="flex w-max text-blue-600">{item.info2}</span> 
+                      <div className="flex flex-row w-full text-white mt-[-0.5rem]">
+ <span className="flex w-max text-blue-400">{item.info2}</span> 
  <span className="flex w-max">{item.info3}</span>
                       </div>
-       <span className="flex w-max text-black  mt-[-0.5rem] w-full">{item.info4}</span>
+       <span className="flex w-max text-white  mt-[-0.5rem] w-full">{item.info4}</span>
 
 
 

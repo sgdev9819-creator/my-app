@@ -228,7 +228,7 @@ export default function FooterGrid(){
     {products.map((item,index)=>(
      <div 
                 key={index}
-                className="relative flex flex-col  justify-center  items-center  h-[490px]  font-light text-white " >
+                className="relative flex flex-col  justify-center  items-center  h-[490px] w-full  font-light text-white " >
                     <img src={item.image} alt={index} className="h-[200px] absolute top-0"/>
                     <div className="w-full flex flex-col gap-0 justify-center items-center">
                         <div className="w-full flex justify-center items-center absolute top-[13.5rem]">

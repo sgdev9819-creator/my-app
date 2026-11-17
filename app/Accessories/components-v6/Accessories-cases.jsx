@@ -3,9 +3,9 @@ import { useState, useEffect, useRef } from "react"
 import { motion } from "framer-motion"
 import Link from "next/link"
 const items = {
-  "Your New Wordrobe": {
-    id: "Your New Wordrobe",
-    name: "Your New Wordrobe",
+  "Holiday Picks": {
+    id: "Holiday Picks",
+    name: "Holiday Picks",
     path:"#",
     product: [
       { image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
@@ -16,7 +16,7 @@ const items = {
          info1:"Case with MagSafe – Crisp...",
          price: "$49.00 or $4.08/mo. for 12 mo." },
 
-      { image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+      { image: ["mini1.webp", ],
          status:"Only at Apple",
          info: "Herschel Ripstop Zip Case ",
          info1:"for AirPods",
@@ -97,102 +97,9 @@ const items = {
 
 
 
-  "Smart Home Accessories": {
-    id: "Smart Home Accessories",
-    name: "Smart Home Accessories",
-      path:"#",
-    product: [
-       { image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
-         status:"New",
-         Id:0,
-         info: "iPhone 18 Pro Max Silicone",
-         classname:"Acc-cases",
-         info1:"Case with MagSafe – Crisp...",
-         price: "$49.00 or $4.08/mo. for 12 mo." },
-
-      { image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
-         status:"Only at Apple",
-         info: "Herschel Ripstop Zip Case ",
-         info1:"for AirPods",
-            classname:"Acc-cases",
-         price: "$24.95" 
-        },
-
-      { 
-        images: ["#"], 
-        imagesclass:"absolute top-0 left-0 w-full h-full",
-        leble2: "AirPods 5", 
-        classname:"spanClass",
-        tag: "$129" 
-      },
-
-      { 
-        images: ["#",], 
-          classname:"spanClass1", 
-          leble:"Everything's",
-          leble1:"better together.",
-          imagesclass:"absolute top-0 left-0 w-full h-full",
-          current:"Holiday Picks",
-          button: "che3.svg"
-         },
-      
-      {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],        
-         status:"Only at Apple",
-            classname:"Acc-cases",
-         info: "Herschel Ripstop Zip Case  ",
-         info1:"for AirPods",
-         price: "$24.95"  },
-
-     
-      { image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
-   classname:"Acc-cases",
-         status:"Only at Apple",
-         info: "Herschel Ripstop Zip Case  ",
-         info1:"for AirPods",
-         price: "$24.95" },
-
-      {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
-           classname:"Acc-cases",
-         status:"Only at Apple",
-         info: "Herschel Ripstop Zip Case ",
-         info1:"for AirPods",
-         price: "$24.95"  },
-
-      { image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
-           classname:"Acc-cases", 
-         status:"Only at Apple",
-         info: "Herschel Ripstop Zip Case ",
-         info1:"for AirPods",
-         price: "$24.95" },
-
-      {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
-          classname:"Acc-cases", 
-         status:"Only at Apple",
-         info: "Herschel Ripstop Zip Case ",
-         info1:"for AirPods",
-         price: "$24.95" },
-
-         {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
-          classname:"Acc-cases", 
-         status:"Only at Apple",
-         info: "Herschel Ripstop Zip Case ",
-         info1:"for AirPods",
-         price: "$24.95" },
-
-      { images: ["#", ],
-          classname:"spanClass", 
-          leble2: "Crossbody Strap", 
-          imagesclass:"absolute top-0 left-0 w-full h-full",
-      tag: "$59 " },
-    ]
-  },
-
-
-
-
-  "Power Picks": {
-    id: "Power Picks",
-    name: "Power Picks",
+  "Colorful Finds": {
+    id: "Colorful Finds",
+    name: "Colorful Finds",
       path:"#",
     product: [
        { image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
@@ -288,6 +195,99 @@ const items = {
     name: "Travel Ready",
       path:"#",
     product: [
+       { image: ["mini1.webp",],
+         status:"New",
+         Id:0,
+         info: "iPhone 18 Pro Max Silicone",
+         classname:"Acc-cases",
+         info1:"Case with MagSafe – Crisp...",
+         price: "$49.00 or $4.08/mo. for 12 mo." },
+
+      { image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+            classname:"Acc-cases",
+         price: "$24.95" 
+        },
+
+      { 
+        images: ["#"], 
+        imagesclass:"absolute top-0 left-0 w-full h-full",
+        leble2: "AirPods 5", 
+        classname:"spanClass",
+        tag: "$129" 
+      },
+
+      { 
+        images: ["#",], 
+          classname:"spanClass1", 
+          leble:"Everything's",
+          leble1:"better together.",
+          imagesclass:"absolute top-0 left-0 w-full h-full",
+          current:"Holiday Picks",
+          button: "che3.svg"
+         },
+      
+      {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],        
+         status:"Only at Apple",
+            classname:"Acc-cases",
+         info: "Herschel Ripstop Zip Case  ",
+         info1:"for AirPods",
+         price: "$24.95"  },
+
+     
+      { image: ["mini1.webp", ],
+   classname:"Acc-cases",
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case  ",
+         info1:"for AirPods",
+         price: "$24.95" },
+
+      {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+           classname:"Acc-cases",
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+         price: "$24.95"  },
+
+      { image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+           classname:"Acc-cases", 
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+         price: "$24.95" },
+
+      {  image: ["mini1.webp",],
+          classname:"Acc-cases", 
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+         price: "$24.95" },
+
+         {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+          classname:"Acc-cases", 
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+         price: "$24.95" },
+
+      { images: ["#", ],
+          classname:"spanClass", 
+          leble2: "Crossbody Strap", 
+          imagesclass:"absolute top-0 left-0 w-full h-full",
+      tag: "$59 " },
+    ]
+  },
+
+
+
+
+  "Home Essentials": {
+    id: "Home Essentials",
+    name: "Home Essentials",
+      path:"#",
+    product: [
        { image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
          status:"New",
          Id:0,
@@ -378,25 +378,40 @@ const items = {
 
 
 
-  "Work from Home": {
-    id: "Work from Home",
-    name: "Work from Home",
+  "Power Picks": {
+    id: "Power Picks",
+    name: "Power Picks",
       path:"#",
     product: [
-      { image: ["pk7.jpg"],
-          classname:"Acc-cases",
-          info: "A 5K Retina display that’s perfect for Mac." },
+      {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+          classname:"Acc-cases", 
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+         price: "$24.95" },
+         
+      {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+          classname:"Acc-cases", 
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+         price: "$24.95" },
 
-       { image: ["pk7.jpg"],    classname:"Acc-cases",
-         info: "A 5K Retina display that’s perfect for Mac." },
-       { image: ["pk1.jpg", "pk1.jpg", "pk1.jpg", "pk1.jpg", "pk1.jpg", "pk1.jpg"], 
-           classname:"Acc-cases",
-           info: "All-in-one desktop for creativity and productivity.", 
-           price: "From $1499 or $124.91/mo. for 12 mo.**" },
-      { image: ["pk5.jpg"], 
-           classname:"Acc-cases",
-           info: "The mini-est most affordable Mac desktop.",
-            price: "From $799 or $66.58/mo. for 12 mo.**" },
+         {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+          classname:"Acc-cases", 
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+         price: "$24.95" },
+         
+      {  image: ["mini1.webp", "mini2.webp", "mini3.webp","mini4.webp"],
+          classname:"Acc-cases", 
+         status:"Only at Apple",
+         info: "Herschel Ripstop Zip Case ",
+         info1:"for AirPods",
+         price: "$24.95" },
+
+      
 
       { image: ["pk1.jpg", "pk1.jpg", "pk1.jpg", "pk1.jpg"], 
           classname:"Acc-cases",
@@ -592,15 +607,15 @@ function ProductCard({ prod, activeMode }) {
 }
 
 export default function Cases() {
-  const [isActive, setIsActive] = useState("Your New Wordrobe")
+  const [isActive, setIsActive] = useState("Holiday Picks")
 
   return (
     <div className="relative w-full h-max justify-center items-center flex flex-col">
       <h2 className="text-white text-[56px] font-light justify-center absolute top-34 left-21">
         Our top picks. Your next favorites.
       </h2>
-      <div className="absolute left-0 top-57 w-full h-max">
-        <div className="flex flex-row w-[723px] h-[44px] p-1 ml-21 bg-white/5 rounded-full z-[100]">
+      <div className="absolute left-0 top-64 w-full h-max">
+        <div className="flex flex-row w-[603px] h-[44px] p-1 ml-21 bg-white/5 rounded-full z-[100]">
           {Object.values(items).map((item, index) => {
             const activeMode = isActive === item.id
             return (
@@ -616,7 +631,7 @@ export default function Cases() {
                     transition={{ type: "spring", stiffness: 100, damping: 20 }}
                   />
                 )}
-                <span className={`relative z-10 transition-colors duration-800 font-light ${activeMode ? "text-black" : "text-white"}`}>
+                <span className={`relative z-10 transition-colors duration-800 font-light hover:text-white ${activeMode ? "text-black" : "text-white/70"}`}>
                   {item.name}
                 </span>
               </button>
@@ -624,7 +639,7 @@ export default function Cases() {
           })}
         </div>
 
-        <div className="relative top-[1rem] w-full ">
+        <div className="relative top-[2.5rem] w-full ">
           {Object.values(items).map((category, index) => {
             const activeMode = isActive === category.id
             return (

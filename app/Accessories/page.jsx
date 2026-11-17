@@ -34,8 +34,8 @@ useEffect(()=>{
     <h2 className="text-white text-[80px] font-light  absolute  top-10 left-21">Accessories</h2>
 
  <div className="absolute right-50 top-21 flex flex-col gap-4 text-[17px] text-blue-400  ">
-    <Link href="#" className="ml-17 font-light  ">Connect with a Specialist</Link>
-     <Link href="#" className="ml-17 font-light mt-[-0.3rem]  ">Find an Apple Store</Link>
+    <Link href="#" className="ml-17 font-light hover:underline  ">Connect with a Specialist</Link>
+     <Link href="#" className="ml-17 font-light mt-[-0.3rem] hover:underline ">Find an Apple Store</Link>
      </div>
      
   <div className="absolute top-[36rem] w-full z-1 "><Accessoriesslide/></div>

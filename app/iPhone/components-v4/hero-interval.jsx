@@ -4,16 +4,16 @@ import Button from "./button"
 
 const Accessories = [
     {
-        name: "Your AirPods. Your way.",
+        name: "iPhone Duo",
         image: "/ip3.png",
-        info: "Get to know the whole family of AirPods and AirPods accessories. And get ",
-        info2: "free engraving",
+        info: "Hello hello",
+        
         link: "Shop all",
     },
     {
-        name: "Find your study buddies.",
+        name: "iPhone 18 Pro",
         image: "ip5.png",
-        info: "Make it the best year ever with the latest accessories.",
+        info: "Pro further",
         link: "Shop college essentials",
     },
 ]
@@ -106,12 +106,13 @@ export default function Interval() {
                         className="Accessories-slid"
                     >
                         <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
-                        <div className="flex flex-row w-full absolute top-[10%] justify-center items-center">
-                            <div className="flex flex-col gap-0 absolute left-[2rem] font-light text-white">
-                                <h3 className="text-[2.4rem]">{item.name}</h3>
-                                <p className="text-[18px]">{item.info}{item.info2}</p>
+                        <div className="flex flex-row w-full absolute top-[13%] justify-center items-center">
+                            <div className={`flex flex-col gap-0 absolute left-[2rem] font-light  ${index === 1 ? "text-black":"text-white"}`}>
+                                <h3 className="text-[56px]">{item.name}</h3>
+                                <p className="text-[28px] mt-[-0.5rem]">{item.info}</p>
                             </div>
-                            <div className="flex absolute right-[2rem]">
+                            <div className="flex absolute right-[2rem] flex flex-row gap-[1rem]">
+                                <button className="border-1 border-blue-700 px-[1.4rem] py-[0.6rem] rounded-[23px] justify-center items-center text-blue-700 text-[17px] hover:text-white hover:bg-blue-700">Buy</button>
                                 <button className="px-[2rem] py-[0.5rem] rounded-[22px] bg-blue-700 justify-center items-center flex text-[17px] font-light text-white transition-transform duration-500 hover:bg-blue-600">
                                     Book order
                                 </button>
