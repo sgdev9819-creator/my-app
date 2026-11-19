@@ -13,7 +13,7 @@ export default function SupportPage() {
     return(
         <div className=" relative top-0 left-0 flex justify-center w-full">
 <SupportNav/>
-<div className="bg-black w-full h-[72.2rem] absolute top-0 left-0 justify-center items-center ">
+<div className="bg-black w-full h-[72.2rem] relative flex flex-col top-0 left-0  ">
     <div className="absolute top-24 justify-center items-center w-full h-max flex flex-col">
         <img src="/support-logo.png" alt="#" className=" w-[10rem] justify-center items-center " />
 <h3 className="font-light  text-white text-6xl mt-9" >

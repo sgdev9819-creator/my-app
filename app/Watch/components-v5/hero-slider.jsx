@@ -84,7 +84,7 @@ export default function firstSlider(){
         }
   
 return(
-    <div className="watch-slider-container ">
+    <div className="relative w-full top-[0rem]">
 <div ref={containerRef} className="watch-slider-content">
     {products.map((item)=>(
         <div

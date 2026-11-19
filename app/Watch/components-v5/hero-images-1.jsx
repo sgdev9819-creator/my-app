@@ -39,7 +39,7 @@ import Buttom from "./buttom";
   export default function WatchImages(){
 return(
    
-        <div className="w-full h-max absolute flex flex-row justify-center items-center gap-[1.2rem] ">
+        <div className="w-full h-max relative top-[5rem] flex flex-row justify-center items-center gap-[1.2rem] ">
             {products.map((items)=>(
               <div 
               key={items.id}
