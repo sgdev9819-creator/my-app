@@ -86,7 +86,7 @@ if(containerRef.current){
     }
 
     return(
-        <div className="hero-images-container">
+        <div className="relative top-[16.5rem] w-full">
     <div ref={containerRef} className="hero-images-content">
                 {items.map((item,index)=>(
                 <div 
@@ -120,7 +120,7 @@ if(containerRef.current){
                
                 ))}
             </div>
-             <div className=" relative top-[-2.5rem] left-[73.5rem] gap-5 flex flex-row  w-max justify-center ">
+             <div className=" relative top-[1.5rem] left-[73.5rem] gap-5 flex flex-row  w-max justify-center ">
  <button 
   disabled={!showLeft}
   onClick={handleLeft}

@@ -24,31 +24,31 @@ export default function Mac(){
 </div>
 
 
-<div className="absolute top-24 left-0 w-full h-[84rem] bg-black   ">
+<div className="relative flex flex-col top-24 left-0 w-full h-[84rem] bg-black   ">
    
-    <h2 className="text-white text-[80px] font-light  absolute  top-18 left-21">iPhone</h2>
+    <h2 className="text-white text-[80px] font-light  relative  top-18 left-21">iPhone</h2>
 <Hero/>
-<div className="absolute top-[24.5rem] w-full">
+
     <Interval/>
-</div>
+
 
     </div>
 
-<div className="relative top-[95.5rem] left-21 justify-cente z-50">
+<div className="relative top-[11.5rem] left-21 ">
 <h2 className="font-light  text-5xl text-white ">
  Explore the lineup.
 </h2>
  </div>
 
 
-<div className="relative top-[84.8rem] w-full ">
+
     <NoCase/>
-</div>
 
 
 
-<div className="relative pt-6 top-[102.6rem] flex items-center w-full justify-center w-[400px] loading-[0.5] ">
-    <div className="absolute left-21  w-max flex flex-col">
+
+<div className="relative pt-6 top-[15.6rem] flex flex-row gap-[47%] w-full  loading-[0.5] ">
+    <div className="relative left-21  w-max flex flex-col">
           <h3 className="font-light text-white text-[47px]  loading-[0.5] w-[500px]" >
         Why Apple is the best
     </h3>
@@ -56,17 +56,17 @@ export default function Mac(){
 
     </div>
   
-<Link href="#" className="absolute top-[3.2rem] z-50 right-21 w-max text-blue-400 no-underline font-light text-[17px] hover:underline">
+<Link href="#" className="mt-[5.7rem] w-max text-blue-400 no-underline font-light text-[17px] hover:underline">
 Shop iPhone
 </Link>
 
 </div>
-<div className="relative top-[93.8rem] w-full ">
-<HeroImage1/>
-</div>
 
-<div className="relative top-[108.5rem] pt-[6rem] bg-black justify-center pb-[9rem] w-full h-535" >
-<div className="absolute pt-6   w-full flex flex-row">
+<HeroImage1/>
+
+
+<div className="relative top-[25rem] flex flex-col pt-[6rem] bg-black pb-[9rem] w-full h-535" >
+<div className="relative pt-6   w-full flex flex-row">
     <h3 className="relative left-21 top-[0.5rem] font-light  text-white text-[47px] w-[500px]" >
        iPhone essentials.
     </h3>
@@ -75,9 +75,9 @@ Shop iPhone
 All iPhone accessories
 </Link>
 </div>
-<div className="relative top-[0rem] mt-0 w-full ">
+
 <HeroImage3/>
-</div>
+
 
 <div className="relative pt-6  top-[61rem] left-21  w-full flex flex-row">
     <h3 className=" font-light  text-white text-[47px] " >
@@ -85,7 +85,7 @@ All iPhone accessories
     </h3>
 </div>
 
-<div className="relative top-[64rem] flex  justify-center items-center w-full ">
+<div className="relative top-[63rem] flex  justify-center items-center w-full ">
 <FooterSwitch/>
 </div>
 
@@ -93,13 +93,13 @@ All iPhone accessories
 </div>
 
 
-<div className="relative top-[116.9rem] left-21 justify-cente z-50">
+<div className="relative top-[30.9rem] left-21 ">
 <h2 className="font-light  text-[48px] text-white ">
     iPhone
 </h2>
  </div>
  
-<div className="relative top-[126.5rem] flex  justify-center items-center w-full ">
+<div className="relative top-[39.5rem] flex  justify-center items-center w-full ">
 <Climax/>
 </div>
     
