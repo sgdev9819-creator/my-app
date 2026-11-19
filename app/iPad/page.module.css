@@ -1,0 +1,35 @@
+.show{
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 0px;
+    opacity: 0;
+    position: absolute;
+    top:2.5rem;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    transform: translateY(-20px);
+    transition: all 2s ease;
+    animation: show 2s ease forwards ;
+}
+
+@keyframes show {
+    0%{
+        opacity: 0;
+        transform: translateY(-20px);
+        background: rgb(0, 58, 247);
+        height: 0px;
+    }
+    
+        
+      
+ 
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+       background:  transparent;
+        height: 54px;
+    }
+}

@@ -1,0 +1,123 @@
+"use client";
+import { useRef,useEffect,useState } from "react";
+const products =[
+    {id: 1,name:"Mac",image:"/store3.webp"},
+      {id: 2,name:"iPhone",image:"/two.png"},
+       {id: 3, name:"iPad",image:"/three.png"},
+          {id: 4, name:"Apple Watch",image:"/store4.webp"},
+            {id: 5, name:"Apple Vision Pro",image:"/five.png"},
+              {id: 6, name:"Home",image:"/store6.webp"},
+                {id: 7, name:"Airtags",image:"/seven.png"},
+                  {id: 8, name:"AppleTV",image:"/eight.png"},
+                  {id: 9, name:"Accesories",image:"/store9.webp"},
+                   
+                      {id: 10, name:"Apple gift card",image:"/11.png"},
+
+]
+export default function Slide(){
+    const containerRef = useRef(null);
+    const[showLeft,setshowLeft]=useState(false)
+    const[showRight,setshowRight]=useState(true)
+
+    const checkCurrentState = ()=>{
+        if(containerRef.current){    
+            const{scrollLeft, scrollWidth,clientWidth} = containerRef.current
+            setshowLeft(scrollLeft > 10)
+
+            setshowRight(scrollLeft < scrollWidth - clientWidth - 10)
+        }     
+    }
+    useEffect(() =>{
+        const container = containerRef.current
+        if(container){
+            checkCurrentState()
+            container.addEventListener("scroll", checkCurrentState);
+        }
+    return () => {
+      if (container) {
+        container.removeEventListener("scroll", checkCurrentState);
+      }
+    };
+  }, []);
+
+    const handleLeft = ()=>{
+if(containerRef.current){
+    containerRef.current.scrollBy({
+        left:-127,
+        behavior:"smooth"
+    })
+}
+    }
+    
+    const handleRight = ()=>{
+if(containerRef.current){
+    containerRef.current.scrollBy({
+        left:127,
+        behavior:"smooth"
+    })
+}
+    }
+return(
+    <div className="relative w-full top-[3.4rem]">
+<div ref={containerRef} className="scroll-content">
+    {products.map((pic)=>(
+     
+
+        <div
+        key={pic.id}
+        className="scroll-item-1">
+        <img src={pic.image} className="item" />
+        <p className="  pt-[8px] text-[15px] font-semibold text-black/80 hover:underline">{pic.name}</p>
+        </div>
+    ))}
+    
+</div>
+
+
+<div className=" absolute top-25  flex flex-row w-full  justify-center items-center">
+{ showLeft && (
+  <button onClick={handleLeft} className="left">
+<img src="lesser.svg" alt="previouse" className="w-[35px] h-auto" />
+    </button>
+)}
+
+    
+ { showRight &&(  <button onClick={handleRight}
+ className="right"
+    >
+        <img src="/greater.svg" alt="next" className="w-[35px] h-auto"/>
+
+    </button>
+ )}
+
+</div>
+
+
+
+
+
+    </div>
+)
+}
+
+<div className=" absolute top-41  flex flex-row w-full  justify-center items-center">
+{ showLeft && (
+  <button onClick={handleLeft} className="storeleft">
+<img src="lesser.svg" alt="previouse" className="w-[35px] h-auto" />
+    </button>
+)}
+
+    
+ { showRight &&(  <button onClick={handleRight}
+ className="storeright"
+    >
+        <img src="/greater.svg" alt="next" className="w-[35px] h-auto"/>
+
+    </button>
+ )}
+
+</div>
+
+
+
+
