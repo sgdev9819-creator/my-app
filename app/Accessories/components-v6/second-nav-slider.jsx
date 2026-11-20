@@ -95,7 +95,7 @@ key={index}
     <img src={items.image} alt={index} className={` h-[4.2rem] transition-scales duration-500 hover:scale-[1.03]   ${index === 1  ?"w-[49px]":"w-[100px]"}
     ${index === 2?"w-[59px]":"w-[50px]"}  ${index === 5 || index === 6 || index === 7 || index === 8?"w-[49px]":"w-[40px]"} 
     `} />
-    <span className="w-full font-light relative top-2 text-[17px] text-white justify-center items-center inline-flex">
+    <span className="w-full font-light relative top-2 text-[15px] text-white justify-center items-center inline-flex">
         {items.name}
     </span>
     </div>

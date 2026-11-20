@@ -118,7 +118,7 @@ const scrollToSlide = (index) => {
     }
 
 return(
-    <div className="relative w-full top-[25rem]">
+    <div className="Accessories-container">
         <div ref={containerRef}
         className="Accessories-content-slide">
  {Accessories.map((items,index)=>(

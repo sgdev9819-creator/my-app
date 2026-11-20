@@ -3,7 +3,7 @@ import { useRef,useEffect,useState } from "react";
 import Button from "../components-v4/button"
  const items = [
         {  
-           name: "iPhone Duo",
+           name: "iPad Pro",
             info:"The ultimate iPad experience with the",
             info1:" most advanced technology.",
             price:"From $1199 or $99.91/mo. for 12 mo.*",
@@ -13,7 +13,7 @@ import Button from "../components-v4/button"
         },
         {
 
-            name:"iPhone 18 Pro",     
+            name:"iPad Air",     
             info:"Serious performance in a thin and ",      
             info1:"light design.",
             price:"From $749 or $62.41/mo. for 12 mo.*",
@@ -25,14 +25,14 @@ import Button from "../components-v4/button"
         {  
 
 
-            name:"iPhone Air",  
+            name:"iPad",  
             info:"The colorful, all‑screen iPad for the",
             info1:" things you do every day.",
             price:"From $449 or $37.41/mo. for 12 mo.*",
                image:"/iphone3.jpg"
         },
         {
-            name:"iPhone 17",             
+            name:"    iPad mini",             
             info:"The full iPad experience in an",
             info1:"ultraportable design.",
             price:"From $599 or $49.91/mo. for 12 mo.*",
@@ -46,7 +46,7 @@ import Button from "../components-v4/button"
          {  
 
 
-            name:"iPhone 17e",  
+            name:"iPad",  
             info:"The colorful, all‑screen iPad for the",
             info1:" things you do every day.",
             price:"From $449 or $37.41/mo. for 12 mo.*",
@@ -102,7 +102,7 @@ if(containerRef.current){
     }
 return(
 
-         <div className="relative w-full top-[12rem]" >
+         <div className="hero-images-container" >
             <div className="active" ref={containerRef}>
                 {items.map((prod,index)=>(
                     <div
@@ -113,8 +113,8 @@ return(
                         className="absolute w-[371px] top-4 rounded-[20px] " />
                        <div className="absolute top-[33rem] flex flex-col gap-0 w-full justify-center items-center">                        
     
-                        <h3 className="text-[28px]  text-white font-normal w-full absolute top-[0.5rem] flex justify-center items-center " >{prod.name}</h3>
-                         <div className="absolute top-[3.5rem] flex flex-col justify-center items-center w-full font-light text-white text-[17px]">
+                        <h3 className="text-[30px]  text-white font-light w-full absolute top-[0.5rem] flex justify-center items-center " >{prod.name}</h3>
+                         <div className="absolute top-[3.5rem] flex flex-col justify-center items-center w-full font-light text-white text-[16.5px]">
                         <span className="">
                             {prod.info}
                         </span>
@@ -143,18 +143,18 @@ return(
 </div>
 <div className=" relative top-[-0.5rem] left-[73.5rem] gap-5 flex flex-row  w-max justify-center ">
 
-   <button 
+  <button 
   disabled={!showLeft}
   onClick={handleLeft}
   className={`w-max rounded-full 
-      justify-center items-center inline-flex p-[9px] bg-white/80 backdrop-blur-[10px] transition-colors duration-300  hover:bg-white/90 
+      justify-center items-center inline-flex p-[11px] bg-white/90 backdrop-blur-[10px]
       ${
         showLeft?"opacity-100":"opacity-50"
       }
   `}
   
   >
-<img src="che4.svg" alt="previouse" className="w-[18px] h-auto" />
+<img src="l-black.svg" alt="previouse" className="w-[15px] h-auto" />
     </button>
 
 
@@ -163,11 +163,11 @@ return(
     disabled={!showRight}
     onClick={handleRight}
 className={`w-max rounded-full 
-       justify-center items-center inline-flex p-[9px] bg-white/80 backdrop-blur-[10px] transition-colors duration-300 hover:bg-white/90
+       justify-center items-center inline-flex p-[11px] bg-white/90 backdrop-blur-[10px]
       ${showRight?"opacity-100":"opacity-30"}
   `}
     >
-        <img src="che3.svg" alt="next" className="w-[18px] h-auto"/>
+        <img src="g-black.svg" alt="next" className="w-[15px] h-auto"/>
 
     </button>
 

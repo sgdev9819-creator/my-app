@@ -17,52 +17,53 @@ export default function Watch(){
 </div>
 
 <div className={styles["show"]} >
-    <div className="relative w-full flex flex-row font-light gap-1 text-[15px] justify-center items-center">
-        <h3 className="  text-white">Lease a new Apple Watch with low monthly payments for 12 or 24 months and upgrade at the end of your term with Apple Upgrade.◊</h3>
-<Link href="#" className="  text-blue-400 hover:underline">Learn more {'\u003e'}</Link>
+    <div className="absolute w-full h-max flex flex-row font-light gap-1 text-[15px] justify-center items-center">
+<h3 className=" w-max h-max justify-center items-center  inline-flex  text-white">Lease a new Apple Watch with low monthly payments for 12 or 24 months and upgrade at the end of your term with Apple Upgrade.◊</h3>
+<Link href="#" className="w-auto h-max justify-center items-center  inline-flex text-blue-400 hover:underline">Learn more {'\u003e'}</Link>
 </div>
 </div>
-<div className="relative top-23 left-0 w-full h-[400px] bg-black flex flex-col ">
+<div className="absolute top-[5.9rem] w-full  h-[26.3rem] pb-40 pt-40 bg-black flex  justify-center ">
 
-<div className="w-full h-max relative font-light left-21 top-[4.9rem] text-white flex text-[4.7rem]">
+<div className="w-full h-max absolute font-light left-21 top-20 text-white flex text-[4.7rem]">
     <h2>
         Apple Watch
     </h2>
 </div>
 
-
+<div className="w-full absolute top-[7rem] left-0 flex justify-center items-center">
     <HeroSlider/>
-
+</div>
 
 </div>
-<div className="flex flex-row relative top-[14rem]  w-full gap-[56%]">
-<h2 className="relative left-21 top-[0px]  text-[47px] w-max text-white font-light">
+<div className="flex flex-row absolute top-[39rem] justify-center items-center w-full">
+<h2 className="absolute left-21 top-[3px]  text-[45px] w-max text-white font-light">
     Explore the lineup.
 </h2>
-<Link href="#" className="text-blue-400 text-[17px] font-normal relative top-8 no-underline hover:underline">
+<Link href="#" className="text-blue-400 text-[17px] font-normal absolute right-22 top-8 no-underline hover:underline">
 Compare all models {'\u003e'}
 </Link>
 </div>
- <HeroImage1/>
-
-<div className=" relative left-21 top-[22rem] w-auto h-auto justify-center">
-<h3 className="font-light text-[47px] text-white ">
+<div className="w-full absolute top-[58.5rem]  flex justify-center items-center">
+    <HeroImage1/>
+</div>
+<div className=" absolute left-21 top-[100rem] w-auto h-auto justify-center">
+<h3 className="font-light text-[45px] text-white ">
  Why Apple is the best
 place to shop Apple Watch.
 </h3>
 </div>
 
-
+<div className=" support-input   absolute top-[90rem] w-full ">
 <HeroImage2 />
+</div>
 
-
-<div className="w-full h-[100rem]  flex bg-black relative top-[41rem] flex flex-col">
-<div className="relative flex flex-row gap-[46.2%]  w-full  top-[8.7rem]">
-    <h3 className="font-light text-white text-[45px] relative left-21">Apple Watch essentials.</h3>
+<div className="w-full h-[100rem] justify-center items-center flex bg-black absolute top-[167.8rem]">
+<div className="absolute flex flex-row gap-[40.2%] justify-center items-center w-full absolute top-[8.7rem]">
+    <h3 className="font-light text-white text-[45px] ">Apple Watch essentials.</h3>
     <Link href="#" className="text-blue-400 text-[17px] mt-[1.6rem] font-light no-underline hover:underline">
 All Apple Watch accessories </Link>
 </div>
-<div className=" relative flex top-[26rem] w-full h-auto justify-center items-center">
+<div className=" absolute left-20 top-[15rem] w-full h-auto justify-center items-center">
     <FooterImage/>
 </div>
 </div>

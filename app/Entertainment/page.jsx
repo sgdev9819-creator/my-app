@@ -15,21 +15,21 @@ import Footer from "./components-v10/footer"
 export default function AirPodsPage(){
 
     return(
- <div className=" relative justify-center flex flex-col w-full h-full ">  
+ <div className=" relative justify-center  w-full h-full ">  
 
 
-    <div className="hidden lg:block relative top-0 left-0 w-full z-50">
+    <div className="hidden lg:block absolute top-0 left-0 w-full z-50">
     <EnternNav />
 </div>
-     <div className="block lg:hidden absolute top-0 left-0 w-full z-40">
+     <div className="block lg:hidden fixed top-0 left-0 w-full z-40">
     <MobileNav />
 </div>
-<div className="w-full h-[100vh] relative bg-black top-0 flex flex-col ">
+<div className="w-full h-[100vh] relative bg-black top-0 flex flex-col justify-center">
 
-<div className="w-full relative top-[4rem]  flex  items-center">
+<div className="w-full absolute top-[3rem]  flex  items-center">
     <HeroSlider/>
 </div>
-<div className="w-full relative top-[24rem]  flex justify-center items-center">
+<div className="w-full relative top-[6rem]  flex  items-center">
     <HeroWords/>
 </div>
 </div>
@@ -71,7 +71,7 @@ export default function AirPodsPage(){
 </div>
 </div>
 
-<button className="w-max justify-center items-center flex absolute top-[500rem]">path</button>
+<button className="w-full justify-center items-center flex absolute top-[500rem]">path</button>
         </div>
     )
 }

@@ -113,7 +113,7 @@ export default function Divs(){
    
 
     return(
-        <div className="relative w-full top-[10.6rem] flex h-max">
+        <div className="relative w-full top-[13.7rem] flex h-max">
     <div ref={containerRef} className="scroll-content-grid">
                 {items.map((item,index)=>(
                 <div 

@@ -95,7 +95,7 @@ export default function Interval() {
     const activeDotIndex = current % Accessories.length
 
     return (
-        <div className="relative w-full top-[7rem]">
+        <div className="relative w-full top-0">
             <div 
                 ref={containerRef}
                 className="hero-images-content"
@@ -114,7 +114,7 @@ export default function Interval() {
                             <div className="flex absolute right-[2rem] flex flex-row gap-[1rem]">
                                 <button className="border-1 border-blue-700 px-[1.4rem] py-[0.6rem] rounded-[23px] justify-center items-center text-blue-700 text-[17px] hover:text-white hover:bg-blue-700">Buy</button>
                                 <button className="px-[2rem] py-[0.5rem] rounded-[22px] bg-blue-700 justify-center items-center flex text-[17px] font-light text-white transition-transform duration-500 hover:bg-blue-600">
-                                    Learn more
+                                    Book order
                                 </button>
                             </div>
                         </div>

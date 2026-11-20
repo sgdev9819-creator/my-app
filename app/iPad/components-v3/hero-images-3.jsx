@@ -31,13 +31,13 @@ export default function Images(){
                 key={index}
                className="climax-contents " >
                 <div className="absolute top-[2rem] flex flex-col justify-center items-center w-full h-max  ">
-                    <div className="absolute top-[0rem] flex flex-col justify-center items-center w-full h-max text-white text-[28px] font-font-normal ">
+                    <div className="absolute top-[0rem] flex flex-col justify-center items-center w-full h-max text-white text-[29px] font-semibold ">
                         <h2>
                             {item.name}
                         </h2>
                         
                     </div>
-                    <div className={`absolute w-full h-max   flex flex-col justify-center items-center text-white text-[17px] font-normal ${index === 1 ?"top-[3.4rem]":"top-[3.3rem]"}`}>
+                    <div className={`absolute w-full h-max   flex flex-col justify-center items-center text-white text-[15px] font-normal ${index === 1 ?"top-[3.4rem]":"top-[3.3rem]"}`}>
                         <p className="">
                             {item.info}
                         </p>

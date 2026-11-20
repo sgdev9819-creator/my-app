@@ -64,7 +64,7 @@ if(containerRef.current){
     }
 
     return(
-        <div className="relative w-full top-[2rem]">
+        <div className="relative w-full top-[9rem]">
     <div ref={containerRef} className="climax-images-1">
                 {items.map((item,index)=>(
                 <div 

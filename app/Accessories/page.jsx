@@ -25,40 +25,31 @@ useEffect(()=>{
 },[])
 
   return( 
-  <div className="relative top-0 left-0 flex flex-col justify-center w-full">
+  <div className="absolute top-0 left-0 flex justify-center w-full">
     <AccessoriesNav/>
 
-<div className="relative  top-0 left-0 w-full h-[99rem] flex flex-col bg-black  ">
+<div className="absolute  top-0 left-0 w-full h-[99rem] justify-center flex bg-black  ">
 
-<div className="relative top-15 left-0 w-full flex flex-row  gap-[44%] ">
-    <h2 className="text-white text-[80px] font-light relative top-10 left-21">Accessories</h2>
+<div className="absolute top-15 left-0 w-full flex flex-row gap-[80%] justify-center items-center">
+    <h2 className="text-white text-[80px] font-light  absolute  top-10 left-21">Accessories</h2>
 
- <div className="relative right-0 top-21 flex flex-col gap-4 text-[17px] text-blue-400  ">
+ <div className="absolute right-50 top-21 flex flex-col gap-4 text-[17px] text-blue-400  ">
     <Link href="#" className="ml-17 font-light hover:underline  ">Connect with a Specialist</Link>
      <Link href="#" className="ml-17 font-light mt-[-0.3rem] hover:underline ">Find an Apple Store</Link>
      </div>
      
+  <div className="absolute top-[36rem] w-full z-1 "><Accessoriesslide/></div>
 
- 
-    </div>
-  <AccessoriesHero/>
-<div className="relative top-[17rem] z-[40] left-0 w-full flex flex-row gap-[80%] justify-center items-center">
-    <h2 className="text-white text-[56px] font-light  absolute  top-10 left-21">Say hello to what’s new.</h2>
-
-</div>
-
-    
-  
-<Accessoriesslide/>
     </div>
 
-<div className={`fixed top-[0px] w-full  z-[100]  bg-transparent justify-center items-center  flex  transition-show duration-500 
+
+<div className={`fixed top-[0px] w-full  z-200  bg-transparent justify-center items-center  flex  transition-show duration-500 
   ${showNav ? "visible opacity-100 flex overflow-hidden" : "invisible opacity-0 hidden"}
  `}> 
 
  <div
       onClick={() => setshowfull(false)}
-      className={`fixed inset-0  z-[90] bg-black/40 backdrop-blur-[16px] transition-all duration-500 ${
+      className={`fixed inset-0  z-40 bg-black/40 backdrop-blur-[16px] transition-all duration-500 ${
         showfull ? "opacity-100 visible overflow-y-hidden" : "opacity-0 invisible pointer-events-none overflow-y-flex"
       }`}
     />
@@ -90,30 +81,45 @@ className={`acc-button ${showfull?"activebutton":"button"}`}>
 
 </div>
  </div>
- 
-    <Cases/>
-  
 
 
-    <div className="relative left-0 w-full  top-[31.8rem] h-[44.5rem] bg-black   flex flex-col">
-
-
-
-<div className=" ml-21 mt-[7rem]  flex flex-row   ">
-    <h2 className="text-white text-[56px] font-light   ">Why Apple is the best place to buy accessories.</h2>
+<div className="absolute top-[31rem] z-40 left-0 w-full flex flex-row gap-[80%] justify-center items-center">
+    <h2 className="text-white text-[56px] font-light  absolute  top-10 left-21">Say hello to what’s new.</h2>
 
 </div>
-  <FooterImage/>
 
+    <div className="absolute top-50 z-100 w-full ">
+    <AccessoriesHero/>
+</div>
+    </div>
+
+
+  <div className="absolute top-[99rem] z-50 justify-center items-center w-full "><Cases/></div>
+
+
+
+
+
+
+    <div className="absolute left-0 w-full z-50 top-[249.8rem] h-[44.5rem] bg-black  justify-center items-center flex flex-col">
+
+
+
+<div className="absolute top-[5.5rem] left-0 w-full flex flex-row gap-[80%] justify-center items-center z-100">
+    <h2 className="text-white text-[56px] font-light z-100  absolute  top-10 left-21">Why Apple is the best place to buy accessories.</h2>
+
+</div>
+
+  <div className="absolute top-[9rem] z-50 justify-center w-full "><FooterImage/></div>
   </div>
-<div className="text-[56px] font-light z-[40]  text-white relative top-[38.5rem] left-21">
+<div className="text-[56px] font-light z-100  text-white absolute top-[300.9rem] left-21">
   
   <h2>Accessories</h2>
 </div>
-
+<div className="absolute top-[315.5rem] justify-center w-full z-50">
  
   <Climax/>
-
+</div>
 
   <button className="absolute top-[350rem] justify-center items-center">path</button>
 </div>

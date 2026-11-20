@@ -246,7 +246,7 @@ if(containerRef.current){
                        ))}
                          </ul>
 
-                       <h3 className={` text-black font-normal text-1xl  ${index === 0 || index === 13  ? "w-[510px] text-3xl":"w-[400px] text-[17px] mt-0"}`}>{item.name}</h3>
+                       <h3 className={` text-black font-semibold text-1xl  ${index === 0 || index === 13  ? "w-[510px] text-3xl":"w-[400px] text-[17px] mt-0"}`}>{item.name}</h3>
                        <div className=" flex flex-col gap-0">
                        <p className="text-sm">
                         {item.down} 

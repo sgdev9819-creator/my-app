@@ -15,7 +15,7 @@
 .hero-images-container{
      position: relative;
     width: 100%;
-    top: 12.6rem;
+    top: 11.6rem;
     left: 0;
     padding-top: 0rem;
 }
@@ -44,7 +44,7 @@
     -ms-overflow-style: none;
    scroll-behavior: smooth;
     gap: 20px;
-    padding: 20px;
+    padding: 105px;
      padding-left: 86px;
     padding-right: 86px;
     transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
@@ -136,8 +136,7 @@ animation-name: fillProgress;
     display: flex;
     flex-direction: row ;
     justify-content: center;
-    z-index: 30;
-    background: linear-gradient(to top,rgba(0, 0, 0, 0.6),transparent);
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.815)5%,transparent 95%);
 
 }
 .activemb span{
@@ -464,7 +463,7 @@ transition: all 0.5s ease;
 .climax-contents{
     flex:0 0 auto;
     width: 42.9%;
-    height: 615px;
+    height: 515px;
     background: rgb(19,19,19);
     color:white;
     border-radius: 20px;
@@ -478,6 +477,93 @@ transition: all 0.5s ease;
 .climax-contents:hover{
     transform: scale(1.01);
 }
+/*store section*/
+
+.scroll-item-5{
+ position: relative;
+   
+    flex: 0 0 auto;
+    width: 313px;
+    height: 495px;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+     background:rgb(19,19,19);
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.096);
+    border-radius: 20px;
+    transition: transform 0.6s ease;
+    border-radius: 20px;
+}
+
+
+.store-image{
+    width: 482px;
+    height: 501px;
+}
+
+.store-image1{
+    width: 478px;
+    height: 501px;
+}
+
+.store-item2{
+    width: 397px;
+    height: 501px;
+}
+
+
+/*colorful cards section  */
+
+.scroll-content-grid{
+      width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,310px);
+    
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    behavior: smooth;
+    gap: 1.3rem;
+   padding: 105px;
+     padding-left: 83px;
+    padding-right: 83px;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    transform: all 0.5s ease;
+    scroll-snap-type: x mandatory;
+}
+.scroll-gid-items{
+     width: 100%;
+    height: 240px;
+    border-radius: 18px;
+    background:rgb(19,19,19);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+   flex:0 0 auto;
+    gap:0.5rem;
+    display: flex; 
+    flex-direction: column;
+    position: relative;
+}
+.scroll-gid-items:hover{
+    transform: scale(1.02)
+}
+  
+.card-wide{
+    position: relative;
+     grid-row: span 2;
+    background:rgb(19,19,19);
+    height:100%;
+    border-radius: 21px;
+    transition: all 0.5s ease;
+   flex:0 0 auto;
+}
+.card-wide:hover{
+    transform: scale(1.01);
+}
+
 
 
 
@@ -497,7 +583,7 @@ transition: all 0.5s ease;
     -ms-overflow-style: none;
     scroll-behavior: smooth;
     gap: 20px;
-    padding: 80px;
+    padding: 105px;
     padding-top: 63px;
     padding-bottom: 63px;
     transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
@@ -612,94 +698,7 @@ right: 0;
     border-radius: 27px;
 }
 
-
 /*store section*/
-
-.scroll-item-5{
- position: relative;
-   
-    flex: 0 0 auto;
-    width: 313px;
-    height: 495px;
-    object-fit: cover;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-     background:rgb(19,19,19);
-     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.096);
-    border-radius: 20px;
-    transition: transform 0.6s ease;
-    border-radius: 20px;
-}
-
-
-.store-image{
-    width: 482px;
-    height: 501px;
-}
-
-.store-image1{
-    width: 478px;
-    height: 501px;
-}
-
-.store-item2{
-    width: 397px;
-    height: 501px;
-}
-
-
-/*colorful cards section  */
-
-.scroll-content-grid{
-      width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4,310px);
-    
-    overflow-x: auto;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;
-    behavior: smooth;
-    gap: 1.3rem;
-   padding: 50px;
-     padding-left: 83px;
-    padding-right: 83px;
-    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
-    transform: all 0.5s ease;
-    scroll-snap-type: x mandatory;
-}
-.scroll-gid-items{
-     width: 100%;
-    height: 240px;
-    border-radius: 18px;
-    background:rgb(19,19,19);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    transition: all 0.5s ease;
-   flex:0 0 auto;
-    gap:0.5rem;
-    display: flex; 
-    flex-direction: column;
-    position: relative;
-}
-.scroll-gid-items:hover{
-    transform: scale(1.02)
-}
-  
-.card-wide{
-    position: relative;
-     grid-row: span 2;
-    background:rgb(19,19,19);
-    height:100%;
-    border-radius: 21px;
-    transition: all 0.5s ease;
-   flex:0 0 auto;
-}
-.card-wide:hover{
-    transform: scale(1.01);
-}
-
 .body-images-content{ 
   position: relative;
    
@@ -763,12 +762,12 @@ right: 0;
 .button-container{
     position:relative;
     top:0.2rem;
-    
     padding-top: 0.1rem;
     display: flex;
     flex-direction: row;
     gap: 0.8rem;
-    
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 .button-container a{
@@ -786,7 +785,7 @@ right: 0;
     padding-right:15px ;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 25px;
-    
+    z-index: 100;
       transition: background-color 0.2s ease;
 }
 
@@ -1173,8 +1172,6 @@ background:rgb(5,118,226);
        display:flex;
         transition: all 0.5s ease;
 }
-
-
 /*Support section*/
 .cover-support-card{
 position:relative;
@@ -1206,7 +1203,7 @@ border-radius: 30px;
 background: rgb(19,19,19);
 display: flex;
 transition:all 0.6s ease;
-z-index: 10;
+z-index: 200;
 box-shadow: 1px 6px 18px rgba(253, 253, 253, 0.055);
 }
 .support-card:hover a{

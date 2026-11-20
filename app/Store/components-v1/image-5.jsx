@@ -26,15 +26,15 @@ export default function Images(){
              hight:"Today at Apple",
             name:"Join free sessions at your",
              name2:" Apple Store.",
-             info:"Learn about the latest features and how to ",
-             info1:"go further with your  Apple devices.",
+             info:"Learn about the latest features and how to go further with your ",
+             info1:" Apple devices.",
                image:"/4.jpg"
         },
         {
            hight:"PERSONAL SETUP",
             name:"Set up your new device with help",
              name2:" from a Specialist.",
-             info:"Let us guide you through data transfer, ",
+             info:"Let us guide you through data transfer, the latest features, and",
              info1:"more in an online, one-on-one session.",
                image:"/5.jpg"
         },
@@ -95,7 +95,7 @@ if(containerRef.current){
     }
 
     return(
-        <div className="relative w-full top-[10.5rem]">
+        <div className="relative w-full top-[15.6rem]">
     <div ref={containerRef} className="hero-images-content store1">
                 {items.map((item,index)=>(
                 <div 
@@ -109,7 +109,7 @@ if(containerRef.current){
 
            
          
-                       <div className="text-black font-normal text-[28px] w-max ">
+                       <div className="text-black font-semibold text-[28px] w-max ">
                        <h3  >
                         {item.name} 
                         </h3>
@@ -117,7 +117,7 @@ if(containerRef.current){
                        <h3 className=" mt-[-0.6rem]" >{item.name2}</h3>
                       
                     </div >
-                    <div className={`text-black/90 font-normal text-[17px] flex flex-col absolute top-[2.9rem] ${index === 3 || index === 4? "top-[4.9rem]":"top-[2.9rem]"}`}>
+                    <div className={`text-black/90 font-normal text-[15px] flex flex-col absolute top-[2.9rem] ${index === 3 || index === 4? "top-[4.9rem]":"top-[2.9rem]"}`}>
 <p className="">{item.info}</p>
 <p className="mt-[-0.3rem]">
     {item.info1}

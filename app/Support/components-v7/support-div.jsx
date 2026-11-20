@@ -38,7 +38,7 @@ export default function Cards(){
                 ><div className="flex flex-col absolute top-[2rem] justify-content items-center w-full h-full gap-4">
                     <img src={card.image} alt={card.name} className=" w-[80px] h-[60px] "/>
                     
-                    <Link  href="#" className="text-blue-600 text-[17px] w-max font-normal no-underline">
+                    <Link  href="#" className="text-blue-600 text-[18px] w-max font-normal no-underline">
                         {card.name}
                     </Link>
                   </div>

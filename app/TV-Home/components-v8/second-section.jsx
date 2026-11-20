@@ -136,7 +136,7 @@ return(
 
            
                    <div className="container-info" >
-                       <h3 className={`"text-black font-normal space-y-1 leading-tight text-[28px] w-[310px] " ${index === 3 ? "text-white":"text-black"}`}>{item.name}</h3>
+                       <h3 className={`"text-black font-semibold space-y-1 leading-tight text-[25px] w-[310px] " ${index === 3 ? "text-white":"text-black"}`}>{item.name}</h3>
                       <p className="text-sm">{item.down2}</p>
                        </div>
                     </div>

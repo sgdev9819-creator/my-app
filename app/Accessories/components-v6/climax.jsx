@@ -97,7 +97,7 @@ export default function ClimaxAcc(){
 
 return(
 
-    <div className="w-full h-max relative top-[41.5rem] left-21 flex">
+    <div className="w-full h-max absolute bottom-20 left-21 flex">
         <div className="w-full flex flex-row gap-36  ">
 {ClimaxItems.map((items,index)=>(
     <div

@@ -3,12 +3,12 @@
 const Accessories =[
     {
         name:"iPhone",
-        image:"jr1.png",
+        image:"jr0.png",
 
     },
     {
          name:"iPad",
-        image:"jr1.png",
+        image:"jr2.png",
     },
     {
          name:"Mac",
@@ -41,14 +41,14 @@ import Link from "next/link"
 import { useState } from "react"
 export default function AccessoriesHero(){
 return(
-    
-        <div className="relative top-[10rem]  flex flex-row gap-[1rem]  pl-[80px]">
+    <div className="Accessories-container acc-hero">
+        <div className="Accessories-content">
  {Accessories.map((items,index)=>(
-<div className="shrink-0 relative w-[100px] h-[120px] flex flex-col "
+<div className="Accessories-item"
 key={index}
 >
-    <img src={items.image} alt={index} className="w-[88px]  absolute top-[0]" />
-    <span className="w-full font-light absolute  top-[4.7rem] text-[14px] text-white justify-center items-center inline-flex">
+    <img src={items.image} alt={index} />
+    <span className="w-full font-light relative top-2 text-1xl text-white justify-center items-center inline-flex">
         {items.name}
     </span>
     </div>
@@ -58,7 +58,7 @@ key={index}
 
         </div>
 
-    
+    </div>
 )
 
 }

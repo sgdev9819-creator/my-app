@@ -36,7 +36,7 @@ export default function SupportExport(){
   >
 
     <img src={item.image} alt={index} className=" w-full h-200px rounded-3xl mt-0 object-cover justify-center items-center" />
-<h3 className="absolute flex bottom-28 text-white text-[28px] font-normal  justify-center items-center w-full">
+<h3 className="absolute flex bottom-30 text-white text-[25px] font-light  justify-center items-center w-full">
     {item.name}
 </h3>
     <div  className="relative top-5 justify-center items-center w-full relative top-3 flex flex-col gap-0">

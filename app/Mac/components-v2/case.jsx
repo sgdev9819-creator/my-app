@@ -152,7 +152,7 @@ if(containerRef.current){
 }
     }
   return (
-    <div className="relative top-[16rem] ">
+    <div className="relative top-9 ">
 <div className="flex flex-row w-[460px] h-[57px] p-2 ml-21 bg-white/5 rounded-full z-100">
     {Object.values(items).map((item)=>{ 
       const activeMode = isActive === item.id
@@ -204,9 +204,9 @@ if(containerRef.current){
                        <div className="absolute bottom-[19rem] flex flex-col gap-0 w-full justify-center items-center">                        
                         <p className="text-[13px] text-orange-700 w-full justify-center items-center flex absolute top-[0rem]">{prod.hight}</p>
                        
-                        <h3 className="text-[28px]  text-white font-normal justify-center w-full justify-center items-center flex  gap-0 absolute top-[1.4rem] " >{prod.leble}</h3>
+                        <h3 className="text-[30px]  text-white font-light justify-center w-full justify-center items-center flex  gap-0 absolute top-[1.4rem] " >{prod.leble}</h3>
 
-                     <div className="w-full full justify-center items-center flex flex-col gap-0 absolute top-[4rem] font-light text-[17px] text-white"> 
+                     <div className="w-full full justify-center items-center flex flex-col gap-0 absolute top-[4rem] font-light text-[16.5px] text-white"> 
                          <p>{prod.info}</p>
                          <p className="mt-[-0.2rem]">
                           {prod.info2}

@@ -84,7 +84,7 @@ if(containerRef.current){
     }
 
     return(
-        <div className="relative w-full top-[0.7rem] ">
+        <div className="relative w-full ">
         <div 
         ref={containerRef}
         className="  hero-images-content" >
@@ -96,7 +96,7 @@ if(containerRef.current){
                 >
                     <img src={card.image} alt="" className="absolute top-[1rem] left-[1rem]"/>
                     <div className="flex flex-col absolute pt-20 pb-15 pr-18 pl-10">
-                    <h3 className="text-white text-[28px] w-max font-normal ">
+                    <h3 className="text-white text-[33px] w-max font-light ">
                         {card.name}
                     </h3>
                     <span className="text-white text-[17px] font-light w-max" >
@@ -114,7 +114,7 @@ if(containerRef.current){
             ))}
 
         </div>
-                    <div className=" relative top-[0.7rem] left-[73.5rem] gap-5 flex flex-row  w-max justify-center ">
+                    <div className=" relative top-[-4.7rem] left-[73.5rem] gap-5 flex flex-row  w-max justify-center ">
 
   <button 
   disabled={!showLeft}

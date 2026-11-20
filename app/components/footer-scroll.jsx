@@ -121,7 +121,7 @@ const scrollToIndex = (index) => {
             <div 
             ref={topRef}
               onScroll={() => handleScroll(topRef, bottomRef)}
-                className="w-full flex overflow-x-auto scrollbar-none snap-x snap-mandatory flex flex-row gap-[1rem]"
+                className="w-full flex overflow-x-auto scrollbar-none snap-x snap-mandatory"
                 style={{ scrollSnapType: 'x mandatory' }}>
                 {duplicatedTop.map((top, index) => (
                     <div 
@@ -140,7 +140,7 @@ const scrollToIndex = (index) => {
             
              ref={bottomRef}
                onScroll={() => handleScroll(bottomRef, topRef)}
-                className="w-full flex overflow-x-auto scrollbar-none snap-x snap-mandatory flex flex-row gap-[1rem]"
+                className="w-full flex overflow-x-auto scrollbar-none snap-x snap-mandatory"
                 style={{ scrollSnapType: 'x mandatory' }}
                 >
                 {duplicatedBottom.map((bottom, index) => (

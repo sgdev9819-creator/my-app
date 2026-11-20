@@ -14,7 +14,7 @@ export default function Mac(){
 
 
     return(
-       <div className="relative top-0 left-0 flex flex-col justify-center w-full  ">
+       <div className="relative top-0 left-0 flex justify-center w-full  ">
     <Navber/>
  <div className={styles["show"]} >
     <div className="w-full  h-full opacity-100 flex flex-row justify-center items-center">
@@ -24,7 +24,7 @@ export default function Mac(){
 </div>
 
 
-<div className="relative top-23 left-0 w-full h-[400px] bg-black flex  justify-center items-center">
+<div className="absolute top-23 left-0 w-full h-[400px] bg-black flex  justify-center items-center">
    
     <h2 className="text-white text-[5rem] font-light  absolute  top-[4.9rem] left-21 z-20">Mac</h2>
 <Hero/>
@@ -32,7 +32,7 @@ export default function Mac(){
 
 
 
-<div className="relative top-[15rem] left-21">
+<div className="absolute top-160 left-21 justify-center">
 <h2 className="font-light  text-[47px] text-white ">
  Explore the lineup.
 </h2>
@@ -40,37 +40,37 @@ export default function Mac(){
 
 </div>
 
-
+<div className="absolute top-170 w-full ">
     <Case/>
+</div>
 
-
-<div className="relative pt-6 top-[18rem] left-21 justify-center w-[400px] loading-[0.5]">
+<div className="absolute pt-6 top-[95.5rem] left-21 justify-center w-[400px] loading-[0.5]">
     <h3 className="font-light  text-white text-[47px]  loading-[0.5] w-[500px]" >
         Why Apple is the best
     </h3>
     <h3 className="mt-[-20] font-light  text-white text-[47px]  loading-[0.5] w-[500px] "> place to shop Mac.</h3>
     
 </div>
-
+<div className="absolute top-367 w-full ">
 <HeroImage/>
+</div>
 
-
-<div className="relative top-[23.8rem] pt-[6rem] bg-black justify-center pb-[9rem] w-full h-[114rem]" >
+<div className="absolute top-[150.8rem] pt-[6rem] bg-black justify-center pb-[9rem] w-full h-[114rem]" >
 <div className="absolute pt-6  left-21 justify-center  w-[400px]">
     <h3 className="relative top-[0.5rem] font-light  text-white text-[47px] w-[500px]" >
        Get to know Mac.
     </h3>
 </div>
-
+<div className="absolute top-[0rem]  w-full ">
 <SecondImages/>
+</div>
 
-
-<div className="relative top-[9.2rem]  left-21 justify-center  w-[400px]">
+<div className="absolute top-[66.1rem]  left-21 justify-center  w-[400px]">
     <h3 className="relative top-[1.5rem] font-light  text-white text-[47px] w-[500px]" >
    Help me choose.
     </h3>
 </div>
-<div className="relative top-[13.9rem] items-center flex  justify-center  w-full ">
+<div className="absolute top-[89.9rem] items-center flex  justify-center  w-full ">
 <BodyImages1/>
 </div>
 
@@ -78,31 +78,31 @@ export default function Mac(){
 </div>
 
     
-<div className="relative top-[31rem] z-50 pt-3 top-30 left-21 justify-center w-[400px]">
+<div className="absolute top-[272rem] pt-3 top-30 left-21 justify-center w-[400px]">
     <h3 className="font-light  text-white text-[47px]  w-[500px]" >
 Switch to Mac.
     </h3>
 </div>
-
+<div className="absolute top-[267.9rem] mt-0 w-full ">
 <ThirdImages/>
+</div>
 
-
-<div className="relative top-[82rem] pt-3 top-30 left-21 justify-center w-[400px]">
+<div className="absolute top-[329rem] pt-3 top-30 left-21 justify-center w-[400px]">
     <h3 className="font-light  text-white text-[47px]  w-[500px]" >
  Mac eccentials.
     </h3>
 </div>
 
-
+<div className="absolute top-[325.2rem]  mt-0 w-full ">
 <FourthImage/>
-
-<div className="relative top-[132rem]   left-21 ">
+</div>
+<div className="absolute top-[383.7rem]   left-21 ">
     <h3 className="font-light  text-white text-[47px]  w-[500px]" >
         Significant others.
     </h3>
 </div>
 
-<div className="relative top-[135.5rem] flex w-full justify-center items-center">
+<div className="absolute top-[391rem] flex w-full justify-center items-center">
     <Footer/>
 </div>
 

@@ -132,24 +132,24 @@ return(
                    
                    <div className= "scroll-item-text-4">
                         <p  className="absolute text-[11px] top-[-20px] text-black-800 ">{item.top}</p>                   
-                       <h3 className={` font-normal ${index === 0 ? "name-text1":"name-text2"}`}>{item.name}</h3>
-                       <div className="text-black font-light text-[28px] w-max ">
+                       <h3 className={` font-semibold ${index === 0 ? "name-text1":"name-text2"}`}>{item.name}</h3>
+                       <div className="text-black font-semibold text-[26px] w-max ">
 
                        
-                       <h3 className="text-black font-light  " >
+                       <h3 className="text-black font-semibold  " >
                         {item.name2} 
                         </h3>
                         
-                       <h3 className=" text-black  font-light" >{item.name3}</h3>
+                       <h3 className=" text-black  font-semibold" >{item.name3}</h3>
                       
                     </div>
                     
-                        <p className="text-black/100 font-light w-[330px]  text-[14px]">{item.down}</p>
+                        <p className="text-black/100 font-[1px] w-[330px]  text-[14px]">{item.down}</p>
                         <h3>{item.title2}</h3>
                        
 
                         </div>
-                          <p className="text-[17px] absolute bottom-6 left-5">{item.price} </p>
+                          <p className="text-sm absolute bottom-6 left-5">{item.price} </p>
                     </div>
                 ))}
             </div>

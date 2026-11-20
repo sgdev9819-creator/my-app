@@ -59,7 +59,7 @@ export default function firstSlider(){
         }
   
 return(
-    <div className="relative w-full top-[3.9rem]">
+    <div className="relative w-full top-[13.9rem]">
 <div ref={containerRef} className="slider-content">
     {products.map((item)=>(
         <div

@@ -86,7 +86,7 @@ if(containerRef.current){
     }
 
     return(
-        <div className="relative top-[16.5rem] w-full">
+        <div className="hero-images-container">
     <div ref={containerRef} className="hero-images-content">
                 {items.map((item,index)=>(
                 <div 
@@ -99,8 +99,8 @@ if(containerRef.current){
 
            
                    <div className="container-info" >
-                       <h3 className={`"text-black font-normal space-y-1 leading-tight text-[28px] w-[310px] " ${index === 3 ? "text-white":"text-black"}`}>{item.name}</h3>
-                      <p className="text-[17px] font-light ">{item.down2}</p>
+                       <h3 className={`"text-black font-light space-y-1 leading-tight text-[25px] w-[310px] " ${index === 3 ? "text-white":"text-black"}`}>{item.name}</h3>
+                      <p className="text-sm font-light ">{item.down2}</p>
                        </div>
                     </div>
                   <div className="absolute bottom-3 right-3 inline-flex justify-center items-center w-max h-max p-[9px] rounded-full transition-colors duration-300 bg-white/80 hover:bg-white/90">
@@ -120,7 +120,7 @@ if(containerRef.current){
                
                 ))}
             </div>
-             <div className=" relative top-[1.5rem] left-[73.5rem] gap-5 flex flex-row  w-max justify-center ">
+             <div className=" relative top-[-2.5rem] left-[73.5rem] gap-5 flex flex-row  w-max justify-center ">
  <button 
   disabled={!showLeft}
   onClick={handleLeft}

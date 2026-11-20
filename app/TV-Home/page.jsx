@@ -28,7 +28,7 @@ export default function TVHomePage(){
     <Case/>
 </div>
 
-<div className="relative pt-6 top-[15.2rem] z-[1] flex items-center w-full justify-center w-auto loading-[0.5] ">
+<div className="relative pt-6 top-[15.2rem] flex items-center w-full justify-center w-auto loading-[0.5] ">
     <div className="absolute left-21  w-max flex flex-col">
           <h3 className="font-light text-white text-[47px]  loading-[0.5] w-[500px]" >
         Why Apple is the best
@@ -42,9 +42,9 @@ Shop Apple Home.
 </Link>
 
 </div>
-
+<div className="relative top-[2.1rem] w-full ">
     <HeroImages1/>
-
+</div>
 
 <div className="w-full h-[158.7rem] relative top-[20.8rem] bg-black flex flex-col">
     

@@ -74,14 +74,14 @@ if(containerRef.current){
     }
 
     return(
-        <div className="relative top-[86rem] w-full">
+        <div className="hero-images-container">
     <div ref={containerRef} className="climax-images-1">
                 {items.map((item,index)=>(
                 <div 
                 key={index}
                className="climax-contents " >
                 <div className="absolute top-[2rem] flex flex-col justify-center items-center w-full h-max  ">
-                    <div className="absolute top-[0rem] flex flex-col justify-center items-center w-full h-max text-white text-[28px] font-normal ">
+                    <div className="absolute top-[0rem] flex flex-col justify-center items-center w-full h-max text-white text-[29px] font-light ">
                         <h2>
                             {item.name}
                         </h2>
@@ -89,7 +89,7 @@ if(containerRef.current){
                             {item.name2}
                         </h2>
                     </div>
-                    <div className={`absolute w-full h-max   flex flex-col justify-center items-center text-white text-[17px] font-light ${index === 1 ?"top-[3.2rem]":"top-[3.3rem]"}`}>
+                    <div className={`absolute w-full h-max   flex flex-col justify-center items-center text-white text-[15px] font-light ${index === 1 ?"top-[3.2rem]":"top-[3.3rem]"}`}>
                         <p className="">
                             {item.info}
                         </p>

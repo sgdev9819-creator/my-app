@@ -39,7 +39,7 @@ const HomeIcons =[
 import Link from "next/link";
 export default function HeroSlider(){
     return(
-        <div className="relative top-[0.6rem] flex flex-row gap-[0.rem] w-full pt-2 pb-2 justify-center items-center   ">
+        <div className="absolute top-[0.6rem] flex flex-row gap-[0.rem] w-full pt-2 pb-2 justify-center items-center   ">
 {HomeIcons.map((icon,index)=>(
     <div
     key={index}
@@ -49,7 +49,7 @@ export default function HeroSlider(){
           
           <Link 
               href={icon.name}
-          className={` absolute flex w-full  text-[14px] text-white font-light  justify-center items-center  
+          className={` absolute flex w-full  text-[13px] text-white font-light  justify-center items-center  
 ${index === 0  ? "top-[38px] ":"top-[2.8rem] "}
 ${index === 1  ? "top-[38px] ":"top-[2.8rem] "}
 

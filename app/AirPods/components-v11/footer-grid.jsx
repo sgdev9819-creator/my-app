@@ -237,18 +237,18 @@ export default function FooterGrid(){
                         </p>
                         </div>
                         <div className="w-full flex flex-col gap-0 justify-center items-center absolute top-[14.7rem]">
-                        <h3 className="text-[28x] ">
+                        <h3 className="text-2xl ">
                             {item.name}
                     
                         </h3>
 
 
-                         <p className="text-white mt-[-0.2rem] text-[17px]">
+                         <p className="text-white mt-[-0.2rem]">
                             {item.text4}
                         </p>
                         </div>
                       
-                        <div className="w-full absolute text-[17px] top-[18.3rem] justify-center white/70 items-center flex  flex-col gap-0">
+                        <div className="w-full absolute top-[18.3rem] justify-center white/70 items-center flex  flex-col gap-0">
                         <p >
                             {item.text}
                         </p>

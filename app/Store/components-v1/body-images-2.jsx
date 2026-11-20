@@ -222,8 +222,8 @@ if(containerRef.current){
     }
 
     return(
-        <div className="relative w-full top-[10.6rem]">
-    <div ref={containerRef} className="hero-images-content  px-[85px] py-[20px]">
+        <div className="hero-images-container">
+    <div ref={containerRef} className="hero-images-content">
                 {items.map((item,index)=>(
                 <div 
                 key={index}
@@ -246,7 +246,7 @@ if(containerRef.current){
                        ))}
                          </ul>
 
-                       <h3 className={` text-black font-normal text-1xl  ${index === 0 || index === 13  ? "w-[510px] text-3xl":"w-[400px] text-[17px] mt-0"}`}>{item.name}</h3>
+                       <h3 className={` text-black font-semibold text-1xl  ${index === 0 || index === 13  ? "w-[510px] text-3xl":"w-[400px] text-[17px] mt-0"}`}>{item.name}</h3>
                        <div className=" flex flex-col gap-0">
                        <p className="text-sm">
                         {item.down} 

@@ -122,7 +122,7 @@ if(containerRef.current){
 
 return(
   
-        <div className="relative w-full top-[18.7rem]">
+        <div className="relative w-full top-[15.7rem]">
     <div ref={containerRef} className="hero-images-content">
                 {products.map((item,index)=>(
                 <div 
@@ -135,7 +135,7 @@ return(
 
            
                    <div className="container-info" >
-                       <h3 className={`"text-black font-normal space-y-1 leading-tight text-[28px] w-[310px] " ${index === 3 ? "text-white":"text-black"}`}>{item.name}</h3>
+                       <h3 className={`"text-black font-semibold space-y-1 leading-tight text-[25px] w-[310px] " ${index === 3 ? "text-white":"text-black"}`}>{item.name}</h3>
                       <p className="text-sm">{item.down2}</p>
                        </div>
                     </div>

@@ -116,7 +116,7 @@ return(
                         </span>
                        <div className="absolute top-[31rem] flex flex-col gap-0 w-full justify-center items-center">                        
     
-                        <h3 className="text-[28px]  text-white font-normal w-full absolute top-[0.5rem] flex justify-center items-center " >{prod.name}</h3>
+                        <h3 className="text-[30px]  text-white font-light w-full absolute top-[0.5rem] flex justify-center items-center " >{prod.name}</h3>
                          <div className="absolute top-[3.5rem] flex flex-col justify-center items-center w-full font-light text-white text-[16.5px]">
                         <span className="">
                             {prod.info}
@@ -160,20 +160,20 @@ return(
                         </div>
                 ))}
 </div>
-<div className=" relative top-[-4%] z-[10] left-[85%] gap-5 flex flex-row  w-max justify-center ">
+<div className=" relative top-[-4%] left-[85%] gap-5 flex flex-row  w-max justify-center ">
 
- <button 
+  <button 
   disabled={!showLeft}
   onClick={handleLeft}
   className={`w-max rounded-full 
-      justify-center items-center inline-flex p-[9px] bg-white/80 backdrop-blur-[10px] transition-colors duration-300  hover:bg-white/90 
+      justify-center items-center inline-flex p-[11px] bg-white/90 backdrop-blur-[10px]
       ${
         showLeft?"opacity-100":"opacity-50"
       }
   `}
   
   >
-<img src="che4.svg" alt="previouse" className="w-[18px] h-auto" />
+<img src="l-black.svg" alt="previouse" className="w-[15px] h-auto" />
     </button>
 
 
@@ -182,11 +182,11 @@ return(
     disabled={!showRight}
     onClick={handleRight}
 className={`w-max rounded-full 
-       justify-center items-center inline-flex p-[9px] bg-white/80 backdrop-blur-[10px] transition-colors duration-300 hover:bg-white/90
+       justify-center items-center inline-flex p-[11px] bg-white/90 backdrop-blur-[10px]
       ${showRight?"opacity-100":"opacity-30"}
   `}
     >
-        <img src="che3.svg" alt="next" className="w-[18px] h-auto"/>
+        <img src="g-black.svg" alt="next" className="w-[15px] h-auto"/>
 
     </button>
 

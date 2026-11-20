@@ -84,7 +84,7 @@ export default function firstSlider(){
         }
   
 return(
-    <div className="relative w-full top-[0rem]">
+    <div className="watch-slider-container ">
 <div ref={containerRef} className="watch-slider-content">
     {products.map((item)=>(
         <div
@@ -92,7 +92,7 @@ return(
          className="watch-slider-item"
         >
             <img src={item.image} className="watch-slider-image" />
-            <div className="absolute w-full flex flex-col gap-[2px] top-36 justify-center items-center text-[14px] text-white font-light ">
+            <div className="absolute w-full flex flex-col gap-[2px] top-36 justify-center items-center text-[13px] text-white font-light ">
             <span >{item.name}</span>
             <span  className="mt-[-0.5rem] " >
                 {item.name3}

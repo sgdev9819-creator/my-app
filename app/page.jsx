@@ -70,7 +70,7 @@ text2="Shop"
 
   ))}
 </div>
-<div className=" relative top-[1rem] w-full justify-center items-center">
+<div className=" relative top-[1.5rem] w-full justify-center items-center">
   <FooterImages/>
 </div>
 <div className="relative flex justify-center items-center w-full top-[4.5rem] font-light text-white text-[37px] lg:text-[57px]">

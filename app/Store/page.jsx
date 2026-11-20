@@ -18,7 +18,7 @@ export default function Mac(){
 
 
     return(
-       <div className="relative top-0 left-0 flex flex-col justify-center w-full ">
+       <div className="absolute top-0 left-0 flex justify-center w-full ">
     <StoreNav/>
 
 <div className={styles["show"]} >
@@ -44,81 +44,82 @@ export default function Mac(){
 </div>
 
 
-<div className="relative top-[6.5rem] left-21 flex flex-row gap-2  ">
+<div className="absolute top-150 left-21 flex flex-row gap-2 justify-center items-center ">
     <h3 className=" text-white font-light text-[28px]">The latest.</h3>
     <h3 className="text-white/60 text-[28px] font-light">Take a look at what's new, right now.</h3>
 </div>
-
+<div className="absolute top-88 w-full ">
 <HeroImages1/>
+</div>
 
 
-
-<div className="relative top-[8.5rem] h-max z-50 left-21 flex flex-row gap-2  ">
+<div className="absolute top-307 h-max z-50 left-21 flex flex-row gap-2 justify-center items-center ">
     <h3 className=" text-white font-light text-[28px]">Accessories. </h3>
     <h3 className="text-white/60 text-[27px] font-light">Essentials that pair perfectly with your favorite products.</h3>
 </div>
 
 
-
+<div className="absolute top-244 z-50 w-full h-max ">
 <HeroImages2/>
+</div>
 
 
 
 
-
-<div className="relative top-[10.5rem] left-21 flex z-2 flex-row gap-2 ">
+<div className="absolute top-[115.6rem] left-21 flex z-2 flex-row gap-2 justify-center items-center ">
     <h3 className=" text-white font-light text-[28px]"> 
 Help is here. </h3>
     <h3 className="text-white/50 text-[28px] font-light"> Whenever and however you need it.</h3>
 </div>
 
-
+<div className=" flex absolute top-[100rem] z-4 w-full ">
     <Images5/>
+</div>
 
-
-<div className="relative top-[12.5rem] left-21 h-max z-5 flex flex-row gap-2 ">
+<div className="absolute top-[154.8rem] left-21 h-max z-5 flex flex-row gap-2 justify-center items-center ">
     <h3 className=" text-white font-light  text-[28px]">The Apple Store difference.</h3>
     <h3 className="text-white/60 text-[28px] font-light ">Even more reason to shop with us.</h3>
 </div>
 
+<div className=" absolute top-[140rem] w-full left-[0.5rem] flex z-60 ">
 <ColorfulCards/>
+</div>
 
 
-
-<div className="relative top-[10.5rem] left-21 flex flex-row gap-2 ">
+<div className="absolute top-[193.4rem] left-21 flex flex-row gap-2 justify-center items-center ">
     <h3 className=" text-white font-light  text-[28px]"> Loud and clear.</h3>
     <h3 className="text-white/60 text-[28px] font-light "> Unparalleled choices for rich, high-quality sound.</h3>
 </div>
 
-
+<div className="absolute top-[181.8rem] w-full  z-50">
 <BodyImages2/>
+</div>
 
 
 
 
-
-<div className="relative top-[12.5rem] left-21 flex flex-row gap-2  ">
+<div className="absolute top-[232.5rem] left-21 flex flex-row gap-2 justify-center items-center ">
     <h3 className=" text-white font-light text-[28px]"> The Apple experience.</h3>
     <h3 className="text-white/50 text-[28px] font-light"> Do even more with Apple products and services.</h3>
 </div>
-
+<div className="w-full flex absolute top-[196.5rem] ">
     <Images2/>
+</div>
 
 
 
-
-<div className="relative top-[14.5rem] left-21 flex flex-row gap-2">
+<div className="absolute top-[271.8rem] left-21 flex flex-row gap-2 justify-center items-center ">
     <h3 className=" text-white font-light  text-[28px]">Savings and offers.</h3>
     <h3 className="text-white/60 text-[28px] font-light "> Exclusive deals, special stores and more.</h3>
 </div>
 
-
+<div className="absolute top-[255.8rem] w-full  z-50">
 <FooterImage2/>
+</div>
 
 
 
-
-<div className="relative top-[16.5rem] left-21 flex flex-col gap-[10px]">
+<div className="absolute top-[310.5rem] left-21 flex flex-col gap-[10px]">
     <h2 className="text-[28px] font-light  text-white ">
         Quick Links
     </h2>

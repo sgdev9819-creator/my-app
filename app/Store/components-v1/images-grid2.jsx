@@ -108,7 +108,7 @@ export default function Images(){
        }
    
        return(
-        <div className="relative w-full top-[12.5rem]">
+        <div className="relative w-full top-[35rem]">
     <div ref={containerRef} className="hero-images-content ">
                 {items.map((item,index)=>(
                 <div 
@@ -119,9 +119,9 @@ export default function Images(){
                         <p  className="absolute text-[11px] top-[-20px] text-orange-800 ">{item.top}</p>
                       
                
-                       <h3 className={` text-black font-normal text-1xl  ${index === 0 ? "w-[510px] text-2xl":"w-[400px] text-[17px] mt-0"}`}>{item.name}</h3>
-                       <div className={` text-black font-normal text-1xl  ${index === 0 ? "w-[510px] text-2xl":"w-[400px] text-[17px] mt-0"}`}>
-                       <h3 className={` text-black font-normal text-1xl  ${index === 0 ? "w-[510px] text-2xl":"w-[400px] text-[17px] mt-0"}`}>
+                       <h3 className={` text-black font-semibold text-1xl  ${index === 0 ? "w-[510px] text-2xl":"w-[400px] text-[17px] mt-0"}`}>{item.name}</h3>
+                       <div className={` text-black font-semibold text-1xl  ${index === 0 ? "w-[510px] text-2xl":"w-[400px] text-[17px] mt-0"}`}>
+                       <h3 className={` text-black font-semibold text-1xl  ${index === 0 ? "w-[510px] text-2xl":"w-[400px] text-[17px] mt-0"}`}>
                         {item.name2} 
                         </h3>
                        

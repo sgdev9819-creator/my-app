@@ -177,7 +177,7 @@ className="no-underline text-xs text-white/90 z-200 justify-center items-center 
 </div>
 
 <div className={`" mt-0 left-0 w-full bg-[rgb(19,19,19)] translate-all duration-500 ease-in-out norder-b norder-white/5  z-100 lg:block"${isactiveLink?
-  "h-screen opacity-100 visible  z-190":"h-0 opacity-0 invinsible translate-all duration-500 "
+  "h-screen opacity-100 visible  z-190":"h-0 opacity-0 invinsible"
 }`}
 onMouseLeave={()=> {
     setisoverlay(false)

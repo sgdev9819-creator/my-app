@@ -3,10 +3,10 @@ import Link from "next/link"
 export default function FooterImages(){
     return(
      
-<div className="w-[87%] h-[30.5rem] rounded-3xl bg-[rgba(122,122,122,0.1)]   justify-center items-center absolute flex flex-row transition-transform duration-300 hover:scale-[1.01]">
+<div className="w-[87%] h-[30.5rem] rounded-3xl bg-[rgba(122,122,122,0.1)]   justify-center items-center absolute flex flex-row transition-colors duration-700 hover:scale-[1.01]">
     <div className="flex flex-col gap-2 absolute left-20 ">
 
-<div className="flex flex-col font-normal text-white text-[31px] ">
+<div className="flex flex-col font-light text-white text-[31px] ">
     <h3>Make it personal.</h3>
     <h3 className="mt-[-0.5rem]" > Make it pop.</h3>
      
