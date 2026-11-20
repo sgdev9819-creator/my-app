@@ -63,7 +63,7 @@ place to shop Apple Watch.
 All Apple Watch accessories </Link>
 </div>
 <div className=" relative flex top-[26rem] w-full h-auto justify-center items-center">
-g    <FooterImage/>
+ <FooterImage/>
 </div>
 </div>
 
