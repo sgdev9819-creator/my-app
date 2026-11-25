@@ -24,7 +24,7 @@ export default function Images(){
     ]
 
     return(
-        <div className="hero-images-container">
+        <div className="relative top-[25rem] w-full">
     <div  className="climax-images-1">
                 {items.map((item,index)=>(
                 <div 

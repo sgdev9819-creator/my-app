@@ -4,7 +4,7 @@ import HeroSlid from "./components-v1/hero-slide"
 import ColorfulCards from "./components-v1/colorful-words"
 import HeroImages1 from "./components-v1/hero-images-1"
 import HeroImages2 from "./components-v1/hero-images-2"
-import BodyImages1 from "./components-v1/body-images-1"
+import MobileNav from "./components-v1/mb-navber"
 import Images2 from "./components-v1/images-grid2"
 import Button from "./components-v1/button"
 import Images5 from "./components-v1/image-5"
@@ -18,24 +18,30 @@ export default function Mac(){
 
 
     return(
-       <div className="absolute top-0 left-0 flex justify-center w-full ">
-    <StoreNav/>
+       <div className="relative top-0 left-0 flex flex-col justify-center w-full ">
+    
 
+    <div className="hidden lg:block relative top-0 left-0 w-full z-50">
+   <StoreNav/>
+</div>
+     <div className="block lg:hidden absolute top-0 left-0 w-full z-40">
+    <MobileNav />
+</div>
 <div className={styles["show"]} >
     <div className="w-full inline-flex  justify-center items-center">
 <h3 className=" w-max h-max justify-center  font-light  items-center inline-flex text-white">For a limited time get a gift cart up to 150$ when you buy a Mac or iPad with education savings.</h3>
 <Link href="#" className="w-max h-max justify-center items-center font-light  inline-flex text-blue-400 ml-5 ">Learn more</Link>
 </div>
 </div>
-<div className="relative top-30 w-full h-[500px] z-50 justify-center items-center">
-    <div className="flex flex-row">
-    <h2 className="text-white text-[78px] font-light mt-14 ml-21">Store</h2>
-    <div className="flex flex-col absolute right-21 mt-14">
-     <h3 className="ml-1 text-3xl text-white  font-light ">The best way to buy the</h3>
-    <h3 className="ml-22 text-3xl text-white  font-light ">products you love</h3>
-    <div className="mt-5 flex flex-col gap-1 text-[17px] text-blue-400  absolute right-0 mt-22">
-    <Link href="#" className="ml-17 font-light  ">Connect with a Specialist</Link>
-     <Link href="#" className="ml-26 font-light ">Find an Apple Store</Link>
+<div className="relative top-30 w-full h-[500px]  justify-center items-center">
+    <div className="flex flex-col lg:flex-row">
+    <h2 className="text-pink-600 text-[56px] lg:text-[80px] font-light mt-14 ml-16 lg:ml-21">Store</h2>
+    <div className="flex flex-col  ml-16  lg:absolute  lg:right-21 lg:mt-14">
+     <h3 className="text-[28px] lg:ml-1  lg:text-3xl text-pink-600  font-light ">The best way to buy the</h3>
+    <h3 className=" text-[28px] lg:ml-22 lg:text-3xl text-pink-600  font-light ">products you love</h3>
+    <div className=" flex flex-col gap-1  text-[14px]  text-blue-400 lg:text-[17px] lg:mt-5 lg:absolute lg:right-0 lg:mt-22 ">
+    <Link href="#" className="lg:ml-17 font-light hover:underline ">Connect with a Specialist</Link>
+     <Link href="#" className="lg:ml-26 font-light hover:underline">Find an Apple Store</Link>
      </div>
      </div>
     
@@ -44,8 +50,8 @@ export default function Mac(){
 </div>
 
 
-<div className="absolute top-150 left-21 flex flex-row gap-2 justify-center items-center ">
-    <h3 className=" text-white font-light text-[28px]">The latest.</h3>
+<div className="relative top-[6.5rem] left-21 flex flex-row gap-2  ">
+    <h3 className=" text-pink-600 font-light text-[28px]">The latest.</h3>
     <h3 className="text-white/60 text-[28px] font-light">Take a look at what's new, right now.</h3>
 </div>
 <div className="absolute top-88 w-full ">
@@ -53,8 +59,9 @@ export default function Mac(){
 </div>
 
 
-<div className="absolute top-307 h-max z-50 left-21 flex flex-row gap-2 justify-center items-center ">
-    <h3 className=" text-white font-light text-[28px]">Accessories. </h3>
+
+<div className="relative top-[8.5rem] h-max left-21 flex flex-row gap-2  ">
+    <h3 className=" text-pink-600 font-light text-[28px]">Accessories. </h3>
     <h3 className="text-white/60 text-[27px] font-light">Essentials that pair perfectly with your favorite products.</h3>
 </div>
 
@@ -66,8 +73,9 @@ export default function Mac(){
 
 
 
-<div className="absolute top-[115.6rem] left-21 flex z-2 flex-row gap-2 justify-center items-center ">
-    <h3 className=" text-white font-light text-[28px]"> 
+
+<div className="relative top-[10.5rem] left-21 flex z-2 flex-row gap-2 ">
+    <h3 className=" text-pink-600 font-light text-[28px]"> 
 Help is here. </h3>
     <h3 className="text-white/50 text-[28px] font-light"> Whenever and however you need it.</h3>
 </div>
@@ -76,8 +84,9 @@ Help is here. </h3>
     <Images5/>
 </div>
 
-<div className="absolute top-[154.8rem] left-21 h-max z-5 flex flex-row gap-2 justify-center items-center ">
-    <h3 className=" text-white font-light  text-[28px]">The Apple Store difference.</h3>
+
+<div className="relative top-[12.5rem] left-21 h-max z-5 flex flex-row gap-2 ">
+    <h3 className=" text-pink-600 font-light  text-[28px]">The Apple Store difference.</h3>
     <h3 className="text-white/60 text-[28px] font-light ">Even more reason to shop with us.</h3>
 </div>
 
@@ -86,8 +95,9 @@ Help is here. </h3>
 </div>
 
 
-<div className="absolute top-[193.4rem] left-21 flex flex-row gap-2 justify-center items-center ">
-    <h3 className=" text-white font-light  text-[28px]"> Loud and clear.</h3>
+
+<div className="relative top-[10.5rem] left-21 flex flex-row gap-2 ">
+    <h3 className=" text-pink-600 font-light  text-[28px]"> Loud and clear.</h3>
     <h3 className="text-white/60 text-[28px] font-light "> Unparalleled choices for rich, high-quality sound.</h3>
 </div>
 
@@ -98,8 +108,9 @@ Help is here. </h3>
 
 
 
-<div className="absolute top-[232.5rem] left-21 flex flex-row gap-2 justify-center items-center ">
-    <h3 className=" text-white font-light text-[28px]"> The Apple experience.</h3>
+
+<div className="relative top-[12.5rem] left-21 flex flex-row gap-2  ">
+    <h3 className=" text-pink-600 font-light text-[28px]"> The Apple experience.</h3>
     <h3 className="text-white/50 text-[28px] font-light"> Do even more with Apple products and services.</h3>
 </div>
 <div className="w-full flex absolute top-[196.5rem] ">
@@ -108,8 +119,9 @@ Help is here. </h3>
 
 
 
-<div className="absolute top-[271.8rem] left-21 flex flex-row gap-2 justify-center items-center ">
-    <h3 className=" text-white font-light  text-[28px]">Savings and offers.</h3>
+
+<div className="relative top-[14.5rem] left-21 flex flex-row gap-2">
+    <h3 className=" text-pink-600 font-light  text-[28px]">Savings and offers.</h3>
     <h3 className="text-white/60 text-[28px] font-light "> Exclusive deals, special stores and more.</h3>
 </div>
 

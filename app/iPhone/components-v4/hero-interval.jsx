@@ -95,7 +95,7 @@ export default function Interval() {
     const activeDotIndex = current % Accessories.length
 
     return (
-        <div className="relative w-full top-0">
+        <div className="relative w-full top-[8.5rem]">
             <div 
                 ref={containerRef}
                 className="hero-images-content"

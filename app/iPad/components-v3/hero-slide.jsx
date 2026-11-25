@@ -60,7 +60,7 @@ export default function firstSlider(){
         }
   
 return(
-    <div className="slider-container">
+    <div className="relative w-full top-[6.3rem]">
 <div ref={containerRef} className="ipad-slid">
     {products.map((item)=>(
         <div

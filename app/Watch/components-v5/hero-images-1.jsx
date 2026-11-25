@@ -1,46 +1,18 @@
 "use client"
 import { useRef,useEffect,useState } from "react";
+import {useStore} from "../../context/StoreContext";
 import Buttom from "./buttom";
-  const products =[
-    {id: 1,
-      color:"wc.png",
-      golden:"New",
-      name:"Apple Watch Series 12",
-        info:"The ultimate way to ",
-        info1:"watch your health.",
-        price:"From $399 or $33.25/mo. for 12 mo.*",
-        price2:"Lease from $11.99/mo. for 24 mo. with",
-        price3:" Apple Upgrade◊◊",
-        image:"watch-i1.png"},
-
-      {id: 2,
-        color:"wc1.png",
-        golden:"New",
-        name: "Apple Watch Ultra 4",
-        info:"The ultimate sports",
-        info1:"and adventure watch.",
-        price:"From $799 or $66.58/mo. for 12 mo.*",
-         price2:"Lease from $24.99/mo. for 24 mo. with",
-        price3:" Apple Upgrade◊◊",
-        image:"/watch-i2.png"},
-
-       {id: 3,
-         color:"wc2.png",
-         golden:"New",
-         name:"Apple Watch SE 3",
-        info:"Essential health features",
-        info1:"at a great value.",
-        price:"From $249 or $20.75/mo. for 12 mo.*",
-       
-        image:"/watch-i3.png"},
-  ]
-
+ 
 
   export default function WatchImages(){
+     const{isproducts,AddtoCart}=useStore()
+
+const watchproducts = (Array.isArray(isproducts) ? isproducts : []).filter((item)=>item.category === "Watch")
+
 return(
    
-        <div className="w-full h-max absolute flex flex-row justify-center items-center gap-[1.2rem] ">
-            {products.map((items)=>(
+        <div className="w-full h-max relative top-[5rem] flex flex-row justify-center items-center gap-[1.2rem] ">
+            {watchproducts.map((items)=>(
               <div 
               key={items.id}
               className="watch-hero-info">
@@ -68,6 +40,7 @@ return(
                 <Buttom 
                    text1="Learn more"
                     text2="Buy"
+                       item={items}
                       />
                       </div>
                 </div>

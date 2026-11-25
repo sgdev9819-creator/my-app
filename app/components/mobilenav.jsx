@@ -195,7 +195,7 @@ onClick={handleLinkClick}
 ${ismobile?
   "activemobile":"h-0 hidden invinsible"
 }`}> 
-    <div className={`w-full py-[3.5rem] pl-[3.5rem] flex flex-col gap-[9px]  `}>
+    <div className={`w-full py-[4rem] pl-[3.5rem] flex flex-col gap-[9px]  `}>
 {navLinks.map((link,index)=>(
     <div key={index}
 
@@ -214,7 +214,7 @@ className={` mb-content no-underline text-[28px] text-white/80  w-full font-ligh
 </div>
 </div>
 
-<div className={` absolute lg:hidden top-0 left-0 w-full flex gap-[22px] bg-[rgba(19,19,19,0.96)] backdrop-blur-[28px] z-200   overflow-y-auto scrollbar-none transition-transform duration-500 ${isactiveLink ? "h-[100vh]  opacity-100 visible  z-180":"h-0 opacity-0 invinsible"
+<div className={` absolute lg:hidden top-0 left-0 w-full flex gap-[22px] bg-[rgba(19,19,19,0.96)] backdrop-blur-[28px] z-200  pb-[2rem] overflow-y-auto scrollbar-none transition-transform duration-500 ${isactiveLink ? "h-[100vh]  opacity-100 visible  z-180":"h-0 opacity-0 invinsible"
 }`}
 
 >
@@ -224,7 +224,7 @@ className={` mb-content no-underline text-[28px] text-white/80  w-full font-ligh
    onClick={handleLinkClicks}
    className={`${isactiveLink ? "backbt":"opacity-0 invinsible"}`}>
    
-<img src="lesser.svg" alt="previouse" className="w-[17px] h-auto " />
+<img src="che2.svg" alt="previouse" className="w-[17px] h-auto " />
     </button> 
 <button 
 onClick={handleAll}

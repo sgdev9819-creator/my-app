@@ -1,62 +1,12 @@
 "use client"
 import { useRef,useEffect,useState } from "react";
 import Button from "../components-v4/button"
- const items = [
-        {  
-           name: "iPad Pro",
-            info:"The ultimate iPad experience with the",
-            info1:" most advanced technology.",
-            price:"From $1199 or $99.91/mo. for 12 mo.*",
-            price1:"Lease from $24.99/mo. for 36 mo. ",
-            price2:"with Apple Upgrade◊◊",
-            image:"iphone1.jpg"
-        },
-        {
-
-            name:"iPad Air",     
-            info:"Serious performance in a thin and ",      
-            info1:"light design.",
-            price:"From $749 or $62.41/mo. for 12 mo.*",
-            price1 :"Lease from $15.99/mo. for 36 mo. ",
-             price2:"with Apple Upgrade◊◊",
-               image:"/iphone2.jpg"
-
-        },
-        {  
-
-
-            name:"iPad",  
-            info:"The colorful, all‑screen iPad for the",
-            info1:" things you do every day.",
-            price:"From $449 or $37.41/mo. for 12 mo.*",
-               image:"/iphone3.jpg"
-        },
-        {
-            name:"    iPad mini",             
-            info:"The full iPad experience in an",
-            info1:"ultraportable design.",
-            price:"From $599 or $49.91/mo. for 12 mo.*",
-            price1:"Lease from $11.99/mo. for 36 mo. ",
-             price2:"with Apple Upgrade◊◊",
-               image:"/iphone4.jpg"
-        },
-       
-
-         
-         {  
-
-
-            name:"iPad",  
-            info:"The colorful, all‑screen iPad for the",
-            info1:" things you do every day.",
-            price:"From $449 or $37.41/mo. for 12 mo.*",
-               image:"/iphone5.jpg"
-        },
-         
-         
-    ]
+import {useStore} from "../../context/StoreContext";
 
 export default function NoCase(){
+  const{isproducts,AddtoCart,removeCart}=useStore()
+
+const iphoneproducts = (Array.isArray(isproducts) ? isproducts : []).filter((item)=>item.category === "iPhone")
 
  const containerRef = useRef(null);
     const[showLeft,setshowLeft]=useState(false)
@@ -104,7 +54,7 @@ return(
 
          <div className="hero-images-container" >
             <div className="active" ref={containerRef}>
-                {items.map((prod,index)=>(
+                {iphoneproducts.map((prod,index)=>(
                     <div
                     key={index}
                     className="cases ipad"
@@ -136,8 +86,11 @@ return(
                                 <Button 
                          text1="Learn more"
                           text2="Buy"
+                             item={prod}
                                />
                              
+
+
                         </div>
                 ))}
 </div>

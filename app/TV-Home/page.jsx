@@ -46,23 +46,23 @@ Shop Apple Home.
     <HeroImages1/>
 </div>
 
-<div className="w-full h-[158.7rem] relative top-[20.8rem] bg-black flex flex-col">
+<div className="w-full h-[158.7rem] relative top-[23.8rem] bg-black flex flex-col">
     
 <div className="relative left-21 w-max flex top-[8.2rem] font-light text-[47px] text-white">
     <h3>Get to know Apple Home.</h3>
 </div>
-<div className="relative top-[6.3rem] w-full ">
+<div className="relative top-[7.5rem] w-full ">
     <HeroImages2/>
 </div>
-<div className="relative left-21 w-max flex top-[9.3rem] font-light text-[47px] text-white">
+<div className="relative left-21 w-max flex top-[11.3rem] font-light text-[47px] text-white">
     <h3>Shop the Apple Home Collection.</h3>
 </div>
 
-<div className="relative top-[27.5rem] w-full justify-center items-center  flex">
+<div className="relative top-[29.5rem] w-full justify-center items-center  flex">
     <BodyImages/>
 </div>
 
-<div className="relative  top-[53.2rem] flex items-center w-full justify-center w-auto loading-[0.5] ">
+<div className="relative  top-[55.2rem] flex items-center w-full justify-center w-auto loading-[0.5] ">
     <div className="absolute left-21  w-max flex flex-col">
           <h3 className="font-light text-white text-[47px]  loading-[0.5] w-[500px]" >
        Home accessories.

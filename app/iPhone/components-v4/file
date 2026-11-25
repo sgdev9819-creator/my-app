@@ -1,0 +1,54 @@
+ const items = [
+        {  
+           name: "iPhone Duo",
+            info:"The ultimate iPad experience with the",
+            info1:" most advanced technology.",
+            price:"From $1199 or $99.91/mo. for 12 mo.*",
+            price1:"Lease from $24.99/mo. for 36 mo. ",
+            price2:"with Apple Upgrade◊◊",
+            image:"iphone1.jpg"
+        },
+        {
+
+            name:"iPhone 18 Pro",     
+            info:"Serious performance in a thin and ",      
+            info1:"light design.",
+            price:"From $749 or $62.41/mo. for 12 mo.*",
+            price1 :"Lease from $15.99/mo. for 36 mo. ",
+             price2:"with Apple Upgrade◊◊",
+               image:"/iphone2.jpg"
+
+        },
+        {  
+
+
+            name:"iPhone Air",  
+            info:"The colorful, all‑screen iPad for the",
+            info1:" things you do every day.",
+            price:"From $449 or $37.41/mo. for 12 mo.*",
+               image:"/iphone3.jpg"
+        },
+        {
+            name:"iPhone 17",             
+            info:"The full iPad experience in an",
+            info1:"ultraportable design.",
+            price:"From $599 or $49.91/mo. for 12 mo.*",
+            price1:"Lease from $11.99/mo. for 36 mo. ",
+             price2:"with Apple Upgrade◊◊",
+               image:"/iphone4.jpg"
+        },
+       
+
+         
+         {  
+
+
+            name:"iPhone 17e",  
+            info:"The colorful, all‑screen iPad for the",
+            info1:" things you do every day.",
+            price:"From $449 or $37.41/mo. for 12 mo.*",
+               image:"/iphone5.jpg"
+        },
+         
+         
+    ]
