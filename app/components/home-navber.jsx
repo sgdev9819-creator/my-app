@@ -1,5 +1,5 @@
 "use client"
-
+import CartDropdown from "../cart/page"
 import Link from "next/link"
 import { useState } from "react"
 const dropdownData = {
@@ -119,7 +119,8 @@ moreinfo:["Get AppleCare","Apple Account & Password","Billing & Subscriptions","
 export default function Navber(){
   const[isactiveLink,setisactiveLink]=useState(null)
   const[ismobile,setismobile]=useState(false)
-  const[isoverlay,setisoverlay]=useState(false)
+    const[isbag,setisbag]=useState(false)
+      const[isoverlay,setisoverlay]=useState(false)
  const navLinks = [
 
     {name:"Store",path:"Store"},
@@ -142,6 +143,7 @@ return(
 <nav onMouseLeave={()=> {
      setisoverlay(false)
     setisactiveLink(null)
+    setisbag(false)
 }} className="fixed w-full h-auto z-200">
 <div className="fixed top-0 left-0 z-204 bg-[rgba(19,19,19,0.8)] backdrop-blur-[28px] w-full h-[44px] justify-center items-center flex flex-row  gap-9">
 
@@ -158,7 +160,8 @@ return(
 href={link.path}
 onMouseEnter={()=>{ 
     setisoverlay(true)
-    setisactiveLink(link.path)}}
+    setisactiveLink(link.path)
+  setisbag(false)}}
 className="no-underline text-xs text-white/90 z-200 justify-center items-center w-full font-light  hover:text-white"
 >
     {link.name} 
@@ -170,24 +173,38 @@ className="no-underline text-xs text-white/90 z-200 justify-center items-center 
 
 </div>
 
-<div className="hidden lg:flex lg:flex-row lg:items-center lg:justify-center lg:gap-[2rem] ">
+<div className="hidden lg:flex lg:flex-row lg:items-center lg:justify-center lg:gap-[2rem]  ">
   <img src="search.svg" alt="" className="w-[20px] h-[20px]" />
+  <button 
+  onClick={()=> { 
+    setisbag(true)
+    setisoverlay(true)
+    setisactiveLink(null)
+  }
+  }
+    onClose={()=> setisbag(false)}
+  className="border-none w-max h-max">
   <img src="shop.svg" alt="" className="w-[20px] h-[20px]"/>
+  </button>
+
 </div>
 </div>
 
-<div className={`" mt-0 left-0 w-full bg-[rgb(19,19,19)] translate-all duration-500 ease-in-out norder-b norder-white/5  z-100 lg:block"${isactiveLink?
-  "h-screen opacity-100 visible  z-190":"h-0 opacity-0 invinsible translate-all duration-500 "
+<div className={`absolute top-0 mt-0 left-0 w-full bg-[rgb(19,19,19)] translate-all duration-500 ease-in-out norder-b norder-white/5  z-100 lg:block ${isactiveLink?
+  " opacity-100 visible h-max z-190":"h-0 opacity-0 invinsible translate-all duration-500 "
 }`}
 onMouseLeave={()=> {
     setisoverlay(false)
-    setisactiveLink(null)}}
+    setisactiveLink(null)
+   setisbag(false)}}
+   
+
 >
     
 
 
 {isactiveLink && dropdownData[isactiveLink] &&(
-<div className="max-w-[1084px] mx-auto px-14 py-17  bg-[rgb(19, 19, 19)] flex flex-row gap-20 animation-fadein z-100">
+<div className="max-w-[1084px] mx-auto px-14 py-17  flex flex-row gap-20 z-100">
 <div className="col-span-8 gap-4">
 <p className="text-white/50 text-[11px] mb-3 font-light  tracking-wider ">
 {dropdownData[isactiveLink].tittle}
@@ -253,6 +270,21 @@ onMouseLeave={()=> {
 
 </div>
 
+<div className={`absolute top-0  mt-0 left-0 w-full bg-[rgb(19,19,19)] translate-all duration-500 ease-in-out norder-b norder-white/5  z-100 lg:block ${isbag?
+  "h-max opacity-100 visible  z-20":"h-0 opacity-0 invisible translate-all duration-500 "
+}
+
+`}
+onMouseLeave={()=> {
+    setisoverlay(false)
+    setisbag(false)}
+    }
+>
+<div className="max-w-[1084px] mx-auto px-14 py-17  bg-[rgb(19, 19, 19)] flex flex-row gap-20 animation-fadein z-100">
+  <CartDropdown/>
+</div>
+   
+</div>
 </nav>
 
 <div className={`fixed top-0 left-0 inset-0 bg-black/70 backdrop-blur-[16px] overflow-hidden 

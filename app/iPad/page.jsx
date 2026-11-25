@@ -7,13 +7,13 @@ import HeroImage2 from "./components-v3/hero-images-2"
 import HeroImage3 from "./components-v3/hero-images-3"
 import Climax from "./components-v3/climax"
 import styles from "./page.module.css"
-
+import Footer from "./components-v3/footer"
 import Link from "next/link"
 export default function Mac(){
 
 
     return(
-       <div className="absolute top-0 left-0 flex justify-center w-full h-full ">
+       <div className="relative top-0 left-0 flex flex-col w-full h-full ">
     <Navber/>
  <div className={styles["show"]} >
     <div className="w-full  h-full flex flex-row justify-center items-center">
@@ -23,15 +23,15 @@ export default function Mac(){
 </div>
 
 
-<div className="absolute top-24 left-0 w-full h-[400px] bg-black flex  justify-center items-center">
+<div className="relative top-24 left-0 w-full h-[400px] bg-black flex  flex-col">
    
-    <h2 className="text-white text-[5rem] font-light  absolute  top-[4.6rem] left-21">iPad</h2>
+    <h2 className="text-white text-[5rem] font-light  relative top-[4.6rem] left-21">iPad</h2>
 <Hero/>
     </div>
 
 
 
-<div className="absolute top-[37.7rem] w-full justify-center flex flex-row ">
+<div className="relative top-[12.7rem] w-full  flex flex-row ">
 <h2 className="font-light text-[47px] text-white absolute  left-21  ">
  Explore the lineup.
 </h2>
@@ -41,12 +41,12 @@ Compare all modles
 </Link>
 </div>
 
-<div className="absolute top-[30.9rem] w-full ">
-    <NoCase/>
-</div>
 
-<div className="absolute pt-6 top-[103.6rem] flex items-center w-full justify-center w-[400px] loading-[0.5] ">
-    <div className="absolute left-21  w-max flex flex-col">
+    <NoCase/>
+
+
+<div className="relative pt-6 top-[19.5rem] flex  w-full w-full loading-[0.5] gap-[51.5%] ">
+    <div className="relative left-21  w-max flex flex-col">
           <h3 className="font-light text-white text-[47px]  loading-[0.5] w-[500px]" >
         Why Apple is the best
     </h3>
@@ -54,41 +54,37 @@ Compare all modles
 
     </div>
   
-<Link href="#" className="absolute top-[3.2rem] z-50 right-21 w-max text-blue-400 no-underline font-light text-[17px] hover:underline">
+<Link href="#" className=" mt-[5.4rem]  w-max text-blue-400 no-underline font-light text-[17px] hover:underline">
 Shop iPad
 </Link>
 
 </div>
-<div className="absolute top-[100rem] w-full ">
-<HeroImage1/>
-</div>
 
-<div className="absolute top-[151.7rem] pt-[6rem] bg-black justify-center pb-[9rem] w-full h-268" >
-<div className="absolute   left-21 justify-center  w-[400px]">
-    <h3 className="relative top-[2.7rem] font-light  text-black text-[47px] w-[500px]" >
-       Get to know Mac.
-    </h3>
-</div>
-<div className="absolute top-[-3rem] mt-0 w-full ">
-<HeroImage2/>
-</div>
-</div>
+<HeroImage1/>
 
     
-<div className="absolute top-[226.4rem] pt-3 top-30 left-21 justify-center w-[400px]">
+<div className="relative top-[22.5rem] pt-3 top-30 left-21  w-[400px]">
     <h3 className="font-light  text-white text-[47px]  w-[500px]" >
-Switch to iPad.
+iPad essentials.
     </h3>
 </div>
-<div className="absolute top-[222.4rem] mt-0 w-full ">
+
 <HeroImage3/>
+
+<div className="relative top-[71rem] pt-3 top-30 left-21  w-[400px]">
+    <h3 className="font-light  text-white text-[47px]  w-[500px]" >
+Significant others.
+    </h3>
+</div>
+
+<div className="relative top-[73.2rem] flex w-full justify-center items-center">
+    <Footer/>
 </div>
 
 <div className="absolute top-[277.4rem] mt-0 w-full justify-center items-center flex ">
 <Climax/>
 </div>
-
-    <button className="absolute top-[400rem] left-0 justify-center "> path</button>
+    <button className="absolucte top-[400rem] left-0 justify-center "> path</button>
     </div>
     )
 }

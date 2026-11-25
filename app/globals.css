@@ -173,6 +173,7 @@ animation-name: fillProgress;
 .mb-content{
     animation: dropCon 0.7s ease forwards;
     width: 100%;
+   
     transition: all 0.7s ease;
 }
 @keyframes dropCon{
@@ -220,9 +221,11 @@ transition: all 0.5s ease;
 }
 .mbnavcon{
     width:full;
+    
      max-width: auto;
       padding:3.5rem; 
       padding-bottom: 4rem;
+      padding-top: 4rem;
        background:transparent; 
        display:flex;
        flex-direction:column; 
@@ -265,6 +268,35 @@ transition: all 0.5s ease;
     background-clip: text;
     -webkit-background-clip: text;
     color:transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Global cart style*/
+.cartScroll{
+    width: 100%;
+    height: 14rem;
+    display: flex;
+    flex-direction:column;
+    overflow-y: auto;
+     scrollbar-width: none; /*Firefox */
+    -ms-overflow-style: none;
+    scroll-behavior: smooth;
+    gap: 30px;
+    gap: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+     transform: all 0.5s ease;
+    scroll-snap-type: y mandatory;
 }
 /*Mac section*/
 .mac1{
@@ -633,7 +665,9 @@ right: 0;
     transition: transform 0.6s ease;
     border-radius: 20px;
 }
-
+.scroll-item-5:hover{
+    transform: scale(1.01)
+}
 
 .store-image{
     width: 482px;
@@ -654,39 +688,73 @@ right: 0;
 /*colorful cards section  */
 
 .scroll-content-grid{
-      width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4,310px);
-    
+     
     overflow-x: auto;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;
     behavior: smooth;
-    gap: 1.3rem;
-   padding: 50px;
-     padding-left: 83px;
-    padding-right: 83px;
+    width: 100%;
+   
+    display: grid;
+    grid-template-columns: repeat(10,313px);
+  
+    visibility: visible;
+    gap: 1.2rem;
+    opacity: 1;
+     align-items: center;
+   padding:5rem;
     transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
     transform: all 0.5s ease;
     scroll-snap-type: x mandatory;
 }
-.scroll-gid-items{
-     width: 100%;
-    height: 240px;
+
+.store-color{
+     width:100%;
+    height: 200px;
     border-radius: 18px;
     background:rgb(19,19,19);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     transition: all 0.5s ease;
+    padding:8rem;
    flex:0 0 auto;
     gap:0.5rem;
     display: flex; 
     flex-direction: column;
     position: relative;
 }
-.scroll-gid-items:hover{
-    transform: scale(1.02)
+
+.store-color:hover{
+    transform: scale(1.01)
 }
+  .store-span{
+  position: relative;
+     grid-row: span 2;
+    background:rgb(19,19,19);
+    height: 100%;
+    width:100%;
+    border-radius: 21px;
+     transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+     animation:Showvisible 0.5s ease forwards ;
+  }
   
+.store-span:hover{
+    transform: scale(1.01)
+}
+   .store-span1{
+  position: relative;
+     grid-row: span 2;
+       grid-column: span 2;
+    background:rgb(19,19,19);
+    height: 100%;
+    width:100%;
+    border-radius: 21px;
+     transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+     animation:Showvisible 0.5s ease forwards ;
+  }
+  
+.store-span1:hover{
+    transform: scale(1.01)
+}
 .card-wide{
     position: relative;
      grid-row: span 2;

@@ -59,7 +59,7 @@ export default function firstSlider(){
         }
   
 return(
-    <div className="relative w-full top-[3.9rem]">
+    <div className="relative w-full top-[5.1rem]">
 <div ref={containerRef} className="slider-content">
     {products.map((item)=>(
         <div
@@ -75,7 +75,7 @@ return(
 <div className=" absolute top-[-0.3rem]  flex flex-row w-full  justify-center items-center">
 { showLeft && (
   <button onClick={handleLeft} className="mac-left">
-<img src="lesser.svg" alt="previouse" className="w-[17px] h-auto ml-37" />
+<img src="che2.svg" alt="previouse" className="w-[17px] h-auto ml-40" />
 
 <span className="w-[1px] h-full bg-white/20 absolute right-0 top-0"></span>
     </button>
@@ -85,7 +85,7 @@ return(
  { showRight &&(  <button onClick={handleRight}
  className="mac-right"
     >
-        <img src="/greater.svg" alt="next" className="w-[17px] h-auto mr-37"/>
+        <img src="/che1.svg" alt="next" className="w-[17px] h-auto mr-37"/>
         
 <span className="w-[1px] h-full bg-white/20 absolute left-0 top-0"></span>
 

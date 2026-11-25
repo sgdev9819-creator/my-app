@@ -1,0 +1,33 @@
+ const products =[
+    {id: 1,
+      color:"wc.png",
+      golden:"New",
+      name:"Apple Watch Series 12",
+        info:"The ultimate way to ",
+        info1:"watch your health.",
+        price:"From $399 or $33.25/mo. for 12 mo.*",
+        price2:"Lease from $11.99/mo. for 24 mo. with",
+        price3:" Apple Upgrade◊◊",
+        image:"watch-i1.png"},
+
+      {id: 2,
+        color:"wc1.png",
+        golden:"New",
+        name: "Apple Watch Ultra 4",
+        info:"The ultimate sports",
+        info1:"and adventure watch.",
+        price:"From $799 or $66.58/mo. for 12 mo.*",
+         price2:"Lease from $24.99/mo. for 24 mo. with",
+        price3:" Apple Upgrade◊◊",
+        image:"/watch-i2.png"},
+
+       {id: 3,
+         color:"wc2.png",
+         golden:"New",
+         name:"Apple Watch SE 3",
+        info:"Essential health features",
+        info1:"at a great value.",
+        price:"From $249 or $20.75/mo. for 12 mo.*",
+       
+        image:"/watch-i3.png"},
+  ]

@@ -130,7 +130,12 @@ const scrollToIndex = (index) => {
                     >
                         <img src={top.image} alt="" className="w-full h-full object-cover" />
                         <div className="landing-footer-scroll">
-                          
+                          <Link
+                        href="#"
+                        className=" absolute bottom-[6%]  rounded-[22px] justify-center items-center inline-flex  left-[2rem] bg-white/80 text-black text-[17px] font-light px-[1.5rem] py-[0.5rem] backdrop-blur-[10px] hover:bg-white/90"
+                        >
+                            Stream now
+                        </Link>
                         </div>
                     </div>
                 ))}
@@ -150,7 +155,12 @@ const scrollToIndex = (index) => {
                     >
                         <img src={bottom.image} alt="" className="w-full relative h-full object-cover" />
                         <div className="landing-footer-scroll"> 
-                            
+                        <Link
+                        href="#"
+                        className=" absolute bottom-[6%]  rounded-[22px] justify-center items-center inline-flex  right-[2rem] bg-white/80 text-black text-[14px] font-light px-[1rem] py-[0.3rem] backdrop-blur-[10px] hover:bg-white/90"
+                        >
+                            play now
+                        </Link>
                         </div>
                     </div>
                 ))}

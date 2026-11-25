@@ -1,58 +1,12 @@
 "use client"
 import { useRef,useEffect,useState } from "react";
+import {useStore} from "../../context/StoreContext";
 import Button from "../components-v3/button"
- const items = [
-        {  
-           name: "iPad Pro",
-            info:"The ultimate iPad experience with the",
-            info1:" most advanced technology.",
-            price:"From $1199 or $99.91/mo. for 12 mo.*",
-            price1:"Lease from $24.99/mo. for 36 mo. ",
-            price2:"with Apple Upgrade◊◊",
-            image:"ie1.png"
-        },
-        {
-
-            name:"iPad Air",     
-            info:"Serious performance in a thin and ",      
-            info1:"light design.",
-            price:"From $749 or $62.41/mo. for 12 mo.*",
-            price1 :"Lease from $15.99/mo. for 36 mo. ",
-             price2:"with Apple Upgrade◊◊",
-               image:"/ie2.png"
-
-        },
-        {  
-
-
-
-
-
-
-            name:"iPad",  
-            info:"The colorful, all‑screen iPad for the",
-            info1:" things you do every day.",
-            price:"From $449 or $37.41/mo. for 12 mo.*",
-               image:"/ie3.png"
-        },
-        {
-            name:"    iPad mini",             
-            info:"The full iPad experience in an",
-            info1:"ultraportable design.",
-            price:"From $599 or $49.91/mo. for 12 mo.*",
-            price1:"Lease from $11.99/mo. for 36 mo. ",
-             price2:"with Apple Upgrade◊◊",
-               image:"/ie4.png"
-        },
-       
-
-         
-         
-         
-         
-    ]
 
 export default function NoCase(){
+    const{isproducts,AddtoCart,product}=useStore()
+
+const ipadproducts = (Array.isArray(isproducts) ? isproducts : []).filter((item)=>item.category === "iPad")
 
  const containerRef = useRef(null);
     const[showLeft,setshowLeft]=useState(false)
@@ -98,9 +52,9 @@ if(containerRef.current){
     }
 return(
 
-         <div className="hero-images-container" >
+         <div className="relative top-[17.1rem] w-full" >
             <div className="active" ref={containerRef}>
-                {items.map((prod,index)=>(
+                {ipadproducts.map((prod,index)=>(
                     <div
                     key={index}
                     className="cases ipad"
@@ -132,6 +86,7 @@ return(
                                 <Button 
                          text1="Learn more"
                           text2="Buy"
+                             item={prod}
                                />
                              
                         </div>
@@ -150,7 +105,7 @@ return(
   `}
   
   >
-<img src="l-black.svg" alt="previouse" className="w-[15px] h-auto" />
+<img src="che4.svg" alt="previouse" className="w-[15px] h-auto" />
     </button>
 
 
@@ -163,7 +118,7 @@ className={`w-max rounded-full
       ${showRight?"opacity-100":"opacity-30"}
   `}
     >
-        <img src="g-black.svg" alt="next" className="w-[15px] h-auto"/>
+        <img src="che3.svg" alt="next" className="w-[15px] h-auto"/>
 
     </button>
 

@@ -5,13 +5,14 @@ export default function Divs(){
       {
             leble:"Pay in full,pay monthly,or",
             lebel1:" lease an upgrade at ",
-            
+            classname:"store-span",
                image:"/2.jpg"
         },
         {
             info: "Trade in your current",
             info2:" device.",
             info3:"Get credits ",
+               classname:"store-span",
             info4:"toward a new one.‡",
             image:"/1.jpg"
           
@@ -25,6 +26,7 @@ export default function Divs(){
             info6:" monthly,or",
             info7:" lease and ",
             info8:"upgrade at the end of",
+               classname:"store-color",
             info9:" your term.",
                image:"/2.jpg"
         },
@@ -33,6 +35,7 @@ export default function Divs(){
                info10:"Make them yours",
                info11:"Engrave a mix of",
                info12:"  emoji,names and ",
+                  classname:"store-span",
                info13:"numbers for free.",
                image:"/3.jpg"
         },
@@ -40,10 +43,12 @@ export default function Divs(){
             info14:"Enjoy",
             info15:"two hour ",
             info16:"delivary",
+               classname:"store-color",
             info17:"from an Apple ",
 
             info18:"Store ,",
            info18:"free delivary",
+              classname:"store-color",
            info19:"or",
            info20:"easy pickup",
                image:"/4.jpg"
@@ -53,6 +58,7 @@ export default function Divs(){
              info22:"peronalized",
             info23:"shopping",
             info24:"experience ",
+               classname:"store-span",
             info25:"in the",
             info26:"Apple Store ",
             info27:"app",
@@ -62,10 +68,44 @@ export default function Divs(){
             info10:"Customize a Mac and  ",
             info11:"style an Apple Watch  ",
             info12:"just for them",
+               classname:"store-span",
                image:"/6.jpg"
             
         },
-
+        {
+            info10:"Customize a Mac and  ",
+            info11:"style an Apple Watch  ",
+            info12:"just for them",
+               classname:"store-span",
+               image:"/6.jpg"
+            
+        },
+        {
+            info10:"Customize a Mac and  ",
+            info11:"style an Apple Watch  ",
+            info12:"just for them",
+               classname:"store-span1",
+               image:"/6.jpg"
+            
+        },
+         {
+            info10:"Customize a Mac and  ",
+            info11:"style an Apple Watch  ",
+            info12:"just for them",
+               classname:"store-color",
+               image:"/6.jpg"
+            
+        },
+         {
+            info10:"Customize a Mac and  ",
+            info11:"style an Apple Watch  ",
+            info12:"just for them",
+               classname:"store-color",
+               image:"/6.jpg"
+            
+        },
+         
+       
     ]
     
     const containerRef = useRef(null);
@@ -113,15 +153,15 @@ export default function Divs(){
    
 
     return(
-        <div className="relative w-full top-[10.6rem] flex h-max">
+        <div className="relative w-full top-[10.6rem]">
     <div ref={containerRef} className="scroll-content-grid">
                 {items.map((item,index)=>(
                 <div 
                 key={index}
-                className={`${index === 0 ? "card-wide":"scroll-gid-items"}`}>
+                className={item.classname}>
                     <img src="#" href={index} />
                     <div className="absolute top-[3.5rem] left-[2rem] flex flex-col h-full font-light text-[25px] ">
-                     
+                     <span className="text-[17px] font-light w-full justify-center items-center text-white/80 hover:text-white/90">{index}</span>
                       <span className="flex w-maxt text-blue-400   " >{item.info}</span>
 
 {/*first and second section */}

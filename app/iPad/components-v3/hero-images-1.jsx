@@ -86,7 +86,7 @@ if(containerRef.current){
     }
 
     return(
-        <div className="relative w-full top-[9.8rem]">
+        <div className="relative w-full top-[20rem]">
     <div ref={containerRef} className="hero-images-content ipad-content">
                 {items.map((item,index)=>(
                 <div 
