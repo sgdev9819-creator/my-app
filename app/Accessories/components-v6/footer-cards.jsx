@@ -114,7 +114,7 @@ if(containerRef.current){
             ))}
 
         </div>
-                    <div className=" relative top-[-4.7rem] left-[73.5rem] gap-5 flex flex-row  w-max justify-center ">
+                    <div className=" relative top-[1rem] left-[73.5rem] gap-5 flex flex-row  w-max justify-center ">
 
   <button 
   disabled={!showLeft}

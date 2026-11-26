@@ -557,7 +557,7 @@ function ProductCard({ prod, activeMode }) {
 <span className="text-orange-600 text-[14px] font-light">
   {prod.status}
 </span>
-  <div className="flex flex-col text-white text-[20px] font-light">
+  <div className="flex flex-col text-white text-[20px] font-normal">
     <span >{prod.info}</span>
     <span className=" mt-[-0.5rem]">{prod.info1}</span>
   </div>
@@ -572,7 +572,7 @@ function ProductCard({ prod, activeMode }) {
   {prod.current}
   </span>
   <div className="flex flex-row w-full ">
-<div className="flex flex-col text-white text-[26px] font-light">
+<div className="flex flex-col text-black text-[26px] font-normal">
     <span >{prod.leble}</span>
     <span className=" mt-[-0.5rem]">{prod.leble1}</span>
   </div>
@@ -586,8 +586,8 @@ function ProductCard({ prod, activeMode }) {
   
 </div>
 
-<div className="flex flex-col w-full absolute top-[21rem]  pl-[2rem]">
-  <div className="flex flex-col text-white text-[26px] font-light">
+<div className="flex flex-col w-full absolute top-[21rem]  pl-[2rem] z-[10]">
+  <div className="flex flex-col text-black text-[26px] font-normal">
     <span >{prod.leble2}</span>
    
   </div>
