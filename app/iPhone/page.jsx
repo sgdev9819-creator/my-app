@@ -79,13 +79,13 @@ All iPhone accessories
 <HeroImage3/>
 
 
-<div className="relative pt-6  top-[61rem] left-21  w-full flex flex-row">
+<div className="relative pt-6  top-[54.2rem] left-21  w-full flex flex-row">
     <h3 className=" font-light  text-white text-[47px] " >
      Significant others.
     </h3>
 </div>
 
-<div className="relative top-[63rem] flex  justify-center items-center w-full ">
+<div className="relative top-[56.3rem] flex  justify-center items-center w-full ">
 <FooterSwitch/>
 </div>
 
