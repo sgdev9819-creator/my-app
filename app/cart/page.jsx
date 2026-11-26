@@ -66,22 +66,27 @@ href="#"
     <div className="relative top-[1rem] flex flex-col gap-[0.5rem] w-full text-white text-[14px] font-light">
         <Link
           href="#"
-        className="flex w-full px-[0.5rem] py-[0.5rem] rounded-[20px] bg-transparent hover:bg-white/5">
-            Orders
+        className="flex flex-row gap-4 w-full py-[0.3rem] text-[12px]
+            text-white/80  hover:bg-white/5 hover:text-white">
+           &rarr;   Orders
         </Link>
          <Link
           href="#"
-         className="flex w-full px-[0.5rem] py-[0.5rem] rounded-[20px] bg-transparent hover:bg-white/5">Your Saves
+         className="flex flex-row gap-4 w-full py-[0.3rem] text-[12px]
+            text-white/80  hover:bg-white/5 hover:text-white">
+            &rarr;   Your Saves
          </Link>
           <Link
             href="#"
-          className="flex w-full px-[0.5rem] py-[0.5rem] rounded-[20px] bg-transparent hover:bg-white/5">
-            Account
+          className="flex flex-row gap-4 w-full py-[0.3rem] text-[12px]
+            text-white/80  hover:bg-white/5 hover:text-white">
+           &rarr;   Account
           </Link>
            <Link
              href="#"
-           className="flex w-full px-[0.5rem] py-[0.5rem] rounded-[20px] bg-transparent hover:bg-white/5">
-            Sign in
+           className="flex flex-row gap-4 w-full py-[0.3rem] text-[12px]
+            text-white/80  hover:bg-white/5 hover:text-white">
+           &rarr;   Sign in
            </Link>
     </div>
 </div>
