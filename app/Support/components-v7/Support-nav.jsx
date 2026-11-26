@@ -239,7 +239,7 @@ onMouseLeave={()=> {
 {isactiveLink && dropdownData[isactiveLink] &&(
 <div className="max-w-[1084px] mx-auto px-14 py-17 flex flex-row gap-20 animation-fadein z-100">
 <div className="col-span-8 gap-4">
-<p className="text-white/50 text-[11px] mb-3 font-light  tracking-wider ">
+<p className="text-white/60 text-[11px] mb-3 font-light  tracking-wider ">
 {dropdownData[isactiveLink].tittle}
 </p>
 <ul className="flex flex-col gap-2">
@@ -264,7 +264,7 @@ onMouseLeave={()=> {
 </div>
 
 <div className="flex flex-col">
-   <p className="text-white/50 text-[12px] font-light  tracking-wider ">
+   <p className="text-white/60 text-[12px] font-light  tracking-wider ">
 {dropdownData[isactiveLink].leble}
 </p>
 
@@ -280,7 +280,7 @@ onMouseLeave={()=> {
      </div>
 
 <div className="flex flex-col">
-   <p className="text-white/50 text-[12px] font-light  tracking-wider ">
+   <p className="text-white/60 text-[12px] font-light  tracking-wider ">
 {dropdownData[isactiveLink]?.extra}
 </p>
 
