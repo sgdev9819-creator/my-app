@@ -161,7 +161,6 @@ export default function Divs(){
                 className={item.classname}>
                     <img src="#" href={index} />
                     <div className="absolute top-[3.5rem] left-[2rem] flex flex-col h-full font-light text-[25px] ">
-                     <span className="text-[17px] font-light w-full justify-center items-center text-white/80 hover:text-white/90">{index}</span>
                       <span className="flex w-maxt text-blue-400   " >{item.info}</span>
 
 {/*first and second section */}

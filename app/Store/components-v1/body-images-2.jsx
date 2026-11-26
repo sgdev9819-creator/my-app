@@ -229,8 +229,8 @@ if(containerRef.current){
                 key={index}
                 className={`${index === 0 || index === 13 ? "body-images-content1 hero" : "body-images-content hero"}`}>
                     <img src={item.image} className={`${index === 0 || index === 13 ?   "h-max":"h-[220px] absolute top-18"}`} />
-                    <div className={`${index === 0 || index === 13 ? "scroll-item-text-4" : "scroll-item-text-5"}`}>
-                        <p  className="absolute text-[11px] top-[-20px] text-orange-800 ">{item.top}</p>
+                    <div className={`${index === 0 || index === 13 ? "absolute top-[2rem] left-[2rem] z-1 flex flex-col" : "absolute bottom-[3rem] w-full h-[3.3rem]  left-[2rem]  flex flex-col"}`}>
+                        <p  className="absolute text-[11px] top-[-20px] text-orange-600 ">{item.top}</p>
                      
                      
                      
@@ -246,23 +246,23 @@ if(containerRef.current){
                        ))}
                          </ul>
 
-                       <h3 className={` text-black font-normal text-1xl  ${index === 0 || index === 13  ? "w-[510px] text-3xl":"w-[400px] text-[17px] mt-0"}`}>{item.name}</h3>
+                       <h3 className={` text-black font-normal   ${index === 0 || index === 13  ? "w-[510px] text-[26px]":"w-[400px] text-[17px] mt-0 text-white"}`}>{item.name}</h3>
                        <div className=" flex flex-col gap-0">
                        <p className="text-sm">
                         {item.down} 
                         </p>
-                        <p className="text-sm">
+                        <p className="text-sm mt-[-0.2rem]">
                         {item.down2}
                     </p>
                     </div>
                   
                       
-                        <h3>{item.title}</h3>
-                        <h3>{item.title2}</h3>
+                        <h3 className="text-white ">{item.title}</h3>
+                        <h3 className="text-white">{item.title2}</h3>
                        
 
                         </div>
-                          <p className="text-sm absolute bottom-6 left-5">{item.price} </p>
+                          <p className="text-sm absolute bottom-6 left-[2rem] text-white">{item.price} </p>
                     </div>
 
 

@@ -94,7 +94,7 @@ return(
                         </div>
                 ))}
 </div>
-<div className=" relative top-[-0.5rem] left-[73.5rem] gap-5 flex flex-row  w-max justify-center ">
+<div className=" relative top-[0rem] left-[73.5rem] gap-5 flex flex-row  w-max justify-center ">
 
    <button 
   disabled={!showLeft}

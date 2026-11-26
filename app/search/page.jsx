@@ -67,19 +67,16 @@ return(
 {!trimmed ? (
     <div className="flex flex-col relative top-[1rem] ">
         {quickLinks.map((lin,index)=>(
-            <div 
-            key={index}
-            className="flex flex-row gap-4 w-full py-[0.3rem] text-[12px]
-            text-white/80  hover:bg-white/5 hover:text-white">
-
+          
             <Link
+            key={index}
             href={lin.path}
-            className=""
+            className="flex flex-row gap-4 w-full py-[0.3rem] pl-[0.3rem] text-white/80 text-[12px] hover:bg-white/5 hover:text-white"
             >
            &rarr;  {lin.lebel}
             
             </Link>
-            </div>
+          
         ))}
             </div>
     ):results.length > 0 ? (
