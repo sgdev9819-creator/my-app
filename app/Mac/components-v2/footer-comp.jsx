@@ -74,7 +74,7 @@ return(
     className={`w-full  relative  flex flex-col transition-all duration-500 border-b border-white/60 overflow-hidden ${activeItem ? "h-auto pb-4" : "h-auto"}`}>
 <button className="w-full flex flex-row relative h-max  gap-[5rem] pb-[2rem]   cursor-pointer"
  onClick={() => handleClick(item.id)}>
-    <div className="flex flex-col text-[28px] text-white font-light ">
+    <div className="flex flex-col text-[28px] text-white font-normal ">
     <h3>
         {item.name}
     </h3>

@@ -1,7 +1,7 @@
 "use client"
 import { useRef,useEffect,useState } from "react";
   const products =[
-    {id: 1,name:"MacBook Noe",image:"/nr1.png"},
+    {id: 1,name:"MacBook Nee",image:"/nr1.png"},
       {id: 2,name:"MacBook Air",image:"/nr2.png"},
        {id: 3, name:"MacBook Pro",name2:"New",image:"/mac18.png"},
           {id: 4, name:"iMac",name2:"New",image:"/nr4.png"},

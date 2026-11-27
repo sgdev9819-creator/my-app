@@ -5,7 +5,7 @@ export default function   supportInfo(){
     return(
 <div className="flex flex-col justify-center items-center w-[72.6%] h-max absolute gap-[28px]">
 <div className="w-full h-[312px] justify-center items-center flex flex-col bg-black rounded-[21px]" >
-<h3 className="justify-center absolute flex top-[2.2rem] w-full text-[24px] font-light text-white ">
+<h3 className="justify-center absolute flex top-[2.2rem] w-full text-[28px] font-normal text-white ">
 Designing for longevity
 </h3>
 <div className="justify-center items-center  flex flex-col w-full text-[17px] absolute top-[5.2rem] font-light text-white " >
@@ -52,7 +52,7 @@ At Apple, we are always working to create the best experience for our customers,
 
 <div className="  flex w-[65.8%] h-[365px] bg-black rounded-[22px] absolute ">
     <div className="flex flex-col absolute left-13 top-8 flex gap-[9px] text-white w-max">
-  <h3 className="font-light text-white text-[23.9px] ">
+  <h3 className="font-normal text-white text-[28px] ">
 Beware of counterfeit parts
     </h3>
 <div  className="font-normal text-white/90 text-[17px] flex flex-col gap-0   ">
@@ -106,7 +106,7 @@ Apple Authorized Service
      rounded-[21px]">
         <div className=" flex-flex-col gap-4 absolute left-[24px] top-[3.1rem]">
         <img src="/icon1.svg" alt="#" className=" w-[60px]  mt-[-0.6rem] ml-[1.5px]"/>
-        <div className="font-light text-white text-[24px] mt-2 flex flex-col ">
+        <div className="font-normal text-white text-[28px] mt-2 flex flex-col ">
 
        
         <h3>

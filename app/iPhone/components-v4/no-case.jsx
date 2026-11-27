@@ -63,8 +63,8 @@ return(
                         className="absolute w-[371px] top-4 rounded-[20px] " />
                        <div className="absolute top-[33rem] flex flex-col gap-0 w-full justify-center items-center">                        
     
-                        <h3 className="text-[30px]  text-white font-light w-full absolute top-[0.5rem] flex justify-center items-center " >{prod.name}</h3>
-                         <div className="absolute top-[3.5rem] flex flex-col justify-center items-center w-full font-light text-white text-[16.5px]">
+                        <h3 className="text-[28px]  text-white font-normal w-full absolute top-[0.5rem] flex justify-center items-center " >{prod.name}</h3>
+                         <div className="absolute top-[3.5rem] flex flex-col justify-center items-center w-full font-light text-white text-[17px]">
                         <span className="">
                             {prod.info}
                         </span>
@@ -72,7 +72,7 @@ return(
                             prod.info1}
                        </span>
                         </div>
- <div className="relative w-full justify-center items-center flex flex-col top-31 text-white/90 font-light  text-[12.5px]">
+ <div className="relative w-full justify-center items-center flex flex-col top-31 text-white/90 font-light  text-[12px]">
                  <p className=" flex  justify-center items-center w-[300px]  ">{prod.price} </p>
                  <p className="">
                     {prod.price1}

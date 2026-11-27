@@ -13,7 +13,7 @@ export default function supportImages(){
     <h3 className="text-white text-4xl font-light ">
    Handled with 
     </h3>
-    <h3 className="text-white text-3xl font-font-light  mt-[-1rem]">
+    <h3 className="text-white text-3xl font-light  mt-[-1rem]">
 AppleCare
     </h3>
     <p className="text-white text-1xl font-light w-[250px]">

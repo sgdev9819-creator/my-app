@@ -5,7 +5,7 @@ export default function footerLinks(){
  return(
 <div className="absolute w-full h-[300px] bg-black flex-flex-col gap-4">
     <div className="pt-18 pl-50 flex flex-col gap-2 absolute">
-<h3 className="text-white  text-2xl font-light">
+<h3 className="text-white  text-[28px] font-normal">
 Apple Service Programs
 </h3>
 <Link href="#"  

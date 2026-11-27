@@ -116,7 +116,7 @@ return(
                         </span>
                        <div className="absolute top-[31rem] flex flex-col gap-0 w-full justify-center items-center">                        
     
-                        <h3 className="text-[30px]  text-white font-light w-full absolute top-[0.5rem] flex justify-center items-center " >{prod.name}</h3>
+                        <h3 className="text-[28px]  text-white font-normal w-full absolute top-[0.5rem] flex justify-center items-center " >{prod.name}</h3>
                          <div className="absolute top-[3.5rem] flex flex-col justify-center items-center w-full font-light text-white text-[16.5px]">
                         <span className="">
                             {prod.info}

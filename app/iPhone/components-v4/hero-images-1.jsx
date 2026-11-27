@@ -99,7 +99,7 @@ if(containerRef.current){
 
            
                    <div className="container-info" >
-                       <h3 className={`"text-black font-light space-y-1 leading-tight text-[25px] w-[310px] " ${index === 3 ? "text-white":"text-black"}`}>{item.name}</h3>
+                       <h3 className={`"text-black font-normal space-y-1 leading-tight text-[28px] w-[310px] " ${index === 3 ? "text-white":"text-black"}`}>{item.name}</h3>
                       <p className="text-sm font-light ">{item.down2}</p>
                        </div>
                     </div>

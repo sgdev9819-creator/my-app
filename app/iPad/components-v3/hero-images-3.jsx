@@ -31,7 +31,7 @@ export default function Images(){
                 key={index}
                className="climax-contents " >
                 <div className="absolute top-[2rem] flex flex-col justify-center items-center w-full h-max  ">
-                    <div className="absolute top-[0rem] flex flex-col justify-center items-center w-full h-max text-white text-[29px] font-semibold ">
+                    <div className="absolute top-[0rem] flex flex-col justify-center items-center w-full h-max text-white text-[28px] font-normal ">
                         <h2>
                             {item.name}
                         </h2>

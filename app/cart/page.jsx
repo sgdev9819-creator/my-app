@@ -51,7 +51,7 @@ className="w-full flex flex-row gap-4 shrink-0 border-b border-white/20  h-[60px
 ))}
 </div>
 <Link
-href="#"
+href="/m-cart"
     className="text-white font-light bg-blue-600 px-[2rem] py-[0.7rem] w-full justify-center items-center flex rounded-[22px] mt-[2rem]  "
 >
     Review Bag

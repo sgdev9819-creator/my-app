@@ -96,7 +96,7 @@ if(containerRef.current){
                 >
                     <img src={card.image} alt="" className="absolute top-[1rem] left-[1rem]"/>
                     <div className="flex flex-col absolute pt-20 pb-15 pr-18 pl-10">
-                    <h3 className="text-white text-[33px] w-max font-light ">
+                    <h3 className="text-white text-[28px] w-max font-normal ">
                         {card.name}
                     </h3>
                     <span className="text-white text-[17px] font-light w-max" >
