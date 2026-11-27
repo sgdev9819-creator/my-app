@@ -115,21 +115,22 @@ export default function Images(){
                 key={index}
                 className={`scroll-item-5  store-image1`}>
                     <img src={item.image} className={`${index === 0 ?   "h-max":"h-[220px] absolute top-18"}`} />
-                    <div className={`${index === 0 ? "scroll-item-text-4" : "scroll-item-text-5"}`}>
+                    <div className={` absolute top-[2rem] left-[2rem] text-2xl text-white flex flex-col }`}>
                         <p  className="absolute text-[11px] top-[-20px] text-orange-800 ">{item.top}</p>
                       
                
-                       <h3 className={` text-black font-semibold text-1xl  ${index === 0 ? "w-[510px] text-2xl":"w-[400px] text-[17px] mt-0"}`}>{item.name}</h3>
-                       <div className={` text-black font-semibold text-1xl  ${index === 0 ? "w-[510px] text-2xl":"w-[400px] text-[17px] mt-0"}`}>
-                       <h3 className={` text-black font-semibold text-1xl  ${index === 0 ? "w-[510px] text-2xl":"w-[400px] text-[17px] mt-0"}`}>
+                       <h3 className={`  font-normal text-2xl text-white}`}>{item.name}</h3>
+                       <div className={`  font-normal   ${index === 0 ? "w-[510px] text-2xl":"w-[400px] text-[17px] mt-0"}`}>
+                       <h3 className={`  font-normal 
+                         w-[510px] text-2xl}`}>
                         {item.name2} 
                         </h3>
                        
                     </div>
                   
                       
-                        <h3>{item.title}</h3>
-                        <h3>{item.title2}</h3>
+                        <h3 className="text-2xl text-white">{item.title}</h3>
+                        <h3 className="text-2xl text-white">{item.title2}</h3>
                        
 
                         </div>
