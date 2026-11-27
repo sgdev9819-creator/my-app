@@ -84,7 +84,7 @@ if(containerRef.current){
     }
 
     return(
-        <div className="relative w-full ">
+        <div className="relative w-full top-[5rem] ">
         <div 
         ref={containerRef}
         className="  hero-images-content" >

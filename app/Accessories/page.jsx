@@ -88,7 +88,7 @@ className={`acc-button ${showfull?"activebutton":"button"}`}>
 
 </div>
 
-    <div className="absolute top-50 z-100 w-full ">
+    <div className="absolute top-50  w-full ">
     <AccessoriesHero/>
 </div>
     </div>

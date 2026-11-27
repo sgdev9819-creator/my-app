@@ -3,12 +3,12 @@
 const Accessories =[
     {
         name:"iPhone",
-        image:"jr0.png",
+        image:"jr3.png",
 
     },
     {
          name:"iPad",
-        image:"jr2.png",
+        image:"jr3.png",
     },
     {
          name:"Mac",
@@ -47,7 +47,7 @@ return(
 <div className="Accessories-item"
 key={index}
 >
-    <img src={items.image} alt={index} />
+    <img src={items.image} alt={index} className="transition-transform duration-300 hover:scale-[1.02]" />
     <span className="w-full font-light relative top-2 text-1xl text-white justify-center items-center inline-flex">
         {items.name}
     </span>
