@@ -42,11 +42,11 @@ Shop Apple Home.
 </Link>
 
 </div>
-<div className="relative top-[2.1rem] w-full ">
+<div className="relative top-[4rem] w-full ">
     <HeroImages1/>
 </div>
 
-<div className="w-full h-[158.7rem] relative top-[23.8rem] bg-black flex flex-col">
+<div className="w-full h-[158.7rem] relative top-[26.8rem] bg-black flex flex-col">
     
 <div className="relative left-21 w-max flex top-[8.2rem] font-light text-[47px] text-white">
     <h3>Get to know Apple Home.</h3>

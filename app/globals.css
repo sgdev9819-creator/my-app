@@ -44,7 +44,7 @@
     -ms-overflow-style: none;
    scroll-behavior: smooth;
     gap: 20px;
-    padding: 105px;
+    padding: 25px;
      padding-left: 86px;
     padding-right: 86px;
     transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
@@ -929,8 +929,7 @@ right: 0;
     display: flex;
     flex-direction: row;
     gap: 0.8rem;
-    justify-content: center;
-    align-items: center;
+   
     width: 100%;
 }
 .button-container a{

@@ -123,7 +123,7 @@ if(containerRef.current){
 
 return(
   
-        <div className="relative w-full top-[15.7rem]">
+        <div className="relative w-full top-[6.7rem]">
     <div ref={containerRef} className="hero-images-content">
                 {products.map((item,index)=>(
                 <div 

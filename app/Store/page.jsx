@@ -54,84 +54,84 @@ export default function Mac(){
     <h3 className=" text-pink-600 font-light text-[28px]">The latest.</h3>
     <h3 className="text-white/60 text-[28px] font-light">Take a look at what's new, right now.</h3>
 </div>
-<div className="absolute top-88 w-full ">
+
 <HeroImages1/>
-</div>
 
 
 
-<div className="relative top-[8.5rem] h-max left-21 flex flex-row gap-2  ">
+
+<div className="relative top-[9.5rem] h-max left-21 flex flex-row gap-2  ">
     <h3 className=" text-pink-600 font-light text-[28px]">Accessories. </h3>
     <h3 className="text-white/60 text-[27px] font-light">Essentials that pair perfectly with your favorite products.</h3>
 </div>
 
 
-<div className="absolute top-244 z-50 w-full h-max ">
+
 <HeroImages2/>
-</div>
 
 
 
 
 
-<div className="relative top-[10.5rem] left-21 flex z-2 flex-row gap-2 ">
+
+<div className="relative top-[12.8rem] left-21 flex z-2 flex-row gap-2 ">
     <h3 className=" text-pink-600 font-light text-[28px]"> 
 Help is here. </h3>
     <h3 className="text-white/50 text-[28px] font-light"> Whenever and however you need it.</h3>
 </div>
 
-<div className=" flex absolute top-[100rem] z-4 w-full ">
+
     <Images5/>
-</div>
 
 
-<div className="relative top-[12.5rem] left-21 h-max z-5 flex flex-row gap-2 ">
+
+<div className="relative top-[15.8rem] left-21 h-max z-5 flex flex-row gap-2 ">
     <h3 className=" text-pink-600 font-light  text-[28px]">The Apple Store difference.</h3>
     <h3 className="text-white/60 text-[28px] font-light ">Even more reason to shop with us.</h3>
 </div>
 
-<div className=" absolute top-[140rem] w-full left-[0.5rem] flex z-60 ">
+
 <ColorfulCards/>
-</div>
 
 
 
-<div className="relative top-[10.5rem] left-21 flex flex-row gap-2 ">
+
+<div className="relative top-[12.4rem] left-21 flex flex-row gap-2 ">
     <h3 className=" text-pink-600 font-light  text-[28px]"> Loud and clear.</h3>
     <h3 className="text-white/60 text-[28px] font-light "> Unparalleled choices for rich, high-quality sound.</h3>
 </div>
 
-<div className="absolute top-[181.8rem] w-full  z-50">
+
 <BodyImages2/>
-</div>
 
 
 
 
 
-<div className="relative top-[12.5rem] left-21 flex flex-row gap-2  ">
+
+<div className="relative top-[15.4rem] left-21 flex flex-row gap-2  ">
     <h3 className=" text-pink-600 font-light text-[28px]"> The Apple experience.</h3>
     <h3 className="text-white/50 text-[28px] font-light"> Do even more with Apple products and services.</h3>
 </div>
-<div className="w-full flex absolute top-[196.5rem] ">
+
     <Images2/>
-</div>
 
 
 
 
-<div className="relative top-[14.5rem] left-21 flex flex-row gap-2">
+
+<div className="relative top-[18.4rem] left-21 flex flex-row gap-2">
     <h3 className=" text-pink-600 font-light  text-[28px]">Savings and offers.</h3>
     <h3 className="text-white/60 text-[28px] font-light "> Exclusive deals, special stores and more.</h3>
 </div>
 
-<div className="absolute top-[255.8rem] w-full  z-50">
+
 <FooterImage2/>
-</div>
 
 
 
-<div className="absolute top-[310.5rem] left-21 flex flex-col gap-[10px]">
+
+<div className="relative top-[21.4rem] left-21 flex flex-col gap-[10px]">
     <h2 className="text-[28px] font-light  text-white ">
         Quick Links
     </h2>

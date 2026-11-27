@@ -108,7 +108,7 @@ export default function Images(){
        }
    
        return(
-        <div className="relative w-full top-[35rem]">
+        <div className="relative w-full top-[15.5rem]">
     <div ref={containerRef} className="hero-images-content ">
                 {items.map((item,index)=>(
                 <div 

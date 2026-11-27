@@ -43,7 +43,7 @@ export default function Watch(){
 Compare all models {'\u003e'}
 </Link>
 </div>
-<div className="w-full absolute top-[58.5rem]  flex justify-center items-center">
+<div className="w-full absolute top-[29.8rem]  flex justify-center items-center">
     <HeroImage1/>
 </div>
 <div className=" absolute left-21 top-[100rem] w-auto h-auto justify-center">
@@ -53,11 +53,11 @@ place to shop Apple Watch.
 </h3>
 </div>
 
-<div className=" support-input   absolute top-[90rem] w-full ">
+<div className=" support-input   absolute top-[93.7rem] w-full ">
 <HeroImage2 />
 </div>
 
-<div className="w-full h-[100rem] justify-center items-center flex bg-black absolute top-[167.8rem]">
+<div className="w-full h-[100rem] justify-center items-center flex bg-black absolute top-[161.8rem]">
 <div className="absolute flex flex-row gap-[40.2%] justify-center items-center w-full absolute top-[8.7rem]">
     <h3 className="font-light text-white text-[45px] ">Apple Watch essentials.</h3>
     <Link href="#" className="text-blue-400 text-[17px] mt-[1.6rem] font-light no-underline hover:underline">

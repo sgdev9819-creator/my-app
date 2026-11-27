@@ -27,7 +27,7 @@ export default function Mac(){
    
     <h2 className="text-white text-[80px] font-light  absolute  top-18 left-21">iPhone</h2>
 <Hero/>
-<div className="absolute top-[24.5rem] w-full">
+<div className="relative top-[8.5rem] w-full">
     <Interval/>
 </div>
 
