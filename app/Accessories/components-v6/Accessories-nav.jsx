@@ -123,7 +123,8 @@ export default function Navber(){
   const[isSearchdrop,setisSearchdrop]=useState(false)
     const[isbag,setisbag]=useState(false)
       const[isoverlay,setisoverlay]=useState(false)
-      const{totalItems} = useStore()
+      const store = useStore()
+      const totalItems = store?.totalItems ?? 0;
  const navLinks = [
 
     {name:"Store",path:"Store"},
