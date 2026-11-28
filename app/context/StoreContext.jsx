@@ -102,7 +102,7 @@ const placeOrder=()=>{
     return newOrder
 }
 const cartCount = cart.reduce((sum,item) => sum + item.quantity, 0);
-const cartTotale = cart.reduce((sum,item) => sum + item.price * item.quantity, 0);
+const cartTotal = cart.reduce((sum,item) => sum + item.price * item.quantity, 0);
 
 return(
     <StoreContext
@@ -111,7 +111,7 @@ value={{
     cart,
     cartCount,
     updateQuantity,
-    cartTotale,
+    cartTotal,
     AddtoCart,
     removeCart,
     orders,
@@ -126,6 +126,17 @@ value={{
 )
 }
 
+const FallBackStore ={
+    cart:[],
+    isproducts:[],
+    cartCount:0,
+    cartTotal:0,
+    AddtoCart:()=>{},
+    updateQuantity:()=>{},
+    removeCart:()=>{},
+    orders:[],
+    placeOrder:()=>{},
+    totalItems:0,
+}
 
-
-export const useStore = ()=> useContext(StoreContext)
+export const useStore = ()=> useContext(StoreContext)?? FallBackStore

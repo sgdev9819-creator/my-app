@@ -3,7 +3,7 @@ import Link from "next/link";
 import {useStore} from "../context/StoreContext";
 
 export default function CartPage(){
-const{AddtoCart,updateQuantity,cart,cartCount,cartTotal,removeCart,placeOrder} = useStore()
+const{cart,removeCart} = useStore()
 
     const item = Array.isArray(cart) ? cart :[]
 
